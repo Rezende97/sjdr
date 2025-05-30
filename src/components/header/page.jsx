@@ -2,8 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 
 const Header = () => {
     return (
@@ -13,8 +11,8 @@ const Header = () => {
                 backgroundImage: 'url("/images/header2.png")',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'contain',
-                width: '100%',
-                height: '33vh' 
+                width: '100vw',
+                height: '40vh' 
         }}>
             <Box sx={{
                 display: 'flex',
