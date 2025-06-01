@@ -31,7 +31,7 @@ const Home = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '18px',
-                border: '2px dashed #C9A13E',
+                border: '2px dashed rgba(201, 162, 62, 0.68)',
                 borderRadius: '20px',
                 padding: '27px 25px'
             }}>
