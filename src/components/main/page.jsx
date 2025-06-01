@@ -5,7 +5,7 @@ const Main = () => {
         <Box 
             component="section" 
             sx={{ 
-                backgroundImage: 'url("/images/background-main.png")',
+                backgroundImage: 'url("/images/background.png")',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
                 padding: '18rem'
@@ -176,7 +176,157 @@ const Main = () => {
             </Box>
 
             {/* redes sociais */}
-                
+            <Box >
+
+                {/* instagram e tiktok */}
+                <Box 
+                    sx={
+                        {
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            gap: '10px'
+                        }
+                    }
+                >
+                    <img
+                        src="/images/retangulo_rede_social.png"
+                        alt="instagram"
+                        width='50%'
+                        height='400px'
+                    />
+
+                    <img
+                        src="/images/retangulo_rede_social.png"
+                        alt="TikTok"
+                        width='50%'
+                        height='400px'
+                    />
+                </Box>
+
+                {/* youtube */}
+                <Box 
+                    sx={
+                        {
+                            display: 'flex',
+                            justifyContent: 'center',
+                            paddingY: '40px'
+                        }
+                    }
+                >
+                    <img
+                        src="/images/retangulo_horizontal_rede_social.png"
+                        alt="Youtube"
+                        width='100%'
+                    />
+                </Box>
+
+            </Box>        
+
+            {/* cidades */}
+            <Box sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexDirection: 'column',
+                gap: '50px'
+            }}>
+
+                {/* cidade e passarinho */}
+                <Box sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    padding: '150px 0 0 100px',
+                    gap: '40px'
+                }}>
+                    <Box>
+                        <img src="/images/CIDADES.png" alt="cidades" width={220} />
+                    </Box>
+                    <Box>
+                        <img src="/images/passarinho_cidade.png" alt="passarinho" width={80}/>
+                    </Box>
+                </Box>
+
+                {/* nome das cidades */}
+                <Box sx={{
+                    display: 'flex',
+                    gap: '35px'
+                }}>
+                    <Box>
+                        <img src="/images/cidade-lado-esquerdo.png" alt="cidades" width={290} />
+                    </Box>
+                    <Box>
+                        <img src="/images/cidade-lado-direito.png" alt="passarinho" width={290}/>
+                    </Box>
+                </Box>
+            </Box>
+
+            {/* sobre a pira */}
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '45px'
+                }}
+            >
+
+                {/* sobre a pira */}
+                <Box 
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'end',
+                        padding: '460px 0 0 0',
+                        gap: '30px'
+                    }}
+                >
+                    <img src="/images/SOBREAPIRA.png" alt="Sobre a Pira" width={170} />
+                    <img src="/images/iconpira.png" alt="Sobre a Pira" width={50} height={50} />
+                </Box>
+
+                {/* texto sobre pira */}
+                <Box>
+                    <img src="/images/texto_pira.png" alt="Sobre a Pira" width={440} height={260} />
+                </Box>
+
+            </Box>
+
+            {/* rodapé */}
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    flexDirection: 'column',
+                    position: 'relative',
+                    top: '15rem'
+                }}
+            >
+
+                {/* patrocinadores */}
+                <Box 
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        gap: '5px',
+                    }}
+                >
+                    <img src="/images/lei.png" alt="Lei" width={170} height={120} />
+                    <img src="/images/petrobras.png" alt="Petrobras" width={170} height={70} />
+                    <img src="/images/pira-realizacao.png" alt="Petrobras" width={170} height={70} />
+                    <img src="/images/ministerio_da_cultura.png" alt="Petrobras" width={170} height={70} />
+                    <img src="/images/governo.png" alt="Petrobras" width={170} height={70} />
+                </Box>
+
+                {/* texto sobre pira */}
+                <Box>
+                    <img src="/images/diga_nao_ao_racismo.png" alt="Diga não ao Racismo" width={170} height={40} />
+                    <img src="/images/recicle_sempre.png" alt="Recicle Sempre" width={170} height={40} />
+                </Box>
+
+            </Box>
+
+
         </Box>
     )
 }
