@@ -45,7 +45,7 @@ const Header = () => {
         >
           <Box sx={{ maxWidth: '150px',
     display: {
-      xs: 'none',         // esconde abaixo de 600px
+      xs: 'none',         
       sm: 'block',
     },
     '@media (max-width:526px)': {
@@ -66,7 +66,6 @@ const Header = () => {
           </Box>
         </Stack>
 
-        {/* Menu - aparece apenas se largura > 1150px */}
         {!isMobile && (
           <Stack
             direction="row"
@@ -82,7 +81,6 @@ const Header = () => {
           </Stack>
         )}
 
-        {/* Menu Hamburguer - aparece se largura <= 1150px */}
         {isMobile && (
             <IconButton
                 onClick={toggleDrawer}
