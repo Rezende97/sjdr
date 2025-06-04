@@ -5,68 +5,56 @@ import Button from '@mui/material/Button';
 
 const Header = () => {
     return (
-        <Box 
-            component="section" 
-            sx={{ 
-                backgroundImage: 'url("/images/header2.png")',
+        <Box
+            component="header"
+            sx={{
+                backgroundImage: 'url("/images/headernovo.png")',
                 backgroundRepeat: 'no-repeat',
-                backgroundSize: 'contain',
-                width: '100vw',
-                height: '40vh' 
-        }}>
-            <Box sx={{
+                backgroundSize: '100% 100%',
+                backgroundPosition: 'center',
+                height: { xs: '200px', md: '250px' },
                 display: 'flex',
-                justifyContent: 'space-evenly',
                 alignItems: 'center',
-                paddingY: '20px'
-            }}>
-                <Stack direction="row" spacing={12}>
-                    <Box sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '20px'
-                    }}>
-                        <Box>
-                            <img src='/images/ministerio_cultura_petrobras.png' sx={{width: '15rem'}} />
-                        </Box>
-                        <Box>
-                            <img src='/images/logo_menu.png' sx={{width: '15rem'}} />
-                        </Box>
-                    </Box>
-                    <Box>
-                        <Button
-                            id="basic-button"
-                            aria-haspopup="true"
-                            sx={{color:'#FFF4E5' }}
-                        >
-                            O PROJETO
-                        </Button>
-                        <Button
-                            id="basic-button"
-                            aria-haspopup="true"
-                            sx={{color:'#FFF4E5' }}
-                        >
-                            CIDADES
-                        </Button>
-                        <Button
-                            id="basic-button"
-                            aria-haspopup="true"
-                            sx={{color:'#FFF4E5' }}
-                        >
-                            REDES SOCIAIS
-                        </Button>
-                        <Button
-                            id="basic-button"
-                            aria-haspopup="true"
-                            sx={{color:'#FFF4E5', fontFamily: 'widescreen' }}
-                        >
-                            A PIRA
-                        </Button>
-                    </Box>
-                </Stack>
-            </Box>
-        </Box>
-    )
-}
+                justifyContent: 'space-evenly',
+                px: { xs: 2, md: 30 }
+            }}
+        >
+            {/* Logotipos */}
+            <Stack direction="row"
+  spacing={3}
+  alignItems="center"
+  height="100%"
+  sx={{ mt: '-70px' }}>
+                <Box sx={{ maxWidth: '150px' }}>
+                    <img
+                        src="/images/ministerio_cultura_petrobras.png"
+                        alt="Ministério da Cultura"
+                        style={{ width: '100%', height: 'auto' }}
+                    />
+                </Box>
+                <Box sx={{ maxWidth: '150px' }}>
+                    <img
+                        src="/images/logo_menu.png"
+                        alt="Logo"
+                        style={{ width: '100%', height: 'auto' }}
+                    />
+                </Box>
+            </Stack>
 
-export default Header
+            {/* Menu */}
+            <Stack direction="row"
+  spacing={3}
+  alignItems="center"
+  height="100%"
+  sx={{ mt: '-70px' }}>
+                <Button sx={{ color: '#FFF4E5' }}>O PROJETO</Button>
+                <Button sx={{ color: '#FFF4E5' }}>CIDADES</Button>
+                <Button sx={{ color: '#FFF4E5' }}>REDES SOCIAIS</Button>
+                <Button sx={{ color: '#FFF4E5', fontFamily: 'widescreen' }}>A PIRA</Button>
+            </Stack>
+
+        </Box>
+    );
+};
+
+export default Header;
