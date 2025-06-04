@@ -43,14 +43,18 @@ const Header = () => {
           height="100%"
           sx={{ mt: '-70px' }}
         >
-          <Box sx={{ maxWidth: '150px',
-    display: {
-      xs: 'none',         
-      sm: 'block',
-    },
-    '@media (max-width:526px)': {
-      display: 'none',
-    } }}>
+          <Box 
+            sx={{ 
+              maxWidth: '150px',
+              display: {
+                xs: 'none',         
+                sm: 'block',
+              },
+              '@media (max-width:526px)': {
+                display: 'none',
+              } 
+            }}
+          >
             <img
               src="/images/ministerio_cultura_petrobras.png"
               alt="Ministério da Cultura"

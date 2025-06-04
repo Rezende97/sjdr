@@ -3,27 +3,39 @@ import Box from '@mui/material/Box';
 
 const Home = () => {
     return (
-        <Box sx={{
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            alignItems: 'center'
-        }}>
-            <Box>
+        <Box 
+            sx={{
+                display: 'flex',
+                justifyContent: 'space-evenly',
+                alignItems: 'center',
+                '@media (max-width:746px)': {
+                    display: 'flex',
+                    flexDirection: 'column'
+                } 
+            }}
+        >
+            <Box sx={{'@media (max-width:746px)': { display: 'none'} }}>
                 <img src='/images/Nuvem.png' width={250} />
             </Box>
+
             <Box sx={{
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexDirection: 'column',
-                gap: '18px'
+                gap: '18px', 
+                '@media (max-width:746px)': { 
+                    marginTop: '20px'
+                }
             }}>
                 <img src='/images/Apresenta.png' width={170} />
                 <img src='/images/logo_home.png' width={300} />
             </Box>
-            <Box>
+
+            <Box sx={{'@media (max-width:746px)': { display: 'none'} }}>
                 <img src='/images/passarinho.png' width={80} />
             </Box>
+
             <Box sx={{
                 backgroundImage: 'url("/imagem/border_redes_sociais_home.png")',
                 backgroundRepeat: 'no-repeat',
@@ -33,7 +45,11 @@ const Home = () => {
                 gap: '18px',
                 border: '2px dashed rgba(201, 162, 62, 0.68)',
                 borderRadius: '20px',
-                padding: '27px 25px'
+                padding: '27px 25px',
+                '@media (max-width:746px)': { 
+                    flexDirection: 'row',
+                    marginTop: '25px'
+                }
             }}>
                 <img src='/images/facebook.png' width={40} />
                 <img src='/images/instagram.png' width={40} />
