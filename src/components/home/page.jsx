@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 
 const Home = () => {
     return (
-        <Box 
+        <Box
             sx={{
                 display: 'flex',
                 justifyContent: 'space-evenly',
@@ -11,10 +11,10 @@ const Home = () => {
                 '@media (max-width:746px)': {
                     display: 'flex',
                     flexDirection: 'column'
-                } 
+                }
             }}
         >
-            <Box sx={{'@media (max-width:746px)': { display: 'none'} }}>
+            <Box sx={{ '@media (max-width:746px)': { display: 'none' } }}>
                 <img src='/images/Nuvem.png' width={250} />
             </Box>
 
@@ -23,8 +23,8 @@ const Home = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexDirection: 'column',
-                gap: '18px', 
-                '@media (max-width:746px)': { 
+                gap: '18px',
+                '@media (max-width:746px)': {
                     marginTop: '20px'
                 }
             }}>
@@ -32,7 +32,7 @@ const Home = () => {
                 <img src='/images/logo_home.png' width={300} />
             </Box>
 
-            <Box sx={{'@media (max-width:746px)': { display: 'none'} }}>
+            <Box sx={{ '@media (max-width:746px)': { display: 'none' } }}>
                 <img src='/images/passarinho.png' width={80} />
             </Box>
 
@@ -46,15 +46,15 @@ const Home = () => {
                 border: '2px dashed rgba(201, 162, 62, 0.68)',
                 borderRadius: '20px',
                 padding: '27px 25px',
-                '@media (max-width:746px)': { 
+                '@media (max-width:746px)': {
                     flexDirection: 'row',
                     marginTop: '25px'
                 }
             }}>
-                <img src='/images/facebook.png' width={40} />
-                <img src='/images/instagram.png' width={40} />
-                <img src='/images/TikTok.png' width={40} />
-                <img src='/images/spotify.png' width={40} />
+                <a href="https://www.facebook.com/profile.php?id=61561246527019&mibextid=wwXIfr&mibextid=wwXIfr" target='_blank'><img src='/images/facebook.png' width={40} /></a>
+                <a href="https://www.instagram.com/saojoaodoreencontro/" target='_blank'><img src='/images/instagram.png' width={40} /></a>
+                <a href="https://www.tiktok.com/@saojoaodoreencontro" target='_blank'><img src='/images/TikTok.png' width={40} /></a>
+                <a href="https://open.spotify.com/user/314az2mxlsdg52eeecvt73sxupcu?si=14a75400a771492c&nd=1&dlsi=0a80dc4fc89b4ae4" target='_blank'><img src='/images/spotify.png' width={40} /></a>
             </Box>
         </Box>
     )

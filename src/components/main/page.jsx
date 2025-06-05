@@ -2,14 +2,14 @@ import Box from '@mui/material/Box';
 
 const Main = () => {
     return (
-        <Box 
-            component="section" 
-            sx={{ 
+        <Box
+            component="section"
+            sx={{
                 backgroundImage: 'url("/images/background.png")',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
                 padding: '18rem'
-        }}>
+            }}>
 
             {/* plalist spotify */}
             <Box
@@ -17,9 +17,10 @@ const Main = () => {
                     {
                         background: '#231F20',
                         padding: '11px',
-                        borderRadius: '20px'
+                        borderRadius: '20px',
+                        border: '1px solid red'
                     }
-            }>
+                }>
                 {/* inicio do container */}
 
                 <Box sx={{
@@ -43,15 +44,15 @@ const Main = () => {
                         <img
                             src="/images/confira_playlist.png"
                             alt="Confira Playlist"
-                            width='170px'
-                            height='45px'
+                        // width='170px'
+                        // height='45px'
                         />
 
                         <img
                             src="/images/Spotify_logo_with_text.svg.png"
                             alt="Confira Playlist"
-                            width='100px'
-                            height='30px'
+                        // width='100px'
+                        // height='30px'
                         />
                     </Box>
 
@@ -64,28 +65,38 @@ const Main = () => {
                             gap: '10px'
                         }
                     }>
-                        <img
+                        {/* <img
                             src="/images/Camada 4.png"
                             alt="Confira Playlist"
-                            width='70px'
-                            height='70px'
-                        />
+                        width='70px'
+                        height='70px'
+                        /> */}
 
-                        <img
+                        {/* <img
                             src="/images/Arriadin por Tu João Gomes, Mestrinho, Jota.pê.png"
                             alt="Confira Playlist"
-                            width='180px'
-                            height='50px'
-                        />
+                        width='180px'
+                        height='50px'
+                        /> */}
                     </Box>
 
                     {/* play na musica */}
                     <Box>
-                        <img
+                        {/* <img
                             src="/images/Objeto Inteligente de Vetor 8.png"
                             alt="Confira Playlist"
                             width='160px'
                             height='60px'
+                        /> */}
+                        <iframe
+                            style={{ borderRadius: '12px' }}
+                            src="https://open.spotify.com/embed/playlist/1m12R22yiuQirwlBL6xvnI?utm_source=generator&theme=0"
+                            width="100%"
+                            height="152"
+                            frameBorder="0"
+                            allowFullScreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"
                         />
                     </Box>
                 </Box>
@@ -102,17 +113,17 @@ const Main = () => {
                     padding: '5rem',
                 }}
             >
-                
+
                 {/* sanfona e triângulo */}
-                <Box 
+                <Box
                     sx={
-                    {
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        flexDirection: 'column',
-                        gap: '20px'
-                    }
+                        {
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'column',
+                            gap: '20px'
+                        }
                     }
                 >
                     <img
@@ -131,7 +142,7 @@ const Main = () => {
                 </Box>
 
                 {/* lua e estrela */}
-                <Box 
+                <Box
                     sx={
                         {
                             display: 'flex',
@@ -156,7 +167,7 @@ const Main = () => {
                         flexDirection: 'column',
                         gap: '20px'
 
-                    }}    
+                    }}
                 >
                     <img
                         src="/images/tradicao_boa_viver.png"
@@ -172,14 +183,14 @@ const Main = () => {
                         height='200px'
                     />
                 </Box>
-                
+
             </Box>
 
             {/* redes sociais */}
             <Box >
 
                 {/* instagram e tiktok */}
-                <Box 
+                <Box
                     sx={
                         {
                             display: 'flex',
@@ -205,7 +216,7 @@ const Main = () => {
                 </Box>
 
                 {/* youtube */}
-                <Box 
+                <Box
                     sx={
                         {
                             display: 'flex',
@@ -221,7 +232,7 @@ const Main = () => {
                     />
                 </Box>
 
-            </Box>        
+            </Box>
 
             {/* cidades */}
             <Box sx={{
@@ -243,7 +254,7 @@ const Main = () => {
                         <img src="/images/CIDADES.png" alt="cidades" width={220} />
                     </Box>
                     <Box>
-                        <img src="/images/passarinho_cidade.png" alt="passarinho" width={80}/>
+                        <img src="/images/passarinho_cidade.png" alt="passarinho" width={80} />
                     </Box>
                 </Box>
 
@@ -256,7 +267,7 @@ const Main = () => {
                         <img src="/images/cidade-lado-esquerdo.png" alt="cidades" width={290} />
                     </Box>
                     <Box>
-                        <img src="/images/cidade-lado-direito.png" alt="passarinho" width={290}/>
+                        <img src="/images/cidade-lado-direito.png" alt="passarinho" width={290} />
                     </Box>
                 </Box>
             </Box>
@@ -271,7 +282,7 @@ const Main = () => {
             >
 
                 {/* sobre a pira */}
-                <Box 
+                <Box
                     sx={{
                         display: 'flex',
                         alignItems: 'end',
@@ -303,7 +314,7 @@ const Main = () => {
             >
 
                 {/* patrocinadores */}
-                <Box 
+                <Box
                     sx={{
                         display: 'flex',
                         justifyContent: 'center',
