@@ -2,17 +2,11 @@ import Box from '@mui/material/Box';
 
 const Main = () => {
     return (
-        <Box
-            component="section"
-            sx={{
-                backgroundImage: 'url("/images/background.png")',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
-                padding: '18rem'
-            }}>
+        <Box>
 
             {/* plalist spotify */}
             <Box
+                component="section"
                 sx={
                     {
                         background: '#231F20',
@@ -20,7 +14,8 @@ const Main = () => {
                         borderRadius: '20px',
                         border: '1px solid red'
                     }
-                }>
+                }
+                >
                 {/* inicio do container */}
 
                 <Box sx={{
@@ -65,29 +60,10 @@ const Main = () => {
                             gap: '10px'
                         }
                     }>
-                        {/* <img
-                            src="/images/Camada 4.png"
-                            alt="Confira Playlist"
-                        width='70px'
-                        height='70px'
-                        /> */}
-
-                        {/* <img
-                            src="/images/Arriadin por Tu João Gomes, Mestrinho, Jota.pê.png"
-                            alt="Confira Playlist"
-                        width='180px'
-                        height='50px'
-                        /> */}
                     </Box>
 
                     {/* play na musica */}
                     <Box>
-                        {/* <img
-                            src="/images/Objeto Inteligente de Vetor 8.png"
-                            alt="Confira Playlist"
-                            width='160px'
-                            height='60px'
-                        /> */}
                         <iframe
                             style={{ borderRadius: '12px' }}
                             src="https://open.spotify.com/embed/playlist/1m12R22yiuQirwlBL6xvnI?utm_source=generator&theme=0"
@@ -336,8 +312,6 @@ const Main = () => {
                 </Box>
 
             </Box>
-
-
         </Box>
     )
 }

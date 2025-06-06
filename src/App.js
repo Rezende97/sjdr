@@ -9,7 +9,7 @@ function App() {
     <Box sx={{overflowX: 'hidden'}}>
       <Header/>
       <Home/>
-      <Main />
+      {/* <Main /> */}
     </Box>
   );
 }
