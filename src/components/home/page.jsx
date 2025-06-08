@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 const Home = () => {
     return (
@@ -73,7 +74,13 @@ const Home = () => {
                     justifyContent: 'space-evenly',
                     px: { xs: 2, md: 18 },
                     position: 'relative',
-                    flexDirection: 'column'
+                    flexDirection: 'column',
+                    height: '100vh',
+                    padding: '280px 0 0 0',
+                    '@media (max-width:746px)': { 
+                        padding: '0 0 0 0',
+                        height: '0'
+                    }
                 }}
             >
 
@@ -145,6 +152,7 @@ const Home = () => {
                         justifyContent: 'space-around',
                         alignItems: 'center',
                         padding: '5rem',
+                        gap: '15px'
                     }}
                 >
 
@@ -181,7 +189,10 @@ const Home = () => {
                             {
                                 display: 'flex',
                                 justifyContent: 'center',
-                                alignItems: 'center'
+                                alignItems: 'center',
+                                '@media (max-width:746px)': { 
+                                    display: 'none'
+                                }
                             }
                         }
                     >
@@ -199,8 +210,10 @@ const Home = () => {
                             display: 'flex',
                             justifyContent: 'center',
                             flexDirection: 'column',
-                            gap: '20px'
-
+                            gap: '20px',
+                            '@media (max-width:746px)': { 
+                                display: 'none'
+                            }
                         }}
                     >
                         <img
@@ -216,6 +229,45 @@ const Home = () => {
                             width='350px'
                             height='200px'
                         />
+                    </Box>
+
+                    <Box
+                        sx={{
+                            display: 'none',
+                            '@media (max-width:746px)': { 
+                                display: 'flex',
+                                justifyContent: 'center',
+                                textAlign: 'right',
+                                flexDirection: 'column'
+
+                            }
+                        }}
+                    >
+                        <Typography variant="h4" component="h2" sx={{color: '#FFF4E5'}}>
+                            TRADIÇÃO
+                        </Typography>
+                        <Typography variant="h4" component="h2" sx={{color: '#FFF4E5'}}>
+                            BOA DE
+                        </Typography>
+                        <Typography variant="h4" component="h2" sx={{color: '#FFF4E5'}}>
+                            VIVER
+                        </Typography>
+
+                        <Typography variant="subtitle1" sx={{color: '#FFF4E5'}}>
+                            O São João do Reencontro nasce do desejo
+                            de reconectar a Bahia com a força de sua
+                            maior tradição popular. Criamos um circuito
+                            junino por 27 municípios, valorizando as
+                            raízes culturais de cada região e reacendendo
+                            o sentimento de pertencimento. Mais que
+                            celebrar, o projeto movimenta a economia
+                            criativa, fortalece o turismo e promove
+                            diversidade.
+                            <br/>
+                            É tradição boa de viver — de interior a interior, de palco em palco, de abraço em abraço.
+                        </Typography>
+
+
                     </Box>
                 </Box>
                 {/* fim container tradição boa de viver */}
@@ -244,27 +296,56 @@ const Home = () => {
 
                     {/* instagram e tiktok */}
                     <Box
-                        sx={
-                            {
+                        sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            gap: '10px',
+                            '@media (max-width:746px)': { 
                                 display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                gap: '10px'
+                                flexDirection: 'column'
                             }
-                        }
+                        }}
                     >
-                        <img
+                        {/* Instagram Embed */}
+                        <div className="instagram-embed">
+                            <blockquote 
+                                className="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/p/C9NiawxJQGy/?utm_source=ig_embed&amp;utm_campaign=loading" 
+                                data-instgrm-version="14"
+                                style={{ 
+                                    background: '#FFF', 
+                                    border: '0', 
+                                    borderRadius: '23px', 
+                                    boxShadow: '0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)', 
+                                    margin: '1px', 
+                                    maxWidth: '540px', 
+                                    minWidth: '326px', 
+                                    padding: '0', 
+                                    width: '99.375%', 
+                                    WebkitCalc: '100% - 2px', 
+                                    width: 'calc(100% - 2px)'
+                                }}
+                            >
+                                {/* Rest of the Instagram embed HTML */}
+                            </blockquote>
+                        </div>
+
+                        {/* Load Instagram script */}
+                        {typeof window !== 'undefined' && (
+                            <script async src="//www.instagram.com/embed.js" />
+                        )}
+
+                        {/* <img
                             src="/images/retangulo_rede_social.png"
                             alt="instagram"
-                            width='50%'
-                            height='400px'
-                        />
+                            // style={{ width: '50%', height: '400px' }}
+                        /> */}
 
                         <img
                             src="/images/retangulo_rede_social.png"
                             alt="TikTok"
-                            width='50%'
-                            height='400px'
+                            style={{ width: '50%', height: '400px' }}
                         />
                     </Box>
 
@@ -292,6 +373,7 @@ const Home = () => {
             {/* inicio container cidade */}
             <Box
                 component="section"
+                id="cidades-section"
                 sx={{
                     backgroundImage: 'url("/images/laranja-cidade.jpg")',
                     backgroundRepeat: 'no-repeat',

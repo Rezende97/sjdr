@@ -18,6 +18,14 @@ const Header = () => {
     setDrawerOpen(!drawerOpen);
   };
 
+  const scrollToCidades = () => {
+    const cidadesSection = document.getElementById('cidades-section');
+    if (cidadesSection) {
+      cidadesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    setDrawerOpen(false); 
+  };
+
   return (
     <>
       <Box
@@ -79,7 +87,7 @@ const Header = () => {
             sx={{ mt: '-70px' }}
           >
             <Button sx={{ color: '#FFF4E5' }}>O PROJETO</Button>
-            <Button sx={{ color: '#FFF4E5' }}>CIDADES</Button>
+            <Button sx={{ color: '#FFF4E5' }} onClick={scrollToCidades}>CIDADES</Button>
             <Button sx={{ color: '#FFF4E5' }}>REDES SOCIAIS</Button>
             <Button sx={{ color: '#FFF4E5', fontFamily: 'widescreen' }}>A PIRA</Button>
           </Stack>
@@ -121,7 +129,7 @@ const Header = () => {
         </IconButton>
         <Stack spacing={2} mt={4}>
           <Button sx={{ color: '#FFF4E5' }} onClick={toggleDrawer}>O PROJETO</Button>
-          <Button sx={{ color: '#FFF4E5' }} onClick={toggleDrawer}>CIDADES</Button>
+          <Button sx={{ color: '#FFF4E5' }} onClick={scrollToCidades}>CIDADES</Button>
           <Button sx={{ color: '#FFF4E5' }} onClick={toggleDrawer}>REDES SOCIAIS</Button>
           <Button sx={{ color: '#FFF4E5', fontFamily: 'widescreen' }} onClick={toggleDrawer}>A PIRA</Button>
         </Stack>
