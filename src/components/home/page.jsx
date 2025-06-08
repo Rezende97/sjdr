@@ -17,7 +17,7 @@ const Home = () => {
                 }}
             >
                 <Box sx={{ '@media (max-width:746px)': { display: 'none' } }}>
-                    <img src='/images/Nuvem.png' width={250} />
+                    <img src='/images/Nuvem.png' width={250} alt="Imagem" />
                 </Box>
 
                 <Box sx={{
@@ -30,12 +30,12 @@ const Home = () => {
                         marginTop: '20px'
                     }
                 }}>
-                    <img src='/images/Apresenta.png' width={170} />
-                    <img src='/images/logo_home.png' width={300} />
+                    <img src='/images/Apresenta.png' width={170} alt="Imagem" />
+                    <img src='/images/logo_home.png' width={300} alt="Imagem"/>
                 </Box>
 
                 <Box sx={{ '@media (max-width:746px)': { display: 'none' } }}>
-                    <img src='/images/passarinho.png' width={80} />
+                    <img src='/images/passarinho.png' width={80} alt="Imagem"/>
                 </Box>
 
                 <Box sx={{
@@ -53,10 +53,10 @@ const Home = () => {
                         marginTop: '25px'
                     }
                 }}>
-                    <a href="https://www.facebook.com/profile.php?id=61561246527019&mibextid=wwXIfr&mibextid=wwXIfr" target='_blank'><img src='/images/facebook.png' width={40} /></a>
-                    <a href="https://www.instagram.com/saojoaodoreencontro/" target='_blank'><img src='/images/instagram.png' width={40} /></a>
-                    <a href="https://www.tiktok.com/@saojoaodoreencontro" target='_blank'><img src='/images/TikTok.png' width={40} /></a>
-                    <a href="https://open.spotify.com/user/314az2mxlsdg52eeecvt73sxupcu?si=14a75400a771492c&nd=1&dlsi=0a80dc4fc89b4ae4" target='_blank'><img src='/images/spotify.png' width={40} /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61561246527019&mibextid=wwXIfr&mibextid=wwXIfr" target='_blank' rel="noreferrer"><img src='/images/facebook.png' width={40} alt="Imagem" /></a>
+                    <a href="https://www.instagram.com/saojoaodoreencontro/" target='_blank' rel="noreferrer"><img src='/images/instagram.png' width={40} alt="Imagem"/></a>
+                    <a href="https://www.tiktok.com/@saojoaodoreencontro" target='_blank' rel="noreferrer"><img src='/images/TikTok.png' width={40} alt="Imagem"/></a>
+                    <a href="https://open.spotify.com/user/314az2mxlsdg52eeecvt73sxupcu?si=14a75400a771492c&nd=1&dlsi=0a80dc4fc89b4ae4" target='_blank' rel="noreferrer"><img src='/images/spotify.png' width={40} alt="Imagem" /></a>
                 </Box>
             </Box>
             <br />
@@ -139,6 +139,7 @@ const Home = () => {
                                 allowFullScreen=""
                                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                                 loading="lazy"
+                                title="Player de música do Spotify"
                             />
                         </Box>
                     </Box>
@@ -211,7 +212,7 @@ const Home = () => {
                             justifyContent: 'center',
                             flexDirection: 'column',
                             gap: '20px',
-                            '@media (max-width:746px)': { 
+                            '@media (max-width:746px)': {
                                 display: 'none'
                             }
                         }}
@@ -239,7 +240,6 @@ const Home = () => {
                                 justifyContent: 'center',
                                 textAlign: 'right',
                                 flexDirection: 'column'
-
                             }
                         }}
                     >
@@ -336,12 +336,6 @@ const Home = () => {
                             <script async src="//www.instagram.com/embed.js" />
                         )}
 
-                        {/* <img
-                            src="/images/retangulo_rede_social.png"
-                            alt="instagram"
-                            // style={{ width: '50%', height: '400px' }}
-                        /> */}
-
                         <img
                             src="/images/retangulo_rede_social.png"
                             alt="TikTok"
@@ -421,7 +415,7 @@ const Home = () => {
                             <img src="/images/cidade-lado-esquerdo.png" alt="cidades" width={290} />
                         </Box>
                         <Box>
-                            <img src="/images/cidade-lado-direito.png" alt="passarinho" width={290} />
+                            <img src="/images/cidade-lado-direito.png" alt="passarinho" width={270} />
                         </Box>
                     </Box>
                 </Box>

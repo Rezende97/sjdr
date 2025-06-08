@@ -6,12 +6,10 @@ import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const theme = useTheme();
   const isMobile = useMediaQuery('(max-width:1150px)');
 
   const toggleDrawer = () => {
