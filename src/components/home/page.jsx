@@ -308,7 +308,11 @@ const Home = () => {
                         }}
                     >
                         {/* Instagram Embed */}
-                        <div className="instagram-embed">
+                        <div className="instagram-embed" style={{
+                            background: '#000000',
+                            padding: '15px',
+                            borderRadius: '15px'
+                        }}>
                             <blockquote 
                                 className="instagram-media"
                                 data-instgrm-permalink="https://www.instagram.com/p/C9NiawxJQGy/?utm_source=ig_embed&amp;utm_campaign=loading" 
