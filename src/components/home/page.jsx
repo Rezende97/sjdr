@@ -462,7 +462,7 @@ const Home = () => {
                         }}
                     >
                         <img src="/images/SOBREAPIRA.png" alt="Sobre a Pira" width={170} />
-                        <img src="/images/iconpira.png" alt="Sobre a Pira" width={50} height={50} />
+                        <img src="/images/Iconpira.png" alt="Sobre a Pira" width={50} height={50} />
                     </Box>
 
                     {/* texto sobre pira */}
