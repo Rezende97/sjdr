@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import '../../styles/main.css';
 
 const Home = () => {
     return (
@@ -400,7 +401,11 @@ const Home = () => {
                         display: 'flex',
                         justifyContent: 'center',
                         padding: '150px 0 0 100px',
-                        gap: '40px'
+                        gap: '40px',
+                        '@media (max-width:435px)': { 
+                            gap: '20px',
+                            padding: '90px 0 0 40px'
+                        }
                     }}>
                         <Box>
                             <img src="/images/CIDADES.png" alt="cidades" width={220} />
@@ -413,15 +418,55 @@ const Home = () => {
                     {/* nome das cidades */}
                     <Box sx={{
                         display: 'flex',
-                        gap: '35px'
+                        gap: '35px',
+                        '@media (max-width:600px)': { 
+                            display: 'none'
+                        }
                     }}>
-                        <Box>
+                        <Box sx={{
+                            '@media (max-width:600px)': { 
+                                display: 'flex',
+                                justifyContent: 'left'
+                            }
+                        }}>
                             <img src="/images/cidade-lado-esquerdo.png" alt="cidades" width={290} />
                         </Box>
-                        <Box>
+                        <Box sx={{
+                            '@media (max-width:600px)': { 
+                                padding: '5px'
+                            }
+                        }}>
                             <img src="/images/cidade-lado-direito.png" alt="passarinho" width={270} />
                         </Box>
                     </Box>
+
+                    {/* mobile */}
+                    <Box sx={{
+                        display: 'none',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        gap: '9px',
+                        '@media (max-width:600px)': { 
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'column'
+                        }
+                    }}>
+                        <Box >
+                            <img src="/images/cidades01.png" alt="cidades" width={290} />
+                        </Box>
+                        <Box sx={{
+                            '@media (max-width:600px)': { 
+                                padding: '5px'
+                            }
+                        }}>
+                            <img src="/images/cidade02.png" alt="passarinho" width={290} />
+                        </Box>
+                    </Box>
+
+
+
                 </Box>
             </Box>
             {/* fim container cidade */}
@@ -454,6 +499,7 @@ const Home = () => {
 
                     {/* sobre a pira */}
                     <Box
+                        className='container-pira'
                         sx={{
                             display: 'flex',
                             alignItems: 'end',
@@ -461,16 +507,17 @@ const Home = () => {
                             gap: '30px'
                         }}
                     >
-                        <img src="/images/SOBREAPIRA.png" alt="Sobre a Pira" width={170} />
+                        <img src="/images/SOBREAPIRA.png" alt="Sobre a Pira" className='logo-image' />
                         <img src="/images/Iconpira.png" alt="Sobre a Pira" width={50} height={50} />
                     </Box>
 
                     {/* texto sobre pira */}
                     <Box>
-                        <img src="/images/texto_pira.png" alt="Sobre a Pira" width={440} height={260} />
+                        <img src="/images/texto_pira.png" alt="Sobre a Pira" className='logo-texto-pira' />
                     </Box>
 
                 </Box>
+
             </Box>
             {/* fim container pira */}
             

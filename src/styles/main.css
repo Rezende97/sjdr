@@ -1,0 +1,33 @@
+.logo-image {
+  width: 170px;
+}
+
+.logo-texto-pira{
+    width: 440px;
+    height: 260px;
+}
+
+@media (max-width: 391px) {
+
+    .logo-texto-pira{
+        width: 300px;
+    }
+}
+
+@media (max-width: 459px) {
+
+    .container-pira{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-image {
+        display: 'flex';
+        justify-content: center;
+    }
+
+    .logo-texto-pira{
+        width: 370px;
+        height: 280px;  
+    }
+}
