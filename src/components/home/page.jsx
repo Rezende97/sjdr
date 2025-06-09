@@ -507,14 +507,17 @@ const Home = () => {
                                 justifyContent: 'left'
                             }
                         }}>
-                            <img src="/images/cidade-lado-esquerdo.png" alt="cidades" width={290} />
+                            {/* <img src="/images/cidade-lado-esquerdo.png" alt="cidades" width={290} /> */}
+                            <img src={process.env.PUBLIC_URL + '/images/cidade-lado-esquerdo.png'} alt="cidades" width={290} />
+                            
                         </Box>
                         <Box sx={{
                             '@media (max-width:600px)': { 
                                 padding: '5px'
                             }
                         }}>
-                            <img src="/images/cidade-lado-direito.png" alt="passarinho" width={270} />
+                            {/* <img src="/images/cidade-lado-direito.png" alt="passarinho" width={270} /> */}
+                            <img src={process.env.PUBLIC_URL + '/images/cidade-lado-direito.png'} alt="passarinho" width={270} />
                         </Box>
                     </Box>
 
@@ -532,7 +535,8 @@ const Home = () => {
                         }
                     }}>
                         <Box >
-                            <img src="/images/cidades01.png" alt="cidades" width={290} />
+                            {/* <img src="/images/cidades01.png" alt="cidades" width={290} /> */}
+                            <img src={process.env.PUBLIC_URL + '/images/cidades01.png'} alt="cidades" width={290} />
                         </Box>
                         <Box sx={{
                             '@media (max-width:600px)': { 
