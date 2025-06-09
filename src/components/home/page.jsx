@@ -78,7 +78,8 @@ const Home = () => {
             <Box
                 component="section"
                 sx={{
-                    backgroundImage: 'url("/images/inicio-main.jpg")',
+                    // backgroundImage: 'url("/images/inicio-main.jpg")',
+                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/inicio-main.jpg)`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 100%',
                     backgroundPosition: 'center',
