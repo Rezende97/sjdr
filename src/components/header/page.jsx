@@ -29,7 +29,8 @@ const Header = () => {
       <Box
         component="header"
         sx={{
-          backgroundImage: 'url("/images/headernovo.png")',
+          // backgroundImage: 'url("/images/headernovo.png")',
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/headernovo.png)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%',
           backgroundPosition: 'center',
@@ -62,14 +63,16 @@ const Header = () => {
             }}
           >
             <img
-              src="/images/ministerio_cultura_petrobras.png"
+              // src="/images/ministerio_cultura_petrobras.png"
+              src={process.env.PUBLIC_URL + '/images/ministerio_cultura_petrobras.png'}
               alt="Ministério da Cultura"
               style={{ width: '100%', height: 'auto' }}
             />
           </Box>
           <Box sx={{ maxWidth: '150px' }}>
             <img
-              src="/images/logo_menu.png"
+              // src="/images/logo_menu.png"
+              src={process.env.PUBLIC_URL + '/images/logo_menu.png'}
               alt="Logo"
               style={{ width: '100%', height: 'auto' }}
             />
