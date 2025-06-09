@@ -322,9 +322,9 @@ const Home = () => {
                                     maxWidth: '540px', 
                                     minWidth: '326px', 
                                     padding: '0', 
-                                    width: '99.375%', 
+                                    // width: '99.375%', 
                                     WebkitCalc: '100% - 2px', 
-                                    width: 'calc(100% - 2px)'
+                                    width: 'calc(90% - 2px)'
                                 }}
                             >
                                 {/* Rest of the Instagram embed HTML */}
