@@ -53,10 +53,10 @@ const Home = () => {
                         marginTop: '25px'
                     }
                 }}>
-                    <a href="https://www.facebook.com/profile.php?id=61561246527019&mibextid=wwXIfr&mibextid=wwXIfr" target='_blank' rel="noreferrer"><img src='/images/facebook.png' width={40} alt="Imagem" /></a>
-                    <a href="https://www.instagram.com/saojoaodoreencontro/" target='_blank' rel="noreferrer"><img src='/images/instagram.png' width={40} alt="Imagem"/></a>
-                    <a href="https://www.tiktok.com/@saojoaodoreencontro" target='_blank' rel="noreferrer"><img src='/images/TikTok.png' width={40} alt="Imagem"/></a>
-                    <a href="https://open.spotify.com/user/314az2mxlsdg52eeecvt73sxupcu?si=14a75400a771492c&nd=1&dlsi=0a80dc4fc89b4ae4" target='_blank' rel="noreferrer"><img src='/images/spotify.png' width={40} alt="Imagem" /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61561246527019&mibextid=wwXIfr&mibextid=wwXIfr" target='_blank' rel="noreferrer"><img src='/images/facebook.png' width={40} alt="Facebook" /></a>
+                    <a href="https://www.instagram.com/saojoaodoreencontro/" target='_blank' rel="noreferrer"> <img src='/images/Instagram.png' width={40} alt="Instagram"/> </a>
+                    <a href="https://www.tiktok.com/@saojoaodoreencontro" target='_blank' rel="noreferrer"><img src='/images/TikTok.png' width={40} alt="TikTok"/></a>
+                    <a href="https://open.spotify.com/user/314az2mxlsdg52eeecvt73sxupcu?si=14a75400a771492c&nd=1&dlsi=0a80dc4fc89b4ae4" target='_blank' rel="noreferrer"><img src='/images/spotify.png' width={40} alt="spotify" /></a>
                 </Box>
             </Box>
             <br />
