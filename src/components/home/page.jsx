@@ -543,7 +543,8 @@ const Home = () => {
                                 padding: '5px'
                             }
                         }}>
-                            <img src="/images/cidade02.png" alt="passarinho" width={290} />
+                            {/* <img src="/images/cidade02.png" alt="passarinho" width={290} /> */}
+                            <img src={process.env.PUBLIC_URL + '/images/cidade02.png'} alt="passarinho" width={290} />
                         </Box>
                     </Box>
 
