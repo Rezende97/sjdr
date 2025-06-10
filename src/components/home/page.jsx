@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import '../../styles/main.css';
 
 const Home = () => {
@@ -174,6 +173,8 @@ const Home = () => {
 
                 {/* inicio container tradição boa de viver */}
                 <Box
+                    component="section"
+                    id='projeto-section'
                     sx={{
                         display: 'flex',
                         justifyContent: 'space-around',
@@ -191,7 +192,10 @@ const Home = () => {
                                 justifyContent: 'center',
                                 alignItems: 'center',
                                 flexDirection: 'column',
-                                gap: '20px'
+                                gap: '20px',
+                                '@media (max-width:746px)': {
+                                    display: 'none'
+                                }
                             }
                         }
                     >
@@ -255,14 +259,16 @@ const Home = () => {
 
                     {/* tradição e texto sobre sao joao */}
                     <Box
+                        className='container-tradicao-texto'
                         sx={{
                             display: 'flex',
                             justifyContent: 'center',
                             flexDirection: 'column',
-                            gap: '20px',
-                            '@media (max-width:746px)': {
-                                display: 'none'
-                            }
+                            gap: '20px'
+                            // ,
+                            // '@media (max-width:746px)': {
+                            //     display: 'none'
+                            // }
                         }}
                     >
                         {/* <img
@@ -281,12 +287,14 @@ const Home = () => {
 
                         <img
                             src={process.env.PUBLIC_URL + '/images/tradicao_boa_viver.png'}
+                            className='imagem-tradicao'
                             alt="Tradição"
                             width='250px'
                             height='80px'
                         />
 
                         <img
+                            className='imagem-texto'
                             src={process.env.PUBLIC_URL + '/images/o_sao_Joao.png'}
                             alt="O São Joâo"
                             width='350px'
@@ -295,43 +303,6 @@ const Home = () => {
 
                     </Box>
 
-                    <Box
-                        sx={{
-                            display: 'none',
-                            '@media (max-width:746px)': { 
-                                display: 'flex',
-                                justifyContent: 'center',
-                                textAlign: 'right',
-                                flexDirection: 'column'
-                            }
-                        }}
-                    >
-                        <Typography variant="h4" component="h2" sx={{color: '#FFF4E5'}}>
-                            TRADIÇÃO
-                        </Typography>
-                        <Typography variant="h4" component="h2" sx={{color: '#FFF4E5'}}>
-                            BOA DE
-                        </Typography>
-                        <Typography variant="h4" component="h2" sx={{color: '#FFF4E5'}}>
-                            VIVER
-                        </Typography>
-
-                        <Typography variant="subtitle1" sx={{color: '#FFF4E5'}}>
-                            O São João do Reencontro nasce do desejo
-                            de reconectar a Bahia com a força de sua
-                            maior tradição popular. Criamos um circuito
-                            junino por 27 municípios, valorizando as
-                            raízes culturais de cada região e reacendendo
-                            o sentimento de pertencimento. Mais que
-                            celebrar, o projeto movimenta a economia
-                            criativa, fortalece o turismo e promove
-                            diversidade.
-                            <br/>
-                            É tradição boa de viver — de interior a interior, de palco em palco, de abraço em abraço.
-                        </Typography>
-
-
-                    </Box>
                 </Box>
                 {/* fim container tradição boa de viver */}
             </Box>
@@ -340,6 +311,7 @@ const Home = () => {
             {/* inicio container redes sociais */}
             <Box
                 component="section"
+                id="rede-sociais-section"
                 sx={{
                     // backgroundImage: 'url("/images/fundo-rede-social.jpg")',
                     backgroundImage: `url(${process.env.PUBLIC_URL}/images/fundo-rede-social.jpg)`,
@@ -557,6 +529,7 @@ const Home = () => {
             {/* inicio container pira */}
             <Box
                 component="section"
+                id='pira-section'
                 sx={{
                     // backgroundImage: 'url("/images/fundo-pira.jpg")',
                     backgroundImage: `url(${process.env.PUBLIC_URL}/images/fundo-pira.jpg)`,

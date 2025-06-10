@@ -7,6 +7,22 @@
     height: 260px;
 }
 
+
+
+@media (max-width: 344px) {
+
+    .container-tradicao-texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem-texto{
+        width: 329px;
+    }
+
+}
+
 @media (max-width: 391px) {
 
     .logo-texto-pira{

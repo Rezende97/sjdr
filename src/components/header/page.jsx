@@ -16,8 +16,32 @@ const Header = () => {
     setDrawerOpen(!drawerOpen);
   };
 
+  const scrollToProjeto = () => {
+    const cidadesSection = document.getElementById('projeto-section');
+    if (cidadesSection) {
+      cidadesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    setDrawerOpen(false); 
+  };
+
   const scrollToCidades = () => {
     const cidadesSection = document.getElementById('cidades-section');
+    if (cidadesSection) {
+      cidadesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    setDrawerOpen(false); 
+  };
+
+  const scrollToRedeSociais = () => {
+    const cidadesSection = document.getElementById('rede-sociais-section');
+    if (cidadesSection) {
+      cidadesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    setDrawerOpen(false); 
+  };
+
+  const scrollToPira = () => {
+    const cidadesSection = document.getElementById('pira-section');
     if (cidadesSection) {
       cidadesSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -87,10 +111,10 @@ const Header = () => {
             height="100%"
             sx={{ mt: '-70px' }}
           >
-            <Button sx={{ color: '#FFF4E5' }}>O PROJETO</Button>
+            <Button sx={{ color: '#FFF4E5' }} onClick={scrollToProjeto}>O PROJETO</Button>
             <Button sx={{ color: '#FFF4E5' }} onClick={scrollToCidades}>CIDADES</Button>
-            <Button sx={{ color: '#FFF4E5' }}>REDES SOCIAIS</Button>
-            <Button sx={{ color: '#FFF4E5', fontFamily: 'widescreen' }}>A PIRA</Button>
+            <Button sx={{ color: '#FFF4E5' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
+            <Button sx={{ color: '#FFF4E5', fontFamily: 'widescreen' }} onClick={scrollToPira}>A PIRA</Button>
           </Stack>
         )}
 
@@ -129,10 +153,10 @@ const Header = () => {
           <CloseIcon />
         </IconButton>
         <Stack spacing={2} mt={4}>
-          <Button sx={{ color: '#FFF4E5' }} onClick={toggleDrawer}>O PROJETO</Button>
+          <Button sx={{ color: '#FFF4E5' }} onClick={scrollToProjeto}>O PROJETO</Button>
           <Button sx={{ color: '#FFF4E5' }} onClick={scrollToCidades}>CIDADES</Button>
-          <Button sx={{ color: '#FFF4E5' }} onClick={toggleDrawer}>REDES SOCIAIS</Button>
-          <Button sx={{ color: '#FFF4E5', fontFamily: 'widescreen' }} onClick={toggleDrawer}>A PIRA</Button>
+          <Button sx={{ color: '#FFF4E5' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
+          <Button sx={{ color: '#FFF4E5', fontFamily: 'widescreen' }} onClick={scrollToPira}>A PIRA</Button>
         </Stack>
       </Drawer>
     </>
