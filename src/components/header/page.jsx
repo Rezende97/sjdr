@@ -54,7 +54,7 @@ const Header = () => {
         component="header"
         sx={{
           // backgroundImage: 'url("/images/headernovo.png")',
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/header-verde.jpg)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/header-fundo.jpg)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%',
           backgroundPosition: 'center',
@@ -138,7 +138,8 @@ const Header = () => {
       <Box sx={{
         position: 'relative',
         display: 'flex',
-        justifyContent: 'space-around'
+        justifyContent: 'space-around',
+        background: '#FEF5E6'
       }}>
         <Box
           sx={{

@@ -10,6 +10,7 @@ const Home = () => {
                     display: 'flex',
                     justifyContent: 'space-evenly',
                     alignItems: 'center',
+                    background: '#FEF5E6',
                     '@media (max-width:746px)': {
                         display: 'flex',
                         flexDirection: 'column'
@@ -91,6 +92,7 @@ const Home = () => {
                     flexDirection: 'column',
                     height: '100vh',
                     padding: '280px 0 0 0',
+                    border: '1px solid red',
                     '@media (max-width:746px)': { 
                         padding: '0 0 0 0',
                         height: '0'
