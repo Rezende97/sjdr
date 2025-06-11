@@ -135,6 +135,32 @@ const Header = () => {
             )}
       </Box>
 
+      <Box sx={{
+        position: 'relative',
+        display: 'flex',
+        justifyContent: 'space-around'
+      }}>
+        <Box
+          sx={{
+            position: 'relative',
+            bottom: '45px',
+          }}
+        >
+          <img src={process.env.PUBLIC_URL + '/images/bandeirolas-esquerdo.png'} alt='Bandeirinha' width={200} />
+        </Box>
+        <Box
+          sx={{
+            position: 'relative',
+            bottom: '87px',
+            '@media (max-width:900px)': { 
+              bottom: '65px',
+            }
+          }}
+        >
+          <img src={process.env.PUBLIC_URL + '/images/bandeirolas-direito.png'} alt='Bandeirinha' width={200}/>
+        </Box>
+      </Box>
+
       {/* Drawer para menu mobile */}
       <Drawer
         anchor="right"
