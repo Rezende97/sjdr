@@ -49,11 +49,12 @@ const Home = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'contain',
                     display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
                     flexDirection: 'column',
                     gap: '18px',
-                    // border: '2px dashed rgba(201, 162, 62, 0.68)',
                     borderRadius: '20px',
-                    padding: '27px 25px',
+                    padding: '50px 30px 50px 30px',
                     '@media (max-width:746px)': {
                         flexDirection: 'row',
                         marginTop: '25px'
@@ -64,10 +65,10 @@ const Home = () => {
                     <a href="https://www.tiktok.com/@saojoaodoreencontro" target='_blank' rel="noreferrer"><img src='/images/TikTok.png' width={40} alt="TikTok"/></a>
                     <a href="https://open.spotify.com/user/314az2mxlsdg52eeecvt73sxupcu?si=14a75400a771492c&nd=1&dlsi=0a80dc4fc89b4ae4" target='_blank' rel="noreferrer"><img src='/images/spotify.png' width={40} alt="spotify" /></a> */}
 
-                    <a href="https://www.facebook.com/profile.php?id=61561246527019&mibextid=wwXIfr&mibextid=wwXIfr" target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + '/images/facebook.png'} width={40} alt="Facebook" /></a>
-                    <a href="https://www.instagram.com/saojoaodoreencontro/" target='_blank' rel="noreferrer"> <img src={process.env.PUBLIC_URL + '/images/Instagram.png'} width={40} alt="Instagram"/> </a>
-                    <a href="https://www.tiktok.com/@saojoaodoreencontro" target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + '/images/TikTok.png'} width={40} alt="TikTok"/></a>
-                    <a href="https://open.spotify.com/user/314az2mxlsdg52eeecvt73sxupcu?si=14a75400a771492c&nd=1&dlsi=0a80dc4fc89b4ae4" target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + '/images/spotify.png'} width={40} alt="spotify" /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61561246527019&mibextid=wwXIfr&mibextid=wwXIfr" target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + '/images/facebook.png'} width={25} alt="Facebook" /></a>
+                    <a href="https://www.instagram.com/saojoaodoreencontro/" target='_blank' rel="noreferrer"> <img src={process.env.PUBLIC_URL + '/images/Instagram.png'} width={25} alt="Instagram"/> </a>
+                    <a href="https://www.tiktok.com/@saojoaodoreencontro" target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + '/images/TikTok.png'} width={25} alt="TikTok"/></a>
+                    <a href="https://open.spotify.com/user/314az2mxlsdg52eeecvt73sxupcu?si=14a75400a771492c&nd=1&dlsi=0a80dc4fc89b4ae4" target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + '/images/spotify.png'} width={25} alt="spotify" /></a>
 
                 </Box>
             </Box>
