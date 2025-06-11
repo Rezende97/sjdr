@@ -51,7 +51,7 @@ const Home = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     gap: '18px',
-                    border: '2px dashed rgba(201, 162, 62, 0.68)',
+                    // border: '2px dashed rgba(201, 162, 62, 0.68)',
                     borderRadius: '20px',
                     padding: '27px 25px',
                     '@media (max-width:746px)': {
@@ -111,13 +111,17 @@ const Home = () => {
 
                     {/* container central */}
                     <Box sx={{
+                        
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/retangulo.png)`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
                         gap: '60px',
-                        border: '2px dashed rgba(201, 162, 62, 0.68)',
+                        // border: '2px dashed rgba(201, 162, 62, 0.68)',
                         padding: '15px',
-                        borderRadius: '20px'
+                        // borderRadius: '20px'
                     }}>
                         
                         {/* cto spotify */}

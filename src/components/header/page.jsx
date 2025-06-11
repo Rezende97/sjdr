@@ -54,7 +54,7 @@ const Header = () => {
         component="header"
         sx={{
           // backgroundImage: 'url("/images/headernovo.png")',
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/headernovo.png)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/header-verde.jpg)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%',
           backgroundPosition: 'center',
@@ -62,7 +62,7 @@ const Header = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-evenly',
-          px: { xs: 2, md: 18 },
+          px: { xs: 2, md: 16 },
           position: 'relative'
         }}
       >
