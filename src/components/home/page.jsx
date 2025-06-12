@@ -38,7 +38,6 @@ const Home = () => {
         }}
       >
         <Box sx={{ "@media (max-width:746px)": { display: "none" } }}>
-          {/* <img src='/images/Nuvem.png' width={250} alt="Imagem" /> */}
           <img
             src={process.env.PUBLIC_URL + "/images/Nuvem.png"}
             width={250}
@@ -58,8 +57,7 @@ const Home = () => {
             },
           }}
         >
-          {/* <img src='/images/Apresenta.png' width={170} alt="Imagem" />
-                    <img src='/images/logo_home.png' width={300} alt="Imagem"/> */}
+          
           <img
             src={process.env.PUBLIC_URL + "/images/Apresenta.png"}
             width={170}
@@ -73,7 +71,6 @@ const Home = () => {
         </Box>
 
         <Box sx={{ "@media (max-width:746px)": { display: "none" } }}>
-          {/* <img src='/images/passarinho.png' width={80} alt="Imagem"/> */}
           <img
             src={process.env.PUBLIC_URL + "/images/passarinho.png"}
             width={80}
@@ -83,10 +80,6 @@ const Home = () => {
 
         <Box
           sx={{
-            // backgroundImage: 'url("/imagem/border_redes_sociais_home.png")',
-            // backgroundImage: `url(${process.env.PUBLIC_URL}/images/border_redes_sociais_home.png)`,
-            // backgroundRepeat: "no-repeat",
-            // backgroundSize: "contain",
             border: '2px dashed #C9A13E',
             display: "flex",
             justifyContent: "center",
@@ -98,14 +91,10 @@ const Home = () => {
             "@media (max-width:746px)": {
               flexDirection: "row",
               marginTop: "25px",
+              padding: "15px 30px 15px 30px",
             },
           }}
         >
-          {/* <a href="https://www.facebook.com/profile.php?id=61561246527019&mibextid=wwXIfr&mibextid=wwXIfr" target='_blank' rel="noreferrer"><img src='/images/facebook.png' width={40} alt="Facebook" /></a>
-                    <a href="https://www.instagram.com/saojoaodoreencontro/" target='_blank' rel="noreferrer"> <img src='/images/Instagram.png' width={40} alt="Instagram"/> </a>
-                    <a href="https://www.tiktok.com/@saojoaodoreencontro" target='_blank' rel="noreferrer"><img src='/images/TikTok.png' width={40} alt="TikTok"/></a>
-                    <a href="https://open.spotify.com/user/314az2mxlsdg52eeecvt73sxupcu?si=14a75400a771492c&nd=1&dlsi=0a80dc4fc89b4ae4" target='_blank' rel="noreferrer"><img src='/images/spotify.png' width={40} alt="spotify" /></a> */}
-
           <a
             href="https://www.facebook.com/profile.php?id=61561246527019&mibextid=wwXIfr&mibextid=wwXIfr"
             target="_blank"
@@ -161,7 +150,7 @@ const Home = () => {
         sx={{
           backgroundImage: `url(${process.env.PUBLIC_URL}/images/inicio-main.jpg)`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
           alignItems: "center",
@@ -191,6 +180,11 @@ const Home = () => {
             sx={{
               position: "relative",
               bottom: "48px",
+              "@media (max-width:746px)": {
+                top: "75px",
+                right: '60px',
+                rotate: '-5deg'
+              }
             }}
           >
             <img
@@ -203,6 +197,10 @@ const Home = () => {
             sx={{
               position: "relative",
               bottom: "-15px",
+              "@media (max-width:746px)": {
+                left: "440px",
+                rotate: '-5deg'
+              }
             }}
           >
             <img
@@ -215,6 +213,11 @@ const Home = () => {
             sx={{
               position: "relative",
               bottom: "30px",
+              "@media (max-width:746px)": {
+                top: "160px",
+                right: '100px',
+                rotate: '-5deg'
+              }
             }}
           >
             <img
@@ -227,11 +230,15 @@ const Home = () => {
             sx={{
               position: "relative",
               bottom: "55px",
+              "@media (max-width:746px)": {
+                top: "195px",
+                rotate: '-5deg'
+              }
             }}
           >
             <img
               src={process.env.PUBLIC_URL + "/images/FAica.png"}
-              alt="cacto"
+              alt="faica"
               width={85}
             />
           </Box>
@@ -759,10 +766,9 @@ const Home = () => {
         component="section"
         id="pira-section"
         sx={{
-          // backgroundImage: 'url("/images/fundo-pira.jpg")',
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/fundo-pira.jpg)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/sobrepirafundo.jpg)`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
           alignItems: "center",
@@ -772,6 +778,16 @@ const Home = () => {
           flexDirection: "column",
         }}
       >
+        <Box sx={{
+          display: 'flex',
+          justifyContent: 'right',
+          position: 'relative',
+          top: '200px',
+          right: '170px',
+          width: '100%'
+        }}>
+          <img src={process.env.PUBLIC_URL + "/images/estrela-main.png"} alt="estrela" width={80}/>
+        </Box>
         {/* sobre a pira */}
         <Box
           sx={{
@@ -790,8 +806,6 @@ const Home = () => {
               gap: "30px",
             }}
           >
-            {/* <img src="/images/SOBREAPIRA.png" alt="Sobre a Pira" className='logo-image' />
-                        <img src="/images/Iconpira.png" alt="Sobre a Pira" width={50} height={50} /> */}
 
             <img
               src={process.env.PUBLIC_URL + "/images/SOBREAPIRA.png"}
@@ -823,15 +837,39 @@ const Home = () => {
       <Box
         component="section"
         sx={{
-          // backgroundImage: 'url("/images/rodape.jpg")',
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape.jpg)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodapet.jpg)`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           position: "relative",
           height: "100vh",
         }}
       >
+        <Box sx={{
+          display: 'flex',
+          justifyContent: 'right',
+          position: 'relative',
+          right: '250px',
+          top: '70px',
+          "@media (max-width:1202px)": {
+            display: 'none'
+          },
+          "@media (max-width:2150px)": {
+            top: '240px',
+          },
+          "@media (max-width:1690px)": {
+            top: '275px',
+          },
+          // "@media (max-width:1330px)": {
+          //   top: '260px',
+          // },
+          // "@media (max-width:1330px)": {
+          //   display: 'none'
+          // }
+        }}>
+          <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" width={80}/>
+        </Box>
+        
         <Box
           sx={{
             position: "absolute",
@@ -855,60 +893,45 @@ const Home = () => {
               gap: "5px",
             }}
           >
-            {/* <img src="/images/lei.png" alt="Lei" width={170} height={120} />
-                        <img src="/images/petrobras.png" alt="Petrobras" width={170} height={70} />
-                        <img src="/images/pira-realizacao.png" alt="Realização" width={170} height={70} />
-                        <img src="/images/ministerio_da_cultura.png" alt="Ministério" width={170} height={70} />
-                        <img src="/images/governo.png" alt="Governo" width={170} height={70} /> */}
-
+           
             <img
               src={process.env.PUBLIC_URL + "/images/lei.png"}
               alt="Lei"
               width={170}
-              height={120}
             />
             <img
               src={process.env.PUBLIC_URL + "/images/petrobras.png"}
               alt="Petrobras"
               width={170}
-              height={70}
             />
             <img
               src={process.env.PUBLIC_URL + "/images/pira-realizacao.png"}
               alt="Realização"
               width={170}
-              height={70}
             />
             <img
               src={process.env.PUBLIC_URL + "/images/ministerio_da_cultura.png"}
               alt="Ministério"
               width={170}
-              height={70}
             />
             <img
               src={process.env.PUBLIC_URL + "/images/governo.png"}
               alt="Governo"
               width={170}
-              height={70}
             />
           </Box>
 
           {/* textos abaixo */}
-          <Box sx={{ mt: 2, display: "flex", gap: "10px" }}>
-            {/* <img src="/images/diga_nao_ao_racismo.png" alt="Diga não ao Racismo" width={170} height={40} />
-                        <img src="/images/recicle_sempre.png" alt="Recicle Sempre" width={170} height={40} /> */}
-
+          <Box sx={{ mt: 2, display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: 'center' }}>
             <img
               src={process.env.PUBLIC_URL + "/images/diga_nao_ao_racismo.png"}
               alt="Diga não ao Racismo"
-              width={170}
-              height={40}
+              width={320}
             />
             <img
               src={process.env.PUBLIC_URL + "/images/recicle_sempre.png"}
               alt="Recicle Sempre"
-              width={170}
-              height={40}
+              width={320}
             />
           </Box>
         </Box>

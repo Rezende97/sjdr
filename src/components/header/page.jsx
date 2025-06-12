@@ -72,7 +72,9 @@ const Header = () => {
           spacing={3}
           alignItems="center"
           height="100%"
-          sx={{ mt: '-70px' }}
+          sx={{ mt: '-70px', "@media (max-width:1150px)": {
+            display: 'none'
+          } }}
         >
           <Box 
             sx={{ 
@@ -146,6 +148,11 @@ const Header = () => {
           sx={{
             position: 'relative',
             bottom: '45px',
+            "@media (max-width:746px)": {
+              rotate: '-5deg',
+              right: '25px',
+              bottom: '53px', 
+            }
           }}
         >
           <img src={process.env.PUBLIC_URL + '/images/bandeirolas-esquerdo.png'} alt='Bandeirinha' width={200} />
@@ -155,7 +162,7 @@ const Header = () => {
             position: 'relative',
             bottom: '87px',
             '@media (max-width:900px)': { 
-              bottom: '65px',
+              bottom: '60px',
             }
           }}
         >

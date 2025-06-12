@@ -7,7 +7,10 @@
     height: 260px;
 }
 
-
+.imgbandeirinhadireito{
+    width: '100px';
+    border: '1px solid red';
+}
 
 @media (max-width: 344px) {
 
@@ -34,16 +37,6 @@
 }
 
 @media (max-width: 459px) {
-
-    .container-pira{
-        display: flex;
-        justify-content: center;
-    }
-
-    .logo-image {
-        display: 'flex';
-        justify-content: center;
-    }
 
     .logo-texto-pira{
         width: 370px;
