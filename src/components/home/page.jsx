@@ -857,15 +857,15 @@ const Home = () => {
           "@media (max-width:2150px)": {
             top: '240px',
           },
-          "@media (max-width:1690px)": {
-            top: '275px',
+          "@media (max-width:1920px)": {
+            top: '280px',
           },
-          // "@media (max-width:1330px)": {
-          //   top: '260px',
-          // },
-          // "@media (max-width:1330px)": {
-          //   display: 'none'
-          // }
+          "@media (max-width:1718px)": {
+            top: '260px',
+          },
+          "@media (min-width:1722px)": {
+            top: '220px',
+          }
         }}>
           <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" width={80}/>
         </Box>
