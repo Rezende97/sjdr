@@ -1,8 +1,28 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 import "../../styles/main.css";
 
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  // width: 400,
+  bgcolor: '#8E3C04',
+  borderRadius: '10px',
+  boxShadow: 24,
+  p: 4,
+};
+
 const Home = () => {
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <>
       <Box
@@ -299,6 +319,7 @@ const Home = () => {
             gap: "15px",
           }}
         >
+          
           {/* sanfona e triângulo */}
           <Box
             sx={{
@@ -306,26 +327,41 @@ const Home = () => {
               justifyContent: "center",
               alignItems: "center",
               flexDirection: "column",
+              position: 'relative',
+              bottom: '15px',
               gap: "20px",
               "@media (max-width:746px)": {
                 display: "none",
               },
             }}
           >
+            <Box 
+              sx={{
+                position: 'relative',
+                bottom: '-3px'
+              }}
+            >
+              <img
+                src={process.env.PUBLIC_URL + "/images/Sanfona.png"}
+                alt="Sanfona"
+                width="170px"
+                // height="80px"
+              />
+            </Box>
 
-            <img
-              src={process.env.PUBLIC_URL + "/images/Sanfona.png"}
-              alt="Sanfona"
-              width="170px"
-              height="80px"
-            />
-
-            <img
-              src={process.env.PUBLIC_URL + "/images/triangulo.png"}
-              alt="Lua e Estrela"
-              width="100px"
-              height="70px"
-            />
+            <Box
+              sx={{
+                position: 'relative',
+                bottom: '15px'
+              }}
+            >
+              <img
+                src={process.env.PUBLIC_URL + "/images/triangulo.png"}
+                alt="Lua e Estrela"
+                width="110px"
+                height="110px"
+              />
+            </Box>
           </Box>
 
           {/* lua e estrela */}
@@ -339,13 +375,19 @@ const Home = () => {
               },
             }}
           >
-
-            <img
-              src={process.env.PUBLIC_URL + "/images/lua_estrela.png"}
-              alt="Triângulo"
-              width="70px"
-              height="70px"
-            />
+            <Box
+              sx={{
+                position: 'relative',
+                right: '18px'
+              }}
+            >
+              <img
+                src={process.env.PUBLIC_URL + "/images/lua_estrela.png"}
+                alt="Triângulo"
+                width="70px"
+                height="70px"
+              />
+            </Box>
           </Box>
 
           {/* tradição e texto sobre sao joao */}
@@ -375,6 +417,7 @@ const Home = () => {
               height="200px"
             />
           </Box>
+
         </Box>
         {/* fim container tradição boa de viver */}
       </Box>
@@ -567,7 +610,6 @@ const Home = () => {
         component="section"
         id="cidades-section"
         sx={{
-          // backgroundImage: 'url("/images/laranja-cidade.jpg")',
           backgroundImage: `url(${process.env.PUBLIC_URL}/images/laranja-cidade.jpg)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%",
@@ -604,7 +646,6 @@ const Home = () => {
             }}
           >
             <Box>
-              {/* <img src="/images/CIDADES.png" alt="cidades" width={220} /> */}
               <img
                 src={process.env.PUBLIC_URL + "/images/CIDADES.png"}
                 alt="cidades"
@@ -612,7 +653,6 @@ const Home = () => {
               />
             </Box>
             <Box>
-              {/* <img src="/images/passarinho_cidade.png" alt="passarinho" width={80} /> */}
               <img
                 src={process.env.PUBLIC_URL + "/images/passarinho_cidade.png"}
                 alt="passarinho"
@@ -625,10 +665,7 @@ const Home = () => {
           <Box
             sx={{
               display: "flex",
-              gap: "35px",
-              "@media (max-width:600px)": {
-                display: "none",
-              },
+              gap: "35px"
             }}
           >
             <Box
@@ -636,10 +673,10 @@ const Home = () => {
                 "@media (max-width:600px)": {
                   display: "flex",
                   justifyContent: "left",
+                  display: 'none'
                 },
               }}
             >
-              {/* <img src="/images/cidade-lado-esquerdo.png" alt="cidades" width={290} /> */}
               <img
                 src={
                   process.env.PUBLIC_URL + "/images/cidade-lado-esquerdo.png"
@@ -650,22 +687,35 @@ const Home = () => {
             </Box>
             <Box
               sx={{
+                position:'relative',
+                top: '3px',
                 "@media (max-width:600px)": {
-                  padding: "5px",
+                  padding: "5px"
+                  
                 },
               }}
             >
-              {/* <img src="/images/cidade-lado-direito.png" alt="passarinho" width={270} /> */}
               <img
                 src={process.env.PUBLIC_URL + "/images/cidade-lado-direito.png"}
                 alt="passarinho"
-                width={270}
+                width={265}
               />
             </Box>
+
+          </Box>
+          <Box
+            sx={{
+              display:'none',
+              "@media (max-width:600px)": {
+                display: "flex",
+              },
+            }}
+          >
+            <Button variant="contained" sx={{background:'#255639', color: '#FEF5E6', fontWeight: 'bold'}} onClick={handleOpen}>Ver mais imagens</Button>
           </Box>
 
           {/* mobile */}
-          <Box
+          {/* <Box
             sx={{
               display: "none",
               justifyContent: "center",
@@ -680,7 +730,6 @@ const Home = () => {
             }}
           >
             <Box>
-              {/* <img src="/images/cidades01.png" alt="cidades" width={290} /> */}
               <img
                 src={process.env.PUBLIC_URL + "/images/cidades01.png"}
                 alt="cidades"
@@ -694,14 +743,13 @@ const Home = () => {
                 },
               }}
             >
-              {/* <img src="/images/cidade02.png" alt="passarinho" width={290} /> */}
               <img
                 src={process.env.PUBLIC_URL + "/images/cidade02.png"}
                 alt="passarinho"
                 width={290}
               />
             </Box>
-          </Box>
+          </Box> */}
         </Box>
       </Box>
       {/* fim container cidade */}
@@ -866,6 +914,50 @@ const Home = () => {
         </Box>
       </Box>
 
+      <Box
+        sx={{
+          maxWidth: '10px'
+        }}
+      >
+
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <Box sx={{
+              display: 'flex',
+              justifyContent: 'space-between'
+            }}>
+              <Typography id="modal-modal-title" variant="h6" component="h2" sx={{textAlign: 'center', color: '#F7EDDB', fontWeight: 'bold'}}>
+                CIDADES
+              </Typography>
+              <Typography onClick={handleClose} id="modal-modal-title" variant="h6" component="h2" sx={{textAlign: 'center', color: '#F7EDDB', fontWeight: 'bold', cursor: 'pointer'}}>
+                X
+              </Typography>
+            </Box>
+            <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'right',
+                  marginTop: '20px',
+                  "@media (max-width:600px)": {
+                    padding: "5px"
+                    
+                  },
+                }}
+              >
+                <img
+                  src={process.env.PUBLIC_URL + "/images/cidade-lado-esquerdo.png"}
+                  alt="passarinho"
+                  width={265}
+                />
+              </Box>
+          </Box>
+        </Modal>
+      </Box>
       {/* fim container rodape */}
     </>
   );
