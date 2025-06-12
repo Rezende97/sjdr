@@ -111,10 +111,10 @@ const Header = () => {
             height="100%"
             sx={{ mt: '-70px' }}
           >
-            <Button sx={{ color: '#FFF4E5' }} onClick={scrollToProjeto}>O PROJETO</Button>
-            <Button sx={{ color: '#FFF4E5' }} onClick={scrollToCidades}>CIDADES</Button>
-            <Button sx={{ color: '#FFF4E5' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
-            <Button sx={{ color: '#FFF4E5', fontFamily: 'widescreen' }} onClick={scrollToPira}>A PIRA</Button>
+            <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToProjeto}>O PROJETO</Button>
+            <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToCidades}>CIDADES</Button>
+            <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
+            <Button sx={{ color: '#FEF5E6', fontFamily: 'widescreen', fontWeight: 'bold' }} onClick={scrollToPira}>A PIRA</Button>
           </Stack>
         )}
 
@@ -122,12 +122,13 @@ const Header = () => {
             <IconButton
                 onClick={toggleDrawer}
                 sx={{
-                color: '#FFF4E5',
+                color: '#FEF5E6',
                 position: 'absolute',
                 top: '33%',
                 right: 32,
                 transform: 'translateY(-50%)',
                 fontSize: '2rem',
+                
                 }}
             >
                 <MenuIcon sx={{ fontSize: 40 }} />
@@ -170,20 +171,20 @@ const Header = () => {
         sx={{
           '& .MuiDrawer-paper': {
             backgroundColor: '#1e4d38',
-            color: '#FFF4E5',
+            color: '#FEF5E6',
             width: 240,
             padding: 2,
           },
         }}
       >
-        <IconButton onClick={toggleDrawer} sx={{ color: '#FFF4E5', alignSelf: 'flex-end' }}>
+        <IconButton onClick={toggleDrawer} sx={{ color: '#FEF5E6', alignSelf: 'flex-end' }}>
           <CloseIcon />
         </IconButton>
         <Stack spacing={2} mt={4}>
-          <Button sx={{ color: '#FFF4E5' }} onClick={scrollToProjeto}>O PROJETO</Button>
-          <Button sx={{ color: '#FFF4E5' }} onClick={scrollToCidades}>CIDADES</Button>
-          <Button sx={{ color: '#FFF4E5' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
-          <Button sx={{ color: '#FFF4E5', fontFamily: 'widescreen' }} onClick={scrollToPira}>A PIRA</Button>
+          <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToProjeto}>O PROJETO</Button>
+          <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToCidades}>CIDADES</Button>
+          <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
+          <Button sx={{ color: '#FEF5E6', fontFamily: 'widescreen', fontWeight: 'bold' }} onClick={scrollToPira}>A PIRA</Button>
         </Stack>
       </Drawer>
     </>
