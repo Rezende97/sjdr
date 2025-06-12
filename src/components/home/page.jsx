@@ -711,7 +711,7 @@ const Home = () => {
               },
             }}
           >
-            <Button variant="contained" sx={{background:'#255639', color: '#FEF5E6', fontWeight: 'bold'}} onClick={handleOpen}>Ver mais imagens</Button>
+            <Button variant="contained" sx={{background:'#255639', color: '#FEF5E6', fontWeight: 'bold'}} onClick={handleOpen}>Ver mais cidades</Button>
           </Box>
 
           {/* mobile */}
