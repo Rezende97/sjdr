@@ -64,9 +64,10 @@ const Home = () => {
         <Box
           sx={{
             // backgroundImage: 'url("/imagem/border_redes_sociais_home.png")',
-            backgroundImage: `url(${process.env.PUBLIC_URL}/images/border_redes_sociais_home.png)`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
+            // backgroundImage: `url(${process.env.PUBLIC_URL}/images/border_redes_sociais_home.png)`,
+            // backgroundRepeat: "no-repeat",
+            // backgroundSize: "contain",
+            border: '2px dashed #C9A13E',
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -138,7 +139,6 @@ const Home = () => {
       <Box
         component="section"
         sx={{
-          // backgroundImage: 'url("/images/inicio-main.jpg")',
           backgroundImage: `url(${process.env.PUBLIC_URL}/images/inicio-main.jpg)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%",
@@ -149,7 +149,7 @@ const Home = () => {
           px: { xs: 2, md: 18 },
           position: "relative",
           flexDirection: "column",
-          height: "100vh",
+          height: "150vh",
           padding: "280px 0 0 0",
           "@media (max-width:746px)": {
             padding: "0 0 0 0",
@@ -163,7 +163,7 @@ const Home = () => {
             justifyContent: "space-evenly",
             alignItems: "center",
             position: "relative",
-            bottom: "180px",
+            bottom: "100px",
             width: "100%",
           }}
         >
@@ -191,7 +191,12 @@ const Home = () => {
               width={85}
             />
           </Box>
-          <Box>
+          <Box
+            sx={{
+              position: "relative",
+              bottom: "30px",
+            }}
+          >
             <img
               src={process.env.PUBLIC_URL + "/images/cobra.png"}
               alt="cacto"
@@ -201,7 +206,7 @@ const Home = () => {
           <Box
             sx={{
               position: "relative",
-              bottom: "25px",
+              bottom: "55px",
             }}
           >
             <img
@@ -216,26 +221,24 @@ const Home = () => {
         <Box
           sx={{
             background: "#231F20",
-            padding: "11px",
+            padding: '15px',
             borderRadius: "20px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            margin: '15px'
           }}
         >
           {/* container central */}
           <Box
             sx={{
-              backgroundImage: `url(${process.env.PUBLIC_URL}/images/retangulo.png)`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               gap: "60px",
-              // border: '2px dashed rgba(201, 162, 62, 0.68)',
-              padding: "15px",
-              // borderRadius: '20px'
+              padding: "30px",
+              border: '2px dashed #63533B',
+              borderRadius: "20px"
             }}
           >
             {/* cto spotify */}
@@ -245,18 +248,11 @@ const Home = () => {
                 justifyContent: "left",
                 flexDirection: "column",
                 gap: "10px",
+                "@media (max-width:746px)": {
+                  display: "none",
+                }
               }}
             >
-              {/* <img
-                                src="/images/confira_playlist.png"
-                                alt="Confira Playlist"
-                            />
-
-                            <img
-                                src="/images/Spotify_logo_with_text.svg.png"
-                                alt="Confira Playlist"
-                                width={105}
-                            /> */}
 
               <img
                 src={process.env.PUBLIC_URL + "/images/confira_playlist.png"}
@@ -279,7 +275,7 @@ const Home = () => {
                 style={{ borderRadius: "12px" }}
                 src="https://open.spotify.com/embed/playlist/1m12R22yiuQirwlBL6xvnI?utm_source=generator&theme=0"
                 width="100%"
-                height="90"
+                height="100"
                 frameBorder="0"
                 allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -316,19 +312,6 @@ const Home = () => {
               },
             }}
           >
-            {/* <img
-                            src="/images/Sanfona.png"
-                            alt="Sanfona"
-                            width='170px'
-                            height='80px'
-                        />
-
-                        <img
-                            src="/images/triangulo.png"
-                            alt="Lua e Estrela"
-                            width='100px'
-                            height='70px'
-                        /> */}
 
             <img
               src={process.env.PUBLIC_URL + "/images/Sanfona.png"}
@@ -356,12 +339,6 @@ const Home = () => {
               },
             }}
           >
-            {/* <img
-                            src="/images/lua_estrela.png"
-                            alt="Triângulo"
-                            width='70px'
-                            height='70px'
-                        /> */}
 
             <img
               src={process.env.PUBLIC_URL + "/images/lua_estrela.png"}
@@ -378,26 +355,9 @@ const Home = () => {
               display: "flex",
               justifyContent: "center",
               flexDirection: "column",
-              gap: "20px",
-              // ,
-              // '@media (max-width:746px)': {
-              //     display: 'none'
-              // }
+              gap: "20px"
             }}
           >
-            {/* <img
-                            src="/images/tradicao_boa_viver.png"
-                            alt="Tradição"
-                            width='250px'
-                            height='80px'
-                        />
-
-                        <img
-                            src="/images/o_sao_Joao.png"
-                            alt="O São Joâo"
-                            width='350px'
-                            height='200px'
-                        /> */}
 
             <img
               src={process.env.PUBLIC_URL + "/images/tradicao_boa_viver.png"}

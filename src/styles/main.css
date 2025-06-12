@@ -13,8 +13,6 @@
 
     .container-tradicao-texto{
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .imagem-texto{
@@ -27,6 +25,11 @@
 
     .logo-texto-pira{
         width: 300px;
+    }
+
+    .imagem-texto{
+        min-width: "100px";
+        min-height:"100px";
     }
 }
 
