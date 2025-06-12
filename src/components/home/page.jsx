@@ -237,7 +237,7 @@ const Home = () => {
             }}
           >
             <img
-              src={process.env.PUBLIC_URL + "/images/FAica.png"}
+              src={process.env.PUBLIC_URL + "/images/Faica.png"}
               alt="faica"
               width={85}
             />
