@@ -92,13 +92,50 @@ const Home = () => {
                     flexDirection: 'column',
                     height: '100vh',
                     padding: '280px 0 0 0',
-                    border: '1px solid red',
                     '@media (max-width:746px)': { 
                         padding: '0 0 0 0',
                         height: '0'
                     }
                 }}
             >
+                <Box
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'space-evenly',
+                        alignItems: 'center',
+                        position: 'relative',
+                        bottom: '180px',
+                        width: '100%'
+                    }}
+                >
+                    <Box
+                        sx={{
+                            position: 'relative',
+                            bottom: '48px',
+                        }}
+                    >
+                        <img src={process.env.PUBLIC_URL + '/images/Cacto.png'} alt='cacto' width={75} />
+                    </Box>
+                    <Box
+                        sx={{
+                            position: 'relative',
+                            bottom: '-15px',
+                        }}
+                    >
+                        <img src={process.env.PUBLIC_URL + '/images/flor-main.png'} alt='cacto' width={85} />
+                    </Box>
+                    <Box>
+                        <img src={process.env.PUBLIC_URL + '/images/cobra.png'} alt='cacto' width={149} />
+                    </Box>
+                    <Box
+                        sx={{
+                            position: 'relative',
+                            bottom: '25px',
+                        }}
+                    >
+                        <img src={process.env.PUBLIC_URL + '/images/FAica.png'} alt='cacto' width={85} />
+                    </Box>
+                </Box>
 
                 {/* inicio container spotify musica */}
                 <Box

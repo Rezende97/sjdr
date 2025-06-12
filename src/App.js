@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 
 function App() {
   return (
-    <Box sx={{overflowX: 'hidden'}}>
+    <Box sx={{overflowX: 'hidden', background: '#FEF5E6'}}>
       <Header/>
       <Home/>
     </Box>
