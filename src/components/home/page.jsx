@@ -483,19 +483,40 @@ const Home = () => {
                     overflow: "hidden"
                 }}>
                     
-                    <blockquote
-                        className="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/p/C9NiawxJQGy/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        data-instgrm-version="14"
+                  <blockquote
+                    className="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/p/DK0KH6zy6GX/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    data-instgrm-version="14"
+                    style={{
+                      background: '#FFF',
+                      border: 0,
+                      borderRadius: '3px',
+                      boxShadow: '0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15)',
+                      margin: '1px',
+                      maxWidth: '540px',
+                      minWidth: '326px',
+                      padding: 0,
+                      width: 'calc(100% - 2px)',
+                    }}
+                  >
+                    <div style={{ padding: '16px' }}>
+                      <a
+                        href="https://www.instagram.com/p/DK0KH6zy6GX/?utm_source=ig_embed&amp;utm_campaign=loading"
                         style={{
-                            margin: "1px",
-                            // maxWidth: "540px",
-                            // minWidth: "326px",
-                            background: "#000000"
+                          background: '#FFFFFF',
+                          lineHeight: 0,
+                          padding: 0,
+                          textAlign: 'center',
+                          textDecoration: 'none',
+                          width: '100%',
                         }}
-                    >
-                        {/* Rest of the Instagram embed HTML */}
-                    </blockquote>
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                      </a>
+                    </div>
+                  </blockquote>
+
                 </div>
 
                 <Box sx={{
@@ -523,7 +544,7 @@ const Home = () => {
                 </Box>
             </div>
 
-            {/* Load tiktok script */}
+            {/* Load instagram script */}
             {typeof window !== "undefined" && (
                 <script async src="//www.instagram.com/embed.js" />
             )}
@@ -542,20 +563,16 @@ const Home = () => {
               <div style={{
                   maxWidth: "100%",
                   width: "100%",
-                  height: "98%",
+                  height: "96%",
                   overflow: "hidden"
               }}>
                   <blockquote
                       className="tiktok-embed"
-                      cite="https://www.tiktok.com/@saojoaodoreencontro/video/7389700227176910123"
-                      data-video-id="7389700227176910123"
+                      cite="https://www.tiktok.com/@saojoaodoreencontro/video/7515183052344003870"
+                      data-video-id="7515183052344003870"
                       style={{
                           margin: "1px",
-                          // maxWidth: "540px",
-                          // minWidth: "326px",
                           background: "#000000"
-                          // WebkitCalc: "100% - 2px",
-                          // width: "calc(90% - 2px)",
                       }}
                   >
                   {" "}
@@ -611,7 +628,13 @@ const Home = () => {
               </div>
 
               <Box >
-                <Typography onClick={handleClose} id="modal-modal-title" variant="h6" component="h2" sx={{textAlign: 'center', color: '#F7EDDB', fontWeight: 'bold', cursor: 'pointer'}}>
+                <Box sx={{
+                  display: 'flex',
+                  justifyContent: 'center', 
+                  alignItems: 'center',
+                  margin: '11px',
+                  gap: '7px'
+                }}>
                   <img
                     src={process.env.PUBLIC_URL + "/images/TIKTOK.png"}
                     width={100}
@@ -622,7 +645,7 @@ const Home = () => {
                     width={17}
                     alt="Icone tiktok"
                   />{" "}
-                </Typography>
+                </Box>
               </Box>
 
             </div>
