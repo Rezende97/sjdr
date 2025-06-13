@@ -113,7 +113,7 @@ const Home = () => {
           >
             {" "}
             <img
-              src={process.env.PUBLIC_URL + "/images/Instagram.png"}
+              src={process.env.PUBLIC_URL + "/images/Instagram1.png"}
               width={25}
               alt="Instagram"
             />{" "}
@@ -124,7 +124,7 @@ const Home = () => {
             rel="noreferrer"
           >
             <img
-              src={process.env.PUBLIC_URL + "/images/TikTok.png"}
+              src={process.env.PUBLIC_URL + "/images/Icon TikTok.png"}
               width={25}
               alt="TikTok"
             />
@@ -253,7 +253,10 @@ const Home = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: '15px'
+            margin: '15px',
+            "@media (max-width:602px)": {
+              zIndex: 1
+            }
           }}
         >
           {/* container central */}
@@ -498,22 +501,26 @@ const Home = () => {
                 <Box sx={{
                     display: 'flex',
                     justifyContent: 'center',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    gap: '10px'
                   }} 
                 >
-                <Typography onClick={handleClose} id="modal-modal-title" variant="h6" component="h2" sx={{textAlign: 'center', color: '#F7EDDB', fontWeight: 'bold', cursor: 'pointer'}}>
-                  <img
-                    src={process.env.PUBLIC_URL + "/images/INSTAGRAM.png"}
-                    width={100}
-                    alt="tiktok"
-                  />{" "}
-                  <img
-                    src={process.env.PUBLIC_URL + "/images/Instagram.png"}
-                    width={17}
-                    alt="Icone tiktok"
-                  />{" "}
-                </Typography>
-              </Box>
+                  <Box>
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/INSTAGRAM.png"}
+                      width={100}
+                      alt="INSTAGRAM"
+                    />{" "}
+                  </Box>
+                  <Box>
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/Instagram1.png"}
+                      width={25}
+                      alt="Icone instagram"
+                    />{" "}
+                  </Box>
+
+                </Box>
             </div>
 
             {/* Load tiktok script */}
@@ -925,10 +932,7 @@ const Home = () => {
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
-            textAlign: "center",
-            "@media (max-width:717px)": {
-              display: 'none'
-            },
+            textAlign: "center"
           }}
         >
           {/* patrocinadores */}
@@ -939,6 +943,9 @@ const Home = () => {
               alignItems: "center",
               flexWrap: "wrap",
               gap: "5px",
+              "@media (max-width:717px)": {
+              display: 'none'
+              }
             }}
           >
            
@@ -970,7 +977,9 @@ const Home = () => {
           </Box>
 
           {/* textos abaixo */}
-          <Box sx={{ mt: 2, display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: 'center' }}>
+          <Box sx={{ mt: 2, display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: 'center', "@media (max-width:717px)": {
+              display: 'none'
+            } }}>
             <img
               src={process.env.PUBLIC_URL + "/images/diga_nao_ao_racismo.png"}
               alt="Diga não ao Racismo"
@@ -982,9 +991,31 @@ const Home = () => {
               width={320}
             />
           </Box>
+
+          <Box sx={{
+            display: 'none',
+            "@media (max-width:717px)": {
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'end',
+              width: '100%',
+              height: '100vh',
+              position: 'relative',
+              top: '80px'
+            }
+          }}>
+            <img
+              src={process.env.PUBLIC_URL + "/images/rodape.svg"}
+              alt="Diga não ao Racismo"
+              style={{
+                width: '1590px',
+                height: '450px'
+              }}
+            />
+          </Box>
         </Box>
 
-        <Box
+        {/* <Box
           sx={{
             position: "absolute",
             bottom: "12%",
@@ -1001,7 +1032,6 @@ const Home = () => {
           }}
         >
 
-          {/* textos abaixo */}
           <Box sx={{
             display: 'flex',
             justifyContent: 'center',
@@ -1014,7 +1044,7 @@ const Home = () => {
               width={2000}
             />
           </Box>
-        </Box>
+        </Box> */}
       </Box>
 
       <Box
