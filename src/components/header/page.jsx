@@ -53,8 +53,8 @@ const Header = () => {
       <Box
         component="header"
         sx={{
-          // backgroundImage: 'url("/images/headernovo.png")',
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/header-fundo.jpg)`,
+          backgroundImage: 'url("/images/header-fundo.jpg")',
+          // backgroundImage: `url(${process.env.PUBLIC_URL}/images/header-fundo.jpg)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%',
           backgroundPosition: 'center',
@@ -63,8 +63,14 @@ const Header = () => {
           alignItems: 'center',
           justifyContent: 'space-evenly',
           px: { xs: 2, md: 16 },
-          position: 'relative'
+          position: 'relative',
+          '@media (max-width:1150px)': {
+            backgroundImage: 'url("/images/header_fundo_s.png")',
+            zIndex: 1
+          }
         }}
+
+        // 
       >
         {/* Logotipos */}
         <Stack
@@ -89,16 +95,16 @@ const Header = () => {
             }}
           >
             <img
-              // src="/images/ministerio_cultura_petrobras.png"
-              src={process.env.PUBLIC_URL + '/images/ministerio_cultura_petrobras.png'}
+              src="/images/ministerio_cultura_petrobras.png"
+              // src={process.env.PUBLIC_URL + '/images/ministerio_cultura_petrobras.png'}
               alt="Ministério da Cultura"
               style={{ width: '100%', height: 'auto' }}
             />
           </Box>
           <Box sx={{ maxWidth: '150px' }}>
             <img
-              // src="/images/logo_menu.png"
-              src={process.env.PUBLIC_URL + '/images/logo_menu.png'}
+              src="/images/logo_menu.png"
+              // src={process.env.PUBLIC_URL + '/images/logo_menu.png'}
               alt="Logo"
               style={{ width: '100%', height: 'auto' }}
             />
@@ -144,19 +150,31 @@ const Header = () => {
         justifyContent: 'space-around',
         background: '#FEF5E6'
       }}>
+
         <Box
           sx={{
             position: 'relative',
             bottom: '45px',
-            "@media (max-width:746px)": {
-              rotate: '-5deg',
+            "@media (max-width:1150px)": {
+              rotate: '-10deg',
               right: '25px',
-              bottom: '53px', 
+              bottom: '45px'
+            },
+            "@media (max-width:900px)": {
+              rotate: '-10deg',
+              right: '25px',
+              bottom: '45px'
+            },
+            "@media (max-width:375px)": {
+              rotate: '-15deg',
+              right: '25px',
+              bottom: '42px'
             }
           }}
         >
-          <img src={process.env.PUBLIC_URL + '/images/bandeirolas-esquerdo.png'} alt='Bandeirinha' width={200} />
+          <img src='/images/bandeirolas-esquerdo.png' alt='Bandeirinha' width={200} />
         </Box>
+
         <Box
           sx={{
             position: 'relative',
@@ -166,7 +184,7 @@ const Header = () => {
             }
           }}
         >
-          <img src={process.env.PUBLIC_URL + '/images/bandeirolas-direito.png'} alt='Bandeirinha' width={200}/>
+          <img src='/images/bandeirolas-direito.png' alt='Bandeirinha' width={200}/>
         </Box>
       </Box>
 

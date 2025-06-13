@@ -96,7 +96,7 @@ const Home = () => {
           }}
         >
           <a
-            href="https://www.facebook.com/profile.php?id=61561246527019&mibextid=wwXIfr&mibextid=wwXIfr"
+            href="https://www.facebook.com/people/S%C3%A3o-Jo%C3%A3o-do-Reencontro/61577035512763/"
             target="_blank"
             rel="noreferrer"
           >
@@ -468,7 +468,7 @@ const Home = () => {
             <div
               className="instagram-embed"
               style={{
-                // background: "#000000",
+                background: "#000000",
                 padding: "15px",
                 borderRadius: "15px",
               }}
@@ -494,6 +494,26 @@ const Home = () => {
                         {/* Rest of the Instagram embed HTML */}
                     </blockquote>
                 </div>
+
+                <Box sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                  }} 
+                >
+                <Typography onClick={handleClose} id="modal-modal-title" variant="h6" component="h2" sx={{textAlign: 'center', color: '#F7EDDB', fontWeight: 'bold', cursor: 'pointer'}}>
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/INSTAGRAM.png"}
+                    width={100}
+                    alt="tiktok"
+                  />{" "}
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/Instagram.png"}
+                    width={17}
+                    alt="Icone tiktok"
+                  />{" "}
+                </Typography>
+              </Box>
             </div>
 
             {/* Load tiktok script */}
@@ -505,77 +525,99 @@ const Home = () => {
             <div
               className="instagram-embed"
               style={{
-                // background: "#000000",
+                background: "#000000",
                 padding: "15px",
                 borderRadius: "15px",
-                height: '627px',
+                height: '657px',
                 overflow: "hidden"
               }}
             >
-                <div style={{
-                    maxWidth: "100%",
-                    width: "100%",
-                    height: "98%",
-                    overflow: "hidden"
-                }}>
-                    <blockquote
-                        className="tiktok-embed"
-                        cite="https://www.tiktok.com/@saojoaodoreencontro/video/7389700227176910123"
-                        data-video-id="7389700227176910123"
-                        style={{
-                            margin: "1px",
-                            // maxWidth: "540px",
-                            // minWidth: "326px",
-                            background: "#000000"
-                            // WebkitCalc: "100% - 2px",
-                            // width: "calc(90% - 2px)",
-                        }}
-                    >
-                    {" "}
-                        <section>
-                            {" "}
-                            <a
+              <div style={{
+                  maxWidth: "100%",
+                  width: "100%",
+                  height: "98%",
+                  overflow: "hidden"
+              }}>
+                  <blockquote
+                      className="tiktok-embed"
+                      cite="https://www.tiktok.com/@saojoaodoreencontro/video/7389700227176910123"
+                      data-video-id="7389700227176910123"
+                      style={{
+                          margin: "1px",
+                          // maxWidth: "540px",
+                          // minWidth: "326px",
+                          background: "#000000"
+                          // WebkitCalc: "100% - 2px",
+                          // width: "calc(90% - 2px)",
+                      }}
+                  >
+                  {" "}
+                      <section>
+                          {" "}
+                          <a
                             target="_blank"
                             title="@saojoaodoreencontro"
+                            rel="noreferrer"
                             href="https://www.tiktok.com/@saojoaodoreencontro?refer=embed"
-                            >
-                            @saojoaodoreencontro
-                            </a>{" "}
-                            O São Pedro de Medeiros Neto é uma realização do Ministério da
-                            Cultura, Somos Pira e São João Do Reencontro Patrocínio de
-                            Petrobras.{" "}
-                            <a
+                          >
+                          @saojoaodoreencontro
+                          </a>{" "}
+                          O São Pedro de Medeiros Neto é uma realização do Ministério da
+                          Cultura, Somos Pira e São João Do Reencontro Patrocínio de
+                          Petrobras.{" "}
+                          <a
                             title="petrobrascultural"
                             target="_blank"
+                            rel="noreferrer"
                             href="https://www.tiktok.com/tag/petrobrascultural?refer=embed"
-                            >
-                            #PetrobrasCultural
-                            </a>{" "}
-                            <a
-                            title="culturagovbr"
+                          >
+                          #PetrobrasCultural
+                          </a>{" "}
+                          <a
+                          title="culturagovbr"
+                          target="_blank"
+                          rel="noreferrer"
+                          href="https://www.tiktok.com/tag/culturagovbr?refer=embed"
+                          >
+                          #CulturaGovBr
+                          </a>{" "}
+                          <a
+                          title="sãojoãodoreencontro"
+                          target="_blank"
+                          rel="noreferrer"
+                          href="https://www.tiktok.com/tag/s%C3%A3ojo%C3%A3odoreencontro?refer=embed"
+                          >
+                          #SãoJoãoDoReencontro
+                          </a>{" "}
+                          @Ministério da Cultura @Petrobras{" "}
+                          <a
                             target="_blank"
-                            href="https://www.tiktok.com/tag/culturagovbr?refer=embed"
-                            >
-                            #CulturaGovBr
-                            </a>{" "}
-                            <a
-                            title="sãojoãodoreencontro"
-                            target="_blank"
-                            href="https://www.tiktok.com/tag/s%C3%A3ojo%C3%A3odoreencontro?refer=embed"
-                            >
-                            #SãoJoãoDoReencontro
-                            </a>{" "}
-                            @Ministério da Cultura @Petrobras{" "}
-                            <a
-                            target="_blank"
+                            rel="noreferrer"
                             title="♬ som original - SaoJoaoDoReencontro"
                             href="https://www.tiktok.com/music/som-original-7389700255329159982?refer=embed"
-                            >
-                            ♬ som original - SaoJoaoDoReencontro
-                            </a>{" "}
-                        </section>{" "}
-                    </blockquote>{" "}
-                </div>
+                          >
+                          ♬ som original - SaoJoaoDoReencontro
+                          </a>{" "}
+                      </section>{" "}
+                  </blockquote>{" "}
+                  
+              </div>
+
+              <Box >
+                <Typography onClick={handleClose} id="modal-modal-title" variant="h6" component="h2" sx={{textAlign: 'center', color: '#F7EDDB', fontWeight: 'bold', cursor: 'pointer'}}>
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/TIKTOK.png"}
+                    width={100}
+                    alt="tiktok"
+                  />{" "}
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/Icon TikTok.png"}
+                    width={17}
+                    alt="Icone tiktok"
+                  />{" "}
+                </Typography>
+              </Box>
+
             </div>
             
             {/* Load tiktok script */}
@@ -593,11 +635,6 @@ const Home = () => {
               paddingY: "40px",
             }}
           >
-            {/* <img
-                            src="/images/retangulo_horizontal_rede_social.png"
-                            alt="Youtube"
-                            width='100%'
-                        /> */}
 
             <img
               src={
@@ -679,8 +716,7 @@ const Home = () => {
               sx={{
                 "@media (max-width:600px)": {
                   display: "flex",
-                  justifyContent: "left",
-                  display: 'none'
+                  justifyContent: "left"
                 },
               }}
             >
@@ -692,13 +728,14 @@ const Home = () => {
                 width={290}
               />
             </Box>
+
             <Box
               sx={{
                 position:'relative',
                 top: '3px',
                 "@media (max-width:600px)": {
-                  padding: "5px"
-                  
+                  padding: "5px",
+                  display: 'none'
                 },
               }}
             >
@@ -710,6 +747,8 @@ const Home = () => {
             </Box>
 
           </Box>
+
+          {/* botao */}
           <Box
             sx={{
               display:'none',
@@ -784,7 +823,13 @@ const Home = () => {
           position: 'relative',
           top: '200px',
           right: '170px',
-          width: '100%'
+          width: '100%',
+          "@media (max-width:593px)": {
+            right: '10px',
+          },
+          "@media (max-width:593px)": {
+            right: '5px',
+          }
         }}>
           <img src={process.env.PUBLIC_URL + "/images/estrela-main.png"} alt="estrela" width={80}/>
         </Box>
@@ -881,6 +926,9 @@ const Home = () => {
             alignItems: "center",
             flexDirection: "column",
             textAlign: "center",
+            "@media (max-width:717px)": {
+              display: 'none'
+            },
           }}
         >
           {/* patrocinadores */}
@@ -935,6 +983,38 @@ const Home = () => {
             />
           </Box>
         </Box>
+
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: "12%",
+            left: 0,
+            right: 0,
+            display: "none",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            textAlign: "center",
+            "@media (max-width:717px)": {
+              display: 'flex'
+            },
+          }}
+        >
+
+          {/* textos abaixo */}
+          <Box sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            position: 'relative',
+            top: '450px'
+          }}>
+            <img
+              src={process.env.PUBLIC_URL + "/images/rodape.svg"}
+              alt="Diga não ao Racismo"
+              width={2000}
+            />
+          </Box>
+        </Box>
       </Box>
 
       <Box
@@ -973,7 +1053,7 @@ const Home = () => {
                 }}
               >
                 <img
-                  src={process.env.PUBLIC_URL + "/images/cidade-lado-esquerdo.png"}
+                  src={process.env.PUBLIC_URL + "/images/cidade-lado-direito.png"}
                   alt="passarinho"
                   width={265}
                 />
