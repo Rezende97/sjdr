@@ -209,7 +209,7 @@ const Header = () => {
           <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToProjeto}>O PROJETO</Button>
           <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToCidades}>CIDADES</Button>
           <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
-          <Button sx={{ color: '#FEF5E6', fontFamily: 'widescreen', fontWeight: 'bold' }} onClick={scrollToPira}>A PIRA</Button>
+          <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToPira}>A PIRA</Button>
         </Stack>
       </Drawer>
     </>
