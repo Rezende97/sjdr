@@ -855,7 +855,6 @@ const Home = () => {
           top: '200px',
           right: '170px',
           width: '100%',
-          border: '10px solid red',
           "@media (max-width:593px)": {
             right: '5px',
           }
