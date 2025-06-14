@@ -60,12 +60,12 @@ const Home = () => {
           
           <img
             src={process.env.PUBLIC_URL + "/images/Apresenta.png"}
-            width={170}
+            width={200}
             alt="Imagem"
           />
           <img
             src={process.env.PUBLIC_URL + "/images/logo_home.png"}
-            width={300}
+            width={330}
             alt="Imagem"
           />
         </Box>
@@ -78,6 +78,7 @@ const Home = () => {
           />
         </Box>
 
+          {/* icones redes sociais */}
         <Box
           sx={{
             border: '2px dashed #C9A13E',
@@ -158,7 +159,7 @@ const Home = () => {
           px: { xs: 2, md: 18 },
           position: "relative",
           flexDirection: "column",
-          height: "150vh",
+          height: "140vh",
           padding: "280px 0 0 0",
           "@media (max-width:746px)": {
             padding: "0 0 0 0",
@@ -854,9 +855,7 @@ const Home = () => {
           top: '200px',
           right: '170px',
           width: '100%',
-          "@media (max-width:593px)": {
-            right: '10px',
-          },
+          border: '10px solid red',
           "@media (max-width:593px)": {
             right: '5px',
           }

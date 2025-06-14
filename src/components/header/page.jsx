@@ -54,7 +54,6 @@ const Header = () => {
         component="header"
         sx={{
           backgroundImage: 'url("/images/header-fundo.jpg")',
-          // backgroundImage: `url(${process.env.PUBLIC_URL}/images/header-fundo.jpg)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%',
           backgroundPosition: 'center',
@@ -122,7 +121,7 @@ const Header = () => {
             <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToProjeto}>O PROJETO</Button>
             <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToCidades}>CIDADES</Button>
             <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
-            <Button sx={{ color: '#FEF5E6', fontFamily: 'widescreen', fontWeight: 'bold' }} onClick={scrollToPira}>A PIRA</Button>
+            <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToPira}>A PIRA</Button>
           </Stack>
         )}
 
@@ -148,7 +147,8 @@ const Header = () => {
         position: 'relative',
         display: 'flex',
         justifyContent: 'space-around',
-        background: '#FEF5E6'
+        background: '#FEF5E6',
+        height: '25px'
       }}>
 
         <Box
