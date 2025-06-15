@@ -964,8 +964,8 @@ const Home = () => {
               alignItems: "center",
               flexWrap: "wrap",
               gap: "5px",
-              "@media (max-width:717px)": {
-              display: 'none'
+              "@media (max-width:877px)": {
+                display: 'none'
               }
             }}
           >
@@ -998,8 +998,14 @@ const Home = () => {
           </Box>
 
           {/* textos abaixo */}
-          <Box sx={{ mt: 2, display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: 'center', "@media (max-width:717px)": {
-              display: 'none'
+          <Box 
+            sx={{ 
+              mt: 2, 
+              display: "flex", 
+              gap: "20px", 
+              flexWrap: "wrap", 
+              justifyContent: 'center', "@media (max-width:877px)": {
+                display: 'none'
             } }}>
             <img
               src={process.env.PUBLIC_URL + "/images/diga_nao_ao_racismo.png"}
@@ -1015,57 +1021,29 @@ const Home = () => {
 
           <Box sx={{
             display: 'none',
-            "@media (max-width:717px)": {
+            "@media (max-width:877px)": {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'end',
               width: '100%',
-              height: '100vh',
+              height: '90vh',
               position: 'relative',
-              top: '80px'
+              top: '90px',
             }
           }}>
             <img
               src={process.env.PUBLIC_URL + "/images/rodape.svg"}
               alt="Diga não ao Racismo"
               style={{
-                width: '1590px',
-                height: '450px'
+                width: '1000px',
+                height: '400px'
               }}
             />
           </Box>
+
         </Box>
 
-        {/* <Box
-          sx={{
-            position: "absolute",
-            bottom: "12%",
-            left: 0,
-            right: 0,
-            display: "none",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-            textAlign: "center",
-            "@media (max-width:717px)": {
-              display: 'flex'
-            },
-          }}
-        >
 
-          <Box sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            position: 'relative',
-            top: '450px'
-          }}>
-            <img
-              src={process.env.PUBLIC_URL + "/images/rodape.svg"}
-              alt="Diga não ao Racismo"
-              width={2000}
-            />
-          </Box>
-        </Box> */}
       </Box>
 
       <Box

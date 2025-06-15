@@ -12,6 +12,10 @@
     border: '1px solid red';
 }
 
+ .diganaoracismo{
+    width: '320px'
+}
+
 @media (max-width: 344px) {
 
     .container-tradicao-texto{
@@ -41,5 +45,12 @@
     .logo-texto-pira{
         width: 370px;
         height: 280px;  
+    }
+}
+
+@media (max-width: 883px) {
+
+    .diganaoracismo{
+        width: '50px'
     }
 }
