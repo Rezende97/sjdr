@@ -61,13 +61,13 @@ const Home = () => {
         }, 3600000); // 1 hora = 3.600.000ms
 
         return () => clearInterval(interval); // limpeza ao desmontar
-    }, []);
+    }, [playlistIds.length]);
 
     const currentPlaylistId = playlistIds[playlistIndex];
     const spotifyEmbedUrl = `https://open.spotify.com/embed/playlist/${currentPlaylistId}?utm_source=generator&theme=0`;
 
     if (loading) {
-        return <Box sx={{ p: 4 }}>Carregando postagens...</Box>;
+      return <Box sx={{ p: 4 }}>Carregando postagens...</Box>;
     }
 
     return (
@@ -334,6 +334,7 @@ const Home = () => {
 
                             <img
                                 src={process.env.PUBLIC_URL + "/images/confira_playlist.png"}
+                                width={110}
                                 alt="Confira Playlist"
                             />
 
@@ -342,18 +343,18 @@ const Home = () => {
                                     process.env.PUBLIC_URL +
                                     "/images/Spotify_logo_with_text.svg.png"
                                 }
-                                alt="Confira Playlist"
-                                width={105}
+                                width={90}
+                                alt="Sportify"
                             />
                         </Box>
 
                         {/* play na musica */}
-                        <Box>
+                         <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'flex-end'}}>
                             <iframe
                                 style={{ borderRadius: "12px" }}
                                 src={spotifyEmbedUrl}
                                 width="100%"
-                                height="100"
+                                height="85"
                                 frameBorder="0"
                                 allowFullScreen=""
                                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -742,6 +743,9 @@ const Home = () => {
                     px: { xs: 2, md: 18 },
                     position: "relative",
                     flexDirection: "column",
+                    "@media (max-width:1644px)": {
+                      zIndex: 0
+                    }
                 }}
             >
                 {/* cidades */}
@@ -880,20 +884,25 @@ const Home = () => {
 
             {/* inicio container pira */}
             <Box
-                component="section"
-                id="pira-section"
-                sx={{
-                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/sobrepirafundo.jpg)`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-evenly",
-                    px: { xs: 2, md: 18 },
-                    position: "relative",
-                    flexDirection: "column",
-                }}
+              component="section"
+              id="pira-section"
+              sx={{
+                backgroundImage: `url(${process.env.PUBLIC_URL}/images/sobrepirafundo.jpg)`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "top",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-evenly",
+                px: { xs: 2, md: 18 },
+                position: "relative",
+                flexDirection: "column",
+                height: '100vh',
+                mt: { xs: -8, md: -10 },
+                "@media (max-width:1644px)": {
+                  zIndex: 1,
+                },
+              }}
             >
                 <Box sx={{
                     display: 'flex',
@@ -957,140 +966,147 @@ const Home = () => {
             <Box
                 component="section"
                 sx={{
-                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodapet.jpg)`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    position: "relative",
-                    height: "100vh",
+                  backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodapet.jpg)`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  position: "relative",
+                  height: "100vh",
+                   "@media (max-width:877px)": {
+                      // height: "120vh",
+                      backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste01.jpg)`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      height: "50vh",
+                    }
                 }}
             >
-                <Box sx={{
-                    display: 'flex',
-                    justifyContent: 'right',
-                    position: 'relative',
-                    right: '250px',
-                    top: '70px',
-                    "@media (max-width:1202px)": {
-                        display: 'none'
-                    },
-                    "@media (max-width:2150px)": {
-                        top: '240px',
-                    },
-                    "@media (max-width:1920px)": {
-                        top: '280px',
-                    },
-                    "@media (max-width:1718px)": {
-                        top: '260px',
-                    },
-                    "@media (min-width:1722px)": {
-                        top: '220px',
-                    }
-                }}>
-                    <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" width={80} />
-                </Box>
+              <Box sx={{
+                  display: 'flex',
+                  justifyContent: 'right',
+                  position: 'relative',
+                  right: '250px',
+                  top: '70px',
+                  "@media (max-width:1202px)": {
+                      display: 'none'
+                  },
+                  "@media (max-width:2150px)": {
+                      top: '240px',
+                  },
+                  "@media (max-width:1920px)": {
+                      top: '280px',
+                  },
+                  "@media (max-width:1718px)": {
+                      top: '260px',
+                  },
+                  "@media (min-width:1722px)": {
+                      top: '220px',
+                  }
+              }}>
+                  <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" width={80} />
+              </Box>
 
-                <Box
-                    sx={{
-                        position: "absolute",
-                        bottom: "12%",
-                        left: 0,
-                        right: 0,
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        flexDirection: "column",
-                        textAlign: "center"
-                    }}
-                >
-                    {/* patrocinadores */}
-                    <Box
-                        sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            flexWrap: "wrap",
-                            gap: "5px",
-                            "@media (max-width:877px)": {
-                                display: 'none'
-                            }
-                        }}
-                    >
+              <Box
+                  sx={{
+                      position: "absolute",
+                      bottom: "12%",
+                      left: 0,
+                      right: 0,
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      flexDirection: "column",
+                      textAlign: "center"
+                  }}
+              >
+                  {/* patrocinadores */}
+                  <Box
+                      sx={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          flexWrap: "wrap",
+                          gap: "5px",
+                          "@media (max-width:877px)": {
+                              display: 'none'
+                          }
+                      }}
+                  >
 
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/lei.png"}
-                            alt="Lei"
-                            width={170}
-                        />
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/petrobras.png"}
-                            alt="Petrobras"
-                            width={170}
-                        />
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/pira-realizacao.png"}
-                            alt="Realização"
-                            width={170}
-                        />
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/ministerio_da_cultura.png"}
-                            alt="Ministério"
-                            width={170}
-                        />
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/governo.png"}
-                            alt="Governo"
-                            width={170}
-                        />
-                    </Box>
+                      <img
+                          src={process.env.PUBLIC_URL + "/images/lei.png"}
+                          alt="Lei"
+                          width={170}
+                      />
+                      <img
+                          src={process.env.PUBLIC_URL + "/images/petrobras.png"}
+                          alt="Petrobras"
+                          width={170}
+                      />
+                      <img
+                          src={process.env.PUBLIC_URL + "/images/pira-realizacao.png"}
+                          alt="Realização"
+                          width={170}
+                      />
+                      <img
+                          src={process.env.PUBLIC_URL + "/images/ministerio_da_cultura.png"}
+                          alt="Ministério"
+                          width={170}
+                      />
+                      <img
+                          src={process.env.PUBLIC_URL + "/images/governo.png"}
+                          alt="Governo"
+                          width={170}
+                      />
+                  </Box>
 
-                    {/* textos abaixo */}
-                    <Box
-                        sx={{
-                            mt: 2,
-                            display: "flex",
-                            gap: "20px",
-                            flexWrap: "wrap",
-                            justifyContent: 'center', "@media (max-width:877px)": {
-                                display: 'none'
-                            }
-                        }}>
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/diga_nao_ao_racismo.png"}
-                            alt="Diga não ao Racismo"
-                            width={320}
-                        />
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/recicle_sempre.png"}
-                            alt="Recicle Sempre"
-                            width={320}
-                        />
-                    </Box>
+                  {/* textos abaixo */}
+                  <Box
+                      sx={{
+                          mt: 2,
+                          display: "flex",
+                          gap: "20px",
+                          flexWrap: "wrap",
+                          justifyContent: 'center', "@media (max-width:877px)": {
+                              display: 'none'
+                          }
+                      }}>
+                      <img
+                          src={process.env.PUBLIC_URL + "/images/diga_nao_ao_racismo.png"}
+                          alt="Diga não ao Racismo"
+                          width={320}
+                      />
+                      <img
+                          src={process.env.PUBLIC_URL + "/images/recicle_sempre.png"}
+                          alt="Recicle Sempre"
+                          width={320}
+                      />
+                  </Box>
 
-                    <Box sx={{
-                        display: 'none',
-                        "@media (max-width:877px)": {
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'end',
-                            width: '100%',
-                            height: '90vh',
-                            position: 'relative',
-                            top: '90px',
-                        }
-                    }}>
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/rodape.svg"}
-                            alt="Diga não ao Racismo"
-                            style={{
-                                width: '1000px',
-                                height: '400px'
-                            }}
-                        />
-                    </Box>
+                  {/* <Box sx={{
+                      display: 'none',
+                      "@media (max-width:877px)": {
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'end',
+                          width: '100%',
+                          height: '100vh',
+                          position: 'relative',
+                          top: '100px',
+                      }
+                  }}>
+                      <img
+                          src={process.env.PUBLIC_URL + "/images/rodape.svg"}
+                          alt="Diga não ao Racismo"
+                          style={{
+                            width: '1500px',
+                            height: '900px'
+                          }}
+                      />
+                  </Box> */}
 
-                </Box>
-
+              </Box>
 
             </Box>
 

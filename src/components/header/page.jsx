@@ -65,7 +65,8 @@ const Header = () => {
           position: 'relative',
           '@media (max-width:1150px)': {
             backgroundImage: 'url("/images/header_fundo_s.png")',
-            zIndex: 1
+            zIndex: 1,
+            bottom: '50px'
           }
         }}
 
@@ -118,10 +119,10 @@ const Header = () => {
             height="100%"
             sx={{ mt: '-70px' }}
           >
-            <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToProjeto}>O PROJETO</Button>
-            <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToCidades}>CIDADES</Button>
-            <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
-            <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToPira}>A PIRA</Button>
+            <Button sx={{ fontFamily: "Montserrat, sans-serif", color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToProjeto}>O PROJETO</Button>
+            <Button sx={{ fontFamily: "Montserrat, sans-serif", color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToCidades}>CIDADES</Button>
+            <Button sx={{ fontFamily: "Montserrat, sans-serif", color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
+            <Button sx={{ fontFamily: "Montserrat, sans-serif", color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToPira}>A PIRA</Button>
           </Stack>
         )}
 
@@ -135,8 +136,10 @@ const Header = () => {
                 right: 32,
                 transform: 'translateY(-50%)',
                 fontSize: '2rem',
-                
-                }}
+                '@media (max-width:1150px)': {
+                  top: '48%',
+                }
+              }}
             >
                 <MenuIcon sx={{ fontSize: 40 }} />
             </IconButton>
@@ -158,17 +161,17 @@ const Header = () => {
             "@media (max-width:1150px)": {
               rotate: '-10deg',
               right: '25px',
-              bottom: '45px'
+              bottom: '95px'
             },
             "@media (max-width:900px)": {
               rotate: '-10deg',
               right: '25px',
-              bottom: '45px'
+              bottom: '100px'
             },
             "@media (max-width:375px)": {
               rotate: '-15deg',
               right: '25px',
-              bottom: '42px'
+              bottom: '100px'
             }
           }}
         >
@@ -179,8 +182,8 @@ const Header = () => {
           sx={{
             position: 'relative',
             bottom: '87px',
-            '@media (max-width:900px)': { 
-              bottom: '60px',
+            '@media (max-width:1150px)': { 
+              bottom: '118px',
             }
           }}
         >
@@ -206,10 +209,10 @@ const Header = () => {
           <CloseIcon />
         </IconButton>
         <Stack spacing={2} mt={4}>
-          <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToProjeto}>O PROJETO</Button>
-          <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToCidades}>CIDADES</Button>
-          <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
-          <Button sx={{ color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToPira}>A PIRA</Button>
+          <Button sx={{ fontFamily: "Montserrat, sans-serif", color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToProjeto}>O PROJETO</Button>
+          <Button sx={{ fontFamily: "Montserrat, sans-serif", color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToCidades}>CIDADES</Button>
+          <Button sx={{ fontFamily: "Montserrat, sans-serif", color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToRedeSociais}>REDES SOCIAIS</Button>
+          <Button sx={{ fontFamily: "Montserrat, sans-serif", color: '#FEF5E6', fontWeight: 'bold' }} onClick={scrollToPira}>A PIRA</Button>
         </Stack>
       </Drawer>
     </>
