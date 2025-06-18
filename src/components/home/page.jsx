@@ -307,7 +307,6 @@ const Home = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        border: '1px solid red',
                         "@media (max-width:750px)": {
                             zIndex: 1
                         }
