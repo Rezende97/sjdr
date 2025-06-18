@@ -190,7 +190,6 @@ const Home = () => {
                     </a>
                 </Box>
             </Box>
-            <br />
 
             {/* inicio container main */}
             <Box
@@ -224,10 +223,11 @@ const Home = () => {
                         width: "100%",
                     }}
                 >
+                    {/* cacto */}
                     <Box
                         sx={{
                             position: "relative",
-                            bottom: "48px",
+                             bottom: "48px",
                             "@media (max-width:746px)": {
                                 top: "75px",
                                 right: '60px',
@@ -241,12 +241,14 @@ const Home = () => {
                             width={75}
                         />
                     </Box>
+
+                    {/* flor */}
                     <Box
                         sx={{
                             position: "relative",
                             bottom: "-15px",
                             "@media (max-width:746px)": {
-                                left: "440px",
+                                left: "400px",
                                 rotate: '-5deg'
                             }
                         }}
@@ -257,6 +259,8 @@ const Home = () => {
                             width={85}
                         />
                     </Box>
+
+                    {/* cobra */}
                     <Box
                         sx={{
                             position: "relative",
@@ -274,11 +278,13 @@ const Home = () => {
                             width={149}
                         />
                     </Box>
+
+                    {/* estrela - banner */}
                     <Box
                         sx={{
                             position: "relative",
                             bottom: "55px",
-                            "@media (max-width:746px)": {
+                           "@media (max-width:746px)": {
                                 top: "195px",
                                 rotate: '-5deg'
                             }
@@ -301,8 +307,8 @@ const Home = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        margin: '15px',
-                        "@media (max-width:602px)": {
+                        border: '1px solid red',
+                        "@media (max-width:750px)": {
                             zIndex: 1
                         }
                     }}
@@ -404,7 +410,6 @@ const Home = () => {
                                 src={process.env.PUBLIC_URL + "/images/Sanfona.png"}
                                 alt="Sanfona"
                                 width="170px"
-                            // height="80px"
                             />
                         </Box>
 
@@ -459,22 +464,34 @@ const Home = () => {
                             gap: "20px"
                         }}
                     >
-
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/tradicao_boa_viver.png"}
-                            className="imagem-tradicao"
-                            alt="Tradição"
-                            width="250px"
-                            height="80px"
-                        />
-
-                        <img
-                            className="imagem-texto"
-                            src={process.env.PUBLIC_URL + "/images/o_sao_Joao.png"}
-                            alt="O São Joâo"
-                            width="350px"
-                            height="200px"
-                        />
+                        <Box>
+                            <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
+                                TRADIÇÃO
+                            </Typography>
+                            <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
+                                BOA DE VIVER
+                            </Typography>
+                        </Box>
+                        <Box>
+                            <Typography
+                                id="modal-modal-title"
+                                sx={{
+                                    fontFamily: 'montserrat',
+                                    textAlign: 'left',
+                                    color: '#F7EDDB',
+                                    maxWidth: '500px', // limite de largura como na imagem
+                                    lineHeight: 1.6,
+                                    fontSize: '16px', // ajuste conforme necessário
+                                }}
+                                >
+                                    O São João do Reencontro nasce do desejo de reconectar a Bahia com a força de sua maior tradição popular.
+                                    Criamos um circuito junino por 27 municípios, valorizando as raízes culturais de cada região e reacendendo
+                                    o sentimento de pertencimento. Mais que celebrar, o projeto movimenta a economia criativa, fortalece o
+                                    turismo e promove diversidade.<br /><br />
+                                    É tradição boa de viver — de interior a interior, de palco em palco, de abraço em abraço.
+                                </Typography>
+                           
+                        </Box>
                     </Box>
 
                 </Box>
@@ -523,12 +540,39 @@ const Home = () => {
                                 background: "#000000",
                                 padding: "15px",
                                 borderRadius: "15px",
+                                height: '500px',
+                                overflow: "hidden"
                             }}
                         >
+                            <Box sx={{
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    marginBottom: '10px',
+                                    gap: '10px'
+                                }}
+                            >
+                                <Box>
+                                    <img
+                                        src={process.env.PUBLIC_URL + "/images/INSTAGRAM.png"}
+                                        width={100}
+                                        alt="INSTAGRAM"
+                                    />
+                                </Box>
+                                <Box>
+                                    <img
+                                        src={process.env.PUBLIC_URL + "/images/Instagram1.png"}
+                                        width={25}
+                                        alt="Icone instagram"
+                                    />
+                                </Box>
+
+                            </Box>
+                            
                             <div style={{
                                 maxWidth: "100%",
                                 width: "100%",
-                                height: "100%",
+                                height: "92.3%",
                                 overflow: "hidden"
                             }}>
 
@@ -568,29 +612,7 @@ const Home = () => {
 
                             </div>
 
-                            <Box sx={{
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                gap: '10px'
-                            }}
-                            >
-                                <Box>
-                                    <img
-                                        src={process.env.PUBLIC_URL + "/images/INSTAGRAM.png"}
-                                        width={100}
-                                        alt="INSTAGRAM"
-                                    />{" "}
-                                </Box>
-                                <Box>
-                                    <img
-                                        src={process.env.PUBLIC_URL + "/images/Instagram1.png"}
-                                        width={25}
-                                        alt="Icone instagram"
-                                    />{" "}
-                                </Box>
-
-                            </Box>
+                            
                         </div>
 
                         {/* Load instagram script */}
@@ -605,14 +627,36 @@ const Home = () => {
                                 background: "#000000",
                                 padding: "15px",
                                 borderRadius: "15px",
-                                height: '657px',
+                                height: '500px',
                                 overflow: "hidden"
                             }}
                         >
+                            <Box >
+                                <Box sx={{
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    marginTop: '1px',
+                                    marginBottom: '17px',
+                                    gap: '7px'
+                                }}>
+                                    <img
+                                        src={process.env.PUBLIC_URL + "/images/TIKTOK.png"}
+                                        width={100}
+                                        alt="tiktok"
+                                    />{" "}
+                                    <img
+                                        src={process.env.PUBLIC_URL + "/images/Icon TikTok.png"}
+                                        width={17}
+                                        alt="Icone tiktok"
+                                    />{" "}
+                                </Box>
+                            </Box>
+
                             <div style={{
                                 maxWidth: "100%",
                                 width: "100%",
-                                height: "96%",
+                                height: "92.8%",
                                 overflow: "hidden"
                             }}>
                                 <blockquote
@@ -675,28 +719,7 @@ const Home = () => {
                                 </blockquote>{" "}
 
                             </div>
-
-                            <Box >
-                                <Box sx={{
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    margin: '11px',
-                                    gap: '7px'
-                                }}>
-                                    <img
-                                        src={process.env.PUBLIC_URL + "/images/TIKTOK.png"}
-                                        width={100}
-                                        alt="tiktok"
-                                    />{" "}
-                                    <img
-                                        src={process.env.PUBLIC_URL + "/images/Icon TikTok.png"}
-                                        width={17}
-                                        alt="Icone tiktok"
-                                    />{" "}
-                                </Box>
-                            </Box>
-
+                            
                         </div>
 
                         {/* Load tiktok script */}
@@ -720,8 +743,9 @@ const Home = () => {
                                 process.env.PUBLIC_URL +
                                 "/images/retangulo_horizontal_rede_social.png"
                             }
+                            className="youtube"
                             alt="Youtube"
-                            width="100%"
+                            width="66%"
                         />
                     </Box>
                 </Box>
@@ -772,17 +796,15 @@ const Home = () => {
                         }}
                     >
                         <Box>
-                            <img
-                                src={process.env.PUBLIC_URL + "/images/CIDADES.png"}
-                                alt="cidades"
-                                width={220}
-                            />
+                            <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
+                                CIDADES
+                            </Typography>
                         </Box>
-                        <Box>
+                        <Box >
                             <img
                                 src={process.env.PUBLIC_URL + "/images/passarinho_cidade.png"}
                                 alt="passarinho"
-                                width={80}
+                                width={70}
                             />
                         </Box>
                     </Box>
@@ -791,43 +813,77 @@ const Home = () => {
                     <Box
                         sx={{
                             display: "flex",
-                            gap: "35px"
+                            gap: "40px", 
+                            "@media (max-width:600px)": {
+                            flexDirection: "column",
+                            gap: "20px",
+                            },
                         }}
                     >
-                        <Box
+                        {/* Coluna da esquerda */}
+                        <Box>
+                            <Typography
+                            id="modal-modal-title"
                             sx={{
+                                textAlign: 'right',
+                                color: "#F7EDDB",
+                                fontFamily: "Widescreen Ex Black",
+                                fontWeight: "bold",
+                                lineHeight: 1.8,
+                                whiteSpace: "pre-line", 
                                 "@media (max-width:600px)": {
-                                    display: "flex",
-                                    justifyContent: "left"
-                                },
-                            }}
-                        >
-                            <img
-                                src={
-                                    process.env.PUBLIC_URL + "/images/cidade-lado-esquerdo.png"
+                                    textAlign: 'left'
                                 }
-                                alt="cidades"
-                                width={290}
-                            />
+                            }}
+                            >
+                            ABAÍRA<br />
+                            ALAGOINHAS<br />
+                            ALMADINA<br />
+                            AMARGOSA<br />
+                            BRUMADO<br />
+                            CACHOEIRA<br />
+                            CABACEIRAS DE PARAGUAÇÚ<br />
+                            CAMAÇARI<br />
+                            CASTRO ALVES<br />
+                            CATU<br />
+                            CÍCERO DANTAS<br />
+                            CIPÓ<br />
+                            COARACI<br />
+                            CONCEIÇÃO DO ALMEIDA
+                            </Typography>
                         </Box>
 
-                        <Box
+                        {/* Coluna da direita */}
+                        <Box sx={{ position: "relative"}}>
+                            <Typography
+                            id="modal-modal-title"
                             sx={{
-                                position: 'relative',
-                                top: '3px',
+                                color: "#F7EDDB",
+                                fontFamily: "Widescreen Ex Black",
+                                fontWeight: "bold",
+                                lineHeight: 1.8,
+                                whiteSpace: "pre-line",
                                 "@media (max-width:600px)": {
                                     padding: "5px",
                                     display: 'none'
-                                },
+                                }
                             }}
-                        >
-                            <img
-                                src={process.env.PUBLIC_URL + "/images/cidade-lado-direito.png"}
-                                alt="passarinho"
-                                width={265}
-                            />
+                            >
+                            ENTRE RIOS<br />
+                            EUCLIDES DA CUNHA<br />
+                            FÁTIMA<br />
+                            HELIÓPOLIS<br />
+                            ITABUNA<br />
+                            ITAJU DO COLÔNIA<br />
+                            MADRE DE DEUS<br />
+                            NOVA SOURE<br />
+                            RIBEIRA DO AMPARO<br />
+                            SANTO ANTÔNIO DE JESUS<br />
+                            SÃO FELIPE<br />
+                            SAPEAÇU<br />
+                            TUCANO
+                            </Typography>
                         </Box>
-
                     </Box>
 
                     {/* botao */}
@@ -842,42 +898,6 @@ const Home = () => {
                         <Button variant="contained" sx={{ background: '#255639', color: '#FEF5E6', fontWeight: 'bold' }} onClick={handleOpen}>Ver mais cidades</Button>
                     </Box>
 
-                    {/* mobile */}
-                    {/* <Box
-            sx={{
-              display: "none",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "9px",
-              "@media (max-width:600px)": {
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                flexDirection: "column",
-              },
-            }}
-          >
-            <Box>
-              <img
-                src={process.env.PUBLIC_URL + "/images/cidades01.png"}
-                alt="cidades"
-                width={290}
-              />
-            </Box>
-            <Box
-              sx={{
-                "@media (max-width:600px)": {
-                  padding: "5px",
-                },
-              }}
-            >
-              <img
-                src={process.env.PUBLIC_URL + "/images/cidade02.png"}
-                alt="passarinho"
-                width={290}
-              />
-            </Box>
-          </Box> */}
                 </Box>
             </Box>
             {/* fim container cidade */}
@@ -894,11 +914,11 @@ const Home = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-evenly",
-                px: { xs: 2, md: 18 },
+                // px: { xs: 2, md: 18 },
                 position: "relative",
                 flexDirection: "column",
                 height: '100vh',
-                mt: { xs: -8, md: -10 },
+                // mt: { xs: -8, md: -10 },
                 "@media (max-width:1644px)": {
                   zIndex: 1,
                 },
@@ -917,12 +937,14 @@ const Home = () => {
                 }}>
                     <img src={process.env.PUBLIC_URL + "/images/estrela-main.png"} alt="estrela" width={80} />
                 </Box>
+
                 {/* sobre a pira */}
                 <Box
                     sx={{
                         display: "flex",
                         flexDirection: "column",
                         gap: "45px",
+                        zIndex: 1
                     }}
                 >
                     {/* sobre a pira */}
@@ -932,31 +954,48 @@ const Home = () => {
                             display: "flex",
                             alignItems: "end",
                             padding: "200px 0 0 0",
-                            gap: "30px",
+                            gap: "40px",
                         }}
                     >
-
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/SOBREAPIRA.png"}
-                            alt="Sobre a Pira"
-                            className="logo-image"
-                        />
+                        <Box>
+                            <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
+                                SOBRE
+                            </Typography>
+                            <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
+                                A PIRA
+                            </Typography>
+                        </Box>
                         <img
                             src={process.env.PUBLIC_URL + "/images/Iconpira.png"}
                             alt="Sobre a Pira"
                             width={50}
-                            height={50}
                         />
                     </Box>
 
                     {/* texto sobre pira */}
                     <Box>
-                        {/* <img src="/images/texto_pira.png" alt="Sobre a Pira" className='logo-texto-pira' /> */}
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/texto_pira.png"}
-                            alt="Sobre a Pira"
-                            className="logo-texto-pira"
-                        />
+                        <Typography
+                            id="modal-modal-title"
+                            sx={{
+                                fontFamily: 'montserrat',
+                                textAlign: 'left',
+                                color: '#F7EDDB',
+                                maxWidth: '500px',
+                                lineHeight: 1.6,
+                                fontSize: '16px',
+                                zIndex: 1
+                            }}
+                        >
+                            A Pira é uma agência full service, especializada<br />
+                            na criação de projetos que potencializam a<br />
+                            conexão entre a população e as marcas, através<br />
+                            da realização de iniciativas que potencializem<br />
+                            seus assets de comunicação.<br /><br />
+                            A sua origem está associada ao significado do<br />
+                            seu nome: Pira é um fogo sagrado que aquece,<br />
+                            ilumina, apaixona, arde, queima, inspira,<br />
+                            transforma e conecta as pessoas.
+                        </Typography>
                     </Box>
                 </Box>
             </Box>
@@ -982,131 +1021,200 @@ const Home = () => {
                     }
                 }}
             >
-              <Box sx={{
-                  display: 'flex',
-                  justifyContent: 'right',
-                  position: 'relative',
-                  right: '250px',
-                  top: '70px',
-                  "@media (max-width:1202px)": {
-                      display: 'none'
-                  },
-                  "@media (max-width:2150px)": {
-                      top: '240px',
-                  },
-                  "@media (max-width:1920px)": {
-                      top: '280px',
-                  },
-                  "@media (max-width:1718px)": {
-                      top: '260px',
-                  },
-                  "@media (min-width:1722px)": {
-                      top: '220px',
-                  }
-              }}>
-                  <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" width={80} />
-              </Box>
+            
+                {/* cacto */}
+                <Box sx={{
+                    display: 'flex',
+                    justifyContent: 'right',
+                    position: 'relative',
+                    right: '250px',
+                    top: '70px',
+                    "@media (max-width:2165px)": {
+                        top: '200px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:1920px)": {
+                        top: '280px',
+                        zIndex: 1
+                    },
+                    "@media (min-width:1722px)": {
+                        top: '260px',
+                        zIndex: 1
+                    },
+                     "@media (max-width:1718px)": {
+                        top: '260px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:1477px)": {
+                        right: '350px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:1443px)": {
+                        top: '90px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:1217px)": {
+                        top: '190px',
+                        zIndex: 1
+                    },
+                    "@media (min-width:1225px)": {
+                        top: '-30px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:1176px)": {
+                        top: '10px',
+                        zIndex: 1
+                    },
+                    "@media (min-width:1000px)": {
+                        left: '-150px',
+                        zIndex: 1
+                    },
+                    "@media (min-width:901px)": {
+                        left: '-50px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:900px)": {
+                        top: '240px',
+                        left: '-150px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:897px)": {
+                        top: '240px',
+                        left: '-150px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:895px)": {
+                        top: '240px',
+                        left: '-150px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:889px)": {
+                        top: '240px',
+                        left: '-150px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:885px)": {
+                        top: '230px',
+                        left: '-150px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:881px)": {
+                        top: '230px',
+                        left: '-150px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:879px)": {
+                        top: '-260px',
+                        left: '-50px',
+                        zIndex: 1
+                    },
+                    "@media (max-width:716px)": {
+                        display: 'none'
+                    },
+                }}>
+                    <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto"  />
+                </Box>
 
-              <Box
-                  sx={{
-                      position: "absolute",
-                      bottom: "12%",
-                      left: 0,
-                      right: 0,
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      flexDirection: "column",
-                      textAlign: "center"
-                  }}
-              >
-                  {/* patrocinadores */}
-                  <Box
-                      sx={{
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          flexWrap: "wrap",
-                          gap: "5px",
-                          "@media (max-width:877px)": {
-                              display: 'none'
-                          }
-                      }}
-                  >
+                <Box
+                    sx={{
+                        position: "absolute",
+                        bottom: "12%",
+                        left: 0,
+                        right: 0,
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        flexDirection: "column",
+                        textAlign: "center"
+                    }}
+                >
+                    {/* patrocinadores */}
+                    <Box
+                        sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            flexWrap: "wrap",
+                            gap: "5px",
+                            "@media (max-width:877px)": {
+                                display: 'none'
+                            }
+                        }}
+                    >
 
-                      <img
-                          src={process.env.PUBLIC_URL + "/images/lei.png"}
-                          alt="Lei"
-                          width={170}
-                      />
-                      <img
-                          src={process.env.PUBLIC_URL + "/images/petrobras.png"}
-                          alt="Petrobras"
-                          width={170}
-                      />
-                      <img
-                          src={process.env.PUBLIC_URL + "/images/pira-realizacao.png"}
-                          alt="Realização"
-                          width={170}
-                      />
-                      <img
-                          src={process.env.PUBLIC_URL + "/images/ministerio_da_cultura.png"}
-                          alt="Ministério"
-                          width={170}
-                      />
-                      <img
-                          src={process.env.PUBLIC_URL + "/images/governo.png"}
-                          alt="Governo"
-                          width={170}
-                      />
-                  </Box>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/lei.png"}
+                            alt="Lei"
+                            width={170}
+                        />
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/petrobras.png"}
+                            alt="Petrobras"
+                            width={170}
+                        />
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/pira-realizacao.png"}
+                            alt="Realização"
+                            width={170}
+                        />
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/ministerio_da_cultura.png"}
+                            alt="Ministério"
+                            width={170}
+                        />
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/governo.png"}
+                            alt="Governo"
+                            width={170}
+                        />
+                    </Box>
 
-                  {/* textos abaixo */}
-                  <Box
-                      sx={{
-                          mt: 2,
-                          display: "flex",
-                          gap: "20px",
-                          flexWrap: "wrap",
-                          justifyContent: 'center', "@media (max-width:877px)": {
-                              display: 'none'
-                          }
-                      }}>
-                      <img
-                          src={process.env.PUBLIC_URL + "/images/diga_nao_ao_racismo.png"}
-                          alt="Diga não ao Racismo"
-                          width={320}
-                      />
-                      <img
-                          src={process.env.PUBLIC_URL + "/images/recicle_sempre.png"}
-                          alt="Recicle Sempre"
-                          width={320}
-                      />
-                  </Box>
+                    {/* textos abaixo */}
+                    <Box
+                        sx={{
+                            mt: 2,
+                            display: "flex",
+                            gap: "20px",
+                            flexWrap: "wrap",
+                            justifyContent: 'center', "@media (max-width:877px)": {
+                                display: 'none'
+                            }
+                        }}>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/diga_nao_ao_racismo.png"}
+                            alt="Diga não ao Racismo"
+                            width={320}
+                        />
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/recicle_sempre.png"}
+                            alt="Recicle Sempre"
+                            width={320}
+                        />
+                    </Box>
 
-                  {/* <Box sx={{
-                      display: 'none',
-                      "@media (max-width:877px)": {
-                          display: 'flex',
-                          justifyContent: 'center',
-                          alignItems: 'end',
-                          width: '100%',
-                          height: '100vh',
-                          position: 'relative',
-                          top: '100px',
-                      }
-                  }}>
-                      <img
-                          src={process.env.PUBLIC_URL + "/images/rodape.svg"}
-                          alt="Diga não ao Racismo"
-                          style={{
-                            width: '1500px',
-                            height: '900px'
-                          }}
-                      />
-                  </Box> */}
+                    {/* <Box sx={{
+                        display: 'none',
+                        "@media (max-width:877px)": {
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'end',
+                            width: '100%',
+                            height: '100vh',
+                            position: 'relative',
+                            top: '100px',
+                        }
+                    }}>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/rodape.svg"}
+                            alt="Diga não ao Racismo"
+                            style={{
+                                width: '1500px',
+                                height: '900px'
+                            }}
+                        />
+                    </Box> */}
 
-              </Box>
+                </Box>
 
             </Box>
 
@@ -1127,7 +1235,7 @@ const Home = () => {
                             display: 'flex',
                             justifyContent: 'space-between'
                         }}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ textAlign: 'center', color: '#F7EDDB', fontWeight: 'bold' }}>
+                            <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ textAlign: 'center', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
                                 CIDADES
                             </Typography>
                             <Typography onClick={handleClose} id="modal-modal-title" variant="h6" component="h2" sx={{ textAlign: 'center', color: '#F7EDDB', fontWeight: 'bold', cursor: 'pointer' }}>
