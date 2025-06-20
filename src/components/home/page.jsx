@@ -67,7 +67,7 @@ const Home = () => {
     const spotifyEmbedUrl = `https://open.spotify.com/embed/playlist/${currentPlaylistId}?utm_source=generator&theme=0`;
 
     if (loading) {
-      return <Box sx={{ p: 4 }}>Carregando postagens...</Box>;
+        return <Box sx={{ p: 4 }}>Carregando postagens...</Box>;
     }
 
     return (
@@ -227,7 +227,7 @@ const Home = () => {
                     <Box
                         sx={{
                             position: "relative",
-                             bottom: "48px",
+                            bottom: "48px",
                             "@media (max-width:746px)": {
                                 top: "75px",
                                 right: '60px',
@@ -284,7 +284,7 @@ const Home = () => {
                         sx={{
                             position: "relative",
                             bottom: "55px",
-                           "@media (max-width:746px)": {
+                            "@media (max-width:746px)": {
                                 top: "195px",
                                 rotate: '-5deg'
                             }
@@ -354,7 +354,7 @@ const Home = () => {
                         </Box>
 
                         {/* play na musica */}
-                         <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'flex-end'}}>
+                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
                             <iframe
                                 style={{ borderRadius: "12px" }}
                                 src={spotifyEmbedUrl}
@@ -482,14 +482,14 @@ const Home = () => {
                                     lineHeight: 1.6,
                                     fontSize: '16px', // ajuste conforme necessário
                                 }}
-                                >
-                                    O São João do Reencontro nasce do desejo de reconectar a Bahia com a força de sua maior tradição popular.
-                                    Criamos um circuito junino por 27 municípios, valorizando as raízes culturais de cada região e reacendendo
-                                    o sentimento de pertencimento. Mais que celebrar, o projeto movimenta a economia criativa, fortalece o
-                                    turismo e promove diversidade.<br /><br />
-                                    É tradição boa de viver — de interior a interior, de palco em palco, de abraço em abraço.
-                                </Typography>
-                           
+                            >
+                                O São João do Reencontro nasce do desejo de reconectar a Bahia com a força de sua maior tradição popular.
+                                Criamos um circuito junino por 27 municípios, valorizando as raízes culturais de cada região e reacendendo
+                                o sentimento de pertencimento. Mais que celebrar, o projeto movimenta a economia criativa, fortalece o
+                                turismo e promove diversidade.<br /><br />
+                                É tradição boa de viver — de interior a interior, de palco em palco, de abraço em abraço.
+                            </Typography>
+
                         </Box>
                     </Box>
 
@@ -544,12 +544,12 @@ const Home = () => {
                             }}
                         >
                             <Box sx={{
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    marginBottom: '10px',
-                                    gap: '10px'
-                                }}
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                                marginBottom: '10px',
+                                gap: '10px'
+                            }}
                             >
                                 <Box>
                                     <img
@@ -567,7 +567,7 @@ const Home = () => {
                                 </Box>
 
                             </Box>
-                            
+
                             <div style={{
                                 maxWidth: "100%",
                                 width: "100%",
@@ -611,7 +611,7 @@ const Home = () => {
 
                             </div>
 
-                            
+
                         </div>
 
                         {/* Load instagram script */}
@@ -718,7 +718,7 @@ const Home = () => {
                                 </blockquote>{" "}
 
                             </div>
-                            
+
                         </div>
 
                         {/* Load tiktok script */}
@@ -767,7 +767,7 @@ const Home = () => {
                     position: "relative",
                     flexDirection: "column",
                     "@media (max-width:1644px)": {
-                      zIndex: 0
+                        zIndex: 0
                     }
                 }}
             >
@@ -812,75 +812,75 @@ const Home = () => {
                     <Box
                         sx={{
                             display: "flex",
-                            gap: "40px", 
+                            gap: "40px",
                             "@media (max-width:600px)": {
-                            flexDirection: "column",
-                            gap: "20px",
+                                flexDirection: "column",
+                                gap: "20px",
                             },
                         }}
                     >
                         {/* Coluna da esquerda */}
                         <Box>
                             <Typography
-                            id="modal-modal-title"
-                            sx={{
-                                textAlign: 'right',
-                                color: "#F7EDDB",
-                                fontFamily: "Widescreen Ex Black",
-                                fontWeight: "bold",
-                                lineHeight: 1.8,
-                                whiteSpace: "pre-line", 
-                                "@media (max-width:600px)": {
-                                    textAlign: 'left'
-                                }
-                            }}
+                                id="modal-modal-title"
+                                sx={{
+                                    textAlign: 'right',
+                                    color: "#F7EDDB",
+                                    fontFamily: "Widescreen Ex Black",
+                                    fontWeight: "bold",
+                                    lineHeight: 1.8,
+                                    whiteSpace: "pre-line",
+                                    "@media (max-width:600px)": {
+                                        textAlign: 'left'
+                                    }
+                                }}
                             >
-                            ABAÍRA<br />
-                            ALAGOINHAS<br />
-                            ALMADINA<br />
-                            AMARGOSA<br />
-                            BRUMADO<br />
-                            CACHOEIRA<br />
-                            CABACEIRAS DE PARAGUAÇÚ<br />
-                            CAMAÇARI<br />
-                            CASTRO ALVES<br />
-                            CATU<br />
-                            CÍCERO DANTAS<br />
-                            CIPÓ<br />
-                            COARACI<br />
-                            CONCEIÇÃO DO ALMEIDA
+                                ABAÍRA<br />
+                                ALAGOINHAS<br />
+                                ALMADINA<br />
+                                AMARGOSA<br />
+                                BRUMADO<br />
+                                CACHOEIRA<br />
+                                CABACEIRAS DE PARAGUAÇÚ<br />
+                                CAMAÇARI<br />
+                                CASTRO ALVES<br />
+                                CATU<br />
+                                CÍCERO DANTAS<br />
+                                CIPÓ<br />
+                                COARACI<br />
+                                CONCEIÇÃO DO ALMEIDA
                             </Typography>
                         </Box>
 
                         {/* Coluna da direita */}
-                        <Box sx={{ position: "relative"}}>
+                        <Box sx={{ position: "relative" }}>
                             <Typography
-                            id="modal-modal-title"
-                            sx={{
-                                color: "#F7EDDB",
-                                fontFamily: "Widescreen Ex Black",
-                                fontWeight: "bold",
-                                lineHeight: 1.8,
-                                whiteSpace: "pre-line",
-                                "@media (max-width:600px)": {
-                                    padding: "5px",
-                                    display: 'none'
-                                }
-                            }}
+                                id="modal-modal-title"
+                                sx={{
+                                    color: "#F7EDDB",
+                                    fontFamily: "Widescreen Ex Black",
+                                    fontWeight: "bold",
+                                    lineHeight: 1.8,
+                                    whiteSpace: "pre-line",
+                                    "@media (max-width:600px)": {
+                                        padding: "5px",
+                                        display: 'none'
+                                    }
+                                }}
                             >
-                            ENTRE RIOS<br />
-                            EUCLIDES DA CUNHA<br />
-                            FÁTIMA<br />
-                            HELIÓPOLIS<br />
-                            ITABUNA<br />
-                            ITAJU DO COLÔNIA<br />
-                            MADRE DE DEUS<br />
-                            NOVA SOURE<br />
-                            RIBEIRA DO AMPARO<br />
-                            SANTO ANTÔNIO DE JESUS<br />
-                            SÃO FELIPE<br />
-                            SAPEAÇU<br />
-                            TUCANO
+                                ENTRE RIOS<br />
+                                EUCLIDES DA CUNHA<br />
+                                FÁTIMA<br />
+                                HELIÓPOLIS<br />
+                                ITABUNA<br />
+                                ITAJU DO COLÔNIA<br />
+                                MADRE DE DEUS<br />
+                                NOVA SOURE<br />
+                                RIBEIRA DO AMPARO<br />
+                                SANTO ANTÔNIO DE JESUS<br />
+                                SÃO FELIPE<br />
+                                SAPEAÇU<br />
+                                TUCANO
                             </Typography>
                         </Box>
                     </Box>
@@ -903,25 +903,25 @@ const Home = () => {
 
             {/* inicio container pira */}
             <Box
-              component="section"
-              id="pira-section"
-              sx={{
-                backgroundImage: `url(${process.env.PUBLIC_URL}/images/sobrepirafundo.jpg)`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "top",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-evenly",
-                // px: { xs: 2, md: 18 },
-                position: "relative",
-                flexDirection: "column",
-                height: '100vh',
-                // mt: { xs: -8, md: -10 },
-                "@media (max-width:1644px)": {
-                  zIndex: 1,
-                },
-              }}
+                component="section"
+                id="pira-section"
+                sx={{
+                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/sobrepirafundo.jpg)`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    backgroundPosition: "top",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-evenly",
+                    // px: { xs: 2, md: 18 },
+                    position: "relative",
+                    flexDirection: "column",
+                    height: '100vh',
+                    // mt: { xs: -8, md: -10 },
+                    "@media (max-width:1644px)": {
+                        zIndex: 1,
+                    },
+                }}
             >
                 <Box sx={{
                     display: 'flex',
@@ -1004,114 +1004,215 @@ const Home = () => {
             <Box
                 component="section"
                 sx={{
-                  backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodapet.jpg)`,
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  position: "relative",
-                  height: "100vh",
-                   "@media (max-width:877px)": {
-                      // height: "120vh",
-                      backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste01.jpg)`,
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      height: "50vh",
+                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodapet.jpg)`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    position: "relative",
+                    height: "100vh",
+                    "@media (max-width:877px)": {
+                        // height: "120vh",
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste01.jpg)`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        height: "50vh",
                     }
                 }}
             >
-            
+
                 {/* cacto */}
                 <Box sx={{
                     display: 'flex',
                     justifyContent: 'right',
                     position: 'relative',
                     right: '250px',
-                    top: '70px',
-                    "@media (max-width:2165px)": {
-                        top: '200px',
-                        zIndex: 1
+                    top: '12vh', // Usando viewport height
+                    zIndex: 1,
+
+                    // Tablets e desktops grandes
+                    "@media (max-width: 1920px)": {
+                        top: '15vh', // 5% da altura da tela
+                        right: '250px',
                     },
-                    "@media (max-width:1920px)": {
-                        top: '280px',
-                        zIndex: 1
+
+                    "@media (max-width: 1920px) and (max-height: 1250px)": {
+                        top: '150px', // Reduz o top para telas mais baixas
                     },
-                    "@media (min-width:1722px)": {
-                        top: '260px',
-                        zIndex: 1
+                    
+                    "@media (max-width: 1920px) and (max-height: 790px)": {
+                        top: '50px', // Reduz o top para telas mais baixas
                     },
-                     "@media (max-width:1718px)": {
-                        top: '260px',
-                        zIndex: 1
+
+                    // Desktops médios
+                    "@media (max-width: 1600px)": {
+                        top: '18vh',
+                        right: '280px',
                     },
-                    "@media (max-width:1477px)": {
-                        right: '350px',
-                        zIndex: 1
+
+                    "@media (max-width: 1600px) and (max-height: 790px)": {
+                        top: '50px', // Reduz o top para telas mais baixas
                     },
-                    "@media (max-width:1443px)": {
-                        top: '90px',
-                        zIndex: 1
+                    "@media (max-width: 1600px) and (max-height: 840px)": {
+                        top: '80px', // Reduz o top para telas mais baixas
                     },
-                    "@media (max-width:1217px)": {
-                        top: '190px',
-                        zIndex: 1
-                    },
-                    "@media (min-width:1225px)": {
-                        top: '-30px',
-                        zIndex: 1
-                    },
-                    "@media (max-width:1176px)": {
-                        top: '10px',
-                        zIndex: 1
-                    },
-                    "@media (min-width:1000px)": {
-                        left: '-150px',
-                        zIndex: 1
-                    },
-                    "@media (min-width:901px)": {
+
+                    // Laptops grandes
+                    "@media (max-width: 1440px)": {
+                        top: '15vh',
+                        right: '200px',
                         left: '-50px',
-                        zIndex: 1
                     },
-                    "@media (max-width:900px)": {
-                        top: '240px',
-                        left: '-150px',
-                        zIndex: 1
+
+                    // Ajustes para telas com altura menor
+                    "@media (max-width: 1440px) and (max-height: 800px)": {
+                        top: '50px', // Reduz o top para telas mais baixas
                     },
-                    "@media (max-width:897px)": {
-                        top: '240px',
-                        left: '-150px',
-                        zIndex: 1
+
+                    "@media (max-width: 1440px) and (max-height: 600px)": {
+                        top: '40px', // Ainda menos para telas muito baixas
                     },
-                    "@media (max-width:895px)": {
-                        top: '240px',
-                        left: '-150px',
-                        zIndex: 1
-                    },
-                    "@media (max-width:889px)": {
-                        top: '240px',
-                        left: '-150px',
-                        zIndex: 1
-                    },
-                    "@media (max-width:885px)": {
-                        top: '230px',
-                        left: '-150px',
-                        zIndex: 1
-                    },
-                    "@media (max-width:881px)": {
-                        top: '230px',
-                        left: '-150px',
-                        zIndex: 1
-                    },
-                    "@media (max-width:879px)": {
-                        top: '-260px',
+
+                    // Laptops médios
+                    "@media (max-width: 1200px)": {
+                        top: '16vh',
+                        right: 'auto',
                         left: '-50px',
-                        zIndex: 1
                     },
-                    "@media (max-width:716px)": {
+
+                    "@media (max-width: 1200px) and (max-height: 790px)": {
+                        top: '40px', // Reduz o top para telas mais baixas
+                    },
+
+                    // Tablets landscape
+                    "@media (max-width: 1024px)": {
+                        top: '18vh',
+                        left: '-80px',
+                        right: 'auto',
+                    },
+
+                    "@media (max-width: 1024px) and (max-height: 790px)": {
+                        top: '50px', // Reduz o top para telas mais baixas
+                    },
+
+                    // Tablets portrait e mobile landscape
+                    "@media (max-width: 900px)": {
+                        top: '20vh',
+                        left: '-120px',
+                        right: 'auto',
+                    },
+
+                     "@media (max-width: 900px) and (max-height: 790px)": {
+                        top: '70px', // Reduz o top para telas mais baixas
+                    },
+
+                    // Mobile portrait - esconder o cacto
+                    "@media (max-width: 768px)": {
                         display: 'none'
                     },
+                    // display: 'flex',
+                    // justifyContent: 'right',
+                    // position: 'relative',
+                    // right: '250px',
+                    // top: '70px',
+                    // "@media (max-width:2165px)": {
+                    //     top: '200px',
+                    //     zIndex: 1
+                    // },
+                    // "@media (max-width:1920px)": {
+                    //     top: '280px',
+                    //     zIndex: 1
+                    // },
+                    // // "@media (min-width:1722px)": {
+                    // //     top: '260px',
+                    // //     zIndex: 1
+                    // // },
+                    //  "@media (max-width:1718px)": {
+                    //     top: '260px',
+                    //     zIndex: 1
+                    // },
+                    // "@media (max-width:1477px)": {
+                    //     right: '350px',
+                    //     zIndex: 1
+                    // },
+                    // "@media (max-width:1443px)": {
+                    //     top: '40px',
+                    //     left: '-50px',
+                    //     zIndex: 1
+
+                    // },
+                    // "@media (max-width:1217px)": {
+                    //     top: '50px',
+
+                    //     zIndex: 1
+                    // },
+                    // // "@media (min-width:1225px)": {
+                    // //     top: '-30px',
+                    // //     zIndex: 1,
+                    // //     border: '1px solid blue',
+                    // // },
+                    // "@media (max-width:1176px)": {
+                    //     top: '60px',
+                    //     left: '-50px',
+                    //     zIndex: 1
+                    // },
+                    // "@media (max-width:1000px)": {
+                    //     top: '90px',
+                    //     left: '-50px',
+                    //     zIndex: 1
+                    // },
+                    // // "@media (min-width:901px)": {
+                    // //     top: '90px',
+                    // //     left: '-50px',
+                    // //     zIndex: 1,
+                    // //     border: '1px solid red',
+                    // // },
+                    // "@media (max-width:900px)": {
+                    //     top: '100px',
+                    //     left: '-150px',
+                    //     zIndex: 1
+                    // },
+                    // "@media (max-width:897px)": {
+                    //     top: '100px',
+                    //     left: '-150px',
+                    //     zIndex: 1
+                    // },
+                    // "@media (max-width:895px)": {
+                    //     top: '100px',
+                    //     left: '-150px',
+                    //     zIndex: 1
+                    // },
+                    // "@media (max-width:889px)": {
+                    //     top: '100px',
+                    //     left: '-150px',
+                    //     zIndex: 1
+                    // },
+                    // "@media (max-width:885px)": {
+                    //     top: '100px',
+                    //     left: '-150px',
+                    //     zIndex: 1
+                    // },
+                    // "@media (max-width:881px)": {
+                    //     top: '150px',
+                    //     left: '-150px',
+                    //     zIndex: 1
+                    // },
+                    // "@media (max-width:879px)": {
+                    //     top: '150px',
+                    //     left: '-50px',
+                    //     zIndex: 1
+                    // },
+                    // "@media (max-width:878px)": {
+                    //     top: '150px',
+                    //     left: '-50px',
+                    //     zIndex: 1,
+                    //     border: '1px solid red',
+                    // },
+                    // "@media (max-width:716px)": {
+                    //     display: 'none'
+                    // },
                 }}>
-                    <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto"  />
+                    <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" />
                 </Box>
 
                 <Box
