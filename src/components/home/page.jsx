@@ -736,16 +736,53 @@ const Home = () => {
                             paddingY: "40px",
                         }}
                     >
+                        <div
+                            className="instagram-embed"
+                            style={{
+                                background: "#000000",
+                                padding: "15px",
+                                borderRadius: "15px",
+                                height: '43vh',
+                                width: '91%',
+                                overflow: "hidden"
+                            }}
+                        >
+                            <Box sx={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                                marginBottom: '10px',
+                                gap: '10px'
+                            }}
+                            >
+                                <Box>
+                                    <img
+                                        src={process.env.PUBLIC_URL + "/images/YOUTUBE.png"}
+                                        width={100}
+                                        alt="INSTAGRAM"
+                                    />
+                                </Box>
+                                <Box>
+                                    <img
+                                        src={process.env.PUBLIC_URL + "/images/ICON YOUTUBE.png"}
+                                        width={25}
+                                        alt="Icone instagram"
+                                    />
+                                </Box>
 
-                        <img
-                            src={
-                                process.env.PUBLIC_URL +
-                                "/images/retangulo_horizontal_rede_social.png"
-                            }
-                            className="youtube"
-                            alt="Youtube"
-                            width="66%"
-                        />
+                            </Box>
+    
+                            <img
+                                src={
+                                    process.env.PUBLIC_URL +
+                                    "/images/banner_youtube.jpg"
+                                }
+                                className="youtube"
+                                alt="Youtube"
+                                width="100%"
+                                height="85%"
+                            />
+                        </div>
                     </Box>
                 </Box>
             </Box>
