@@ -1047,8 +1047,40 @@ const Home = () => {
                     backgroundPosition: "center",
                     position: "relative",
                     height: "100vh",
-                    "@media (max-width:877px)": {
-                        // height: "120vh",
+                   
+                    "@media (max-width: 4511px)": {
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_gigante.jpg)`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "100% 100%",
+                        backgroundPosition: "center",
+                        position: "relative",
+                        height: "100vh"
+                    },
+                    "@media (max-width: 3221px)": {
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_adaptado3.jpg)`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "100% 100%",
+                        backgroundPosition: "center",
+                        position: "relative",
+                        height: "100vh"
+                    },
+                    "@media (max-width: 2071px)": {
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste1.jpg)`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "100% 100%",
+                        backgroundPosition: "center",
+                        position: "relative",
+                        height: "100vh"
+                    },
+                    "@media (max-width: 1532px)": {
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste5.jpg)`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "container",
+                        backgroundPosition: "center",
+                        position: "relative",
+                        height: "100vh"
+                    },
+                     "@media (max-width:928px)": {
                         backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste01.jpg)`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
@@ -1057,8 +1089,9 @@ const Home = () => {
                     }
                 }}
             >
+                
 
-                {/* cacto */}
+                {/* cacto
                 <Box sx={{
                     display: 'flex',
                     justifyContent: 'right',
@@ -1147,110 +1180,10 @@ const Home = () => {
                     "@media (max-width: 768px)": {
                         display: 'none'
                     },
-                    // display: 'flex',
-                    // justifyContent: 'right',
-                    // position: 'relative',
-                    // right: '250px',
-                    // top: '70px',
-                    // "@media (max-width:2165px)": {
-                    //     top: '200px',
-                    //     zIndex: 1
-                    // },
-                    // "@media (max-width:1920px)": {
-                    //     top: '280px',
-                    //     zIndex: 1
-                    // },
-                    // // "@media (min-width:1722px)": {
-                    // //     top: '260px',
-                    // //     zIndex: 1
-                    // // },
-                    //  "@media (max-width:1718px)": {
-                    //     top: '260px',
-                    //     zIndex: 1
-                    // },
-                    // "@media (max-width:1477px)": {
-                    //     right: '350px',
-                    //     zIndex: 1
-                    // },
-                    // "@media (max-width:1443px)": {
-                    //     top: '40px',
-                    //     left: '-50px',
-                    //     zIndex: 1
-
-                    // },
-                    // "@media (max-width:1217px)": {
-                    //     top: '50px',
-
-                    //     zIndex: 1
-                    // },
-                    // // "@media (min-width:1225px)": {
-                    // //     top: '-30px',
-                    // //     zIndex: 1,
-                    // //     border: '1px solid blue',
-                    // // },
-                    // "@media (max-width:1176px)": {
-                    //     top: '60px',
-                    //     left: '-50px',
-                    //     zIndex: 1
-                    // },
-                    // "@media (max-width:1000px)": {
-                    //     top: '90px',
-                    //     left: '-50px',
-                    //     zIndex: 1
-                    // },
-                    // // "@media (min-width:901px)": {
-                    // //     top: '90px',
-                    // //     left: '-50px',
-                    // //     zIndex: 1,
-                    // //     border: '1px solid red',
-                    // // },
-                    // "@media (max-width:900px)": {
-                    //     top: '100px',
-                    //     left: '-150px',
-                    //     zIndex: 1
-                    // },
-                    // "@media (max-width:897px)": {
-                    //     top: '100px',
-                    //     left: '-150px',
-                    //     zIndex: 1
-                    // },
-                    // "@media (max-width:895px)": {
-                    //     top: '100px',
-                    //     left: '-150px',
-                    //     zIndex: 1
-                    // },
-                    // "@media (max-width:889px)": {
-                    //     top: '100px',
-                    //     left: '-150px',
-                    //     zIndex: 1
-                    // },
-                    // "@media (max-width:885px)": {
-                    //     top: '100px',
-                    //     left: '-150px',
-                    //     zIndex: 1
-                    // },
-                    // "@media (max-width:881px)": {
-                    //     top: '150px',
-                    //     left: '-150px',
-                    //     zIndex: 1
-                    // },
-                    // "@media (max-width:879px)": {
-                    //     top: '150px',
-                    //     left: '-50px',
-                    //     zIndex: 1
-                    // },
-                    // "@media (max-width:878px)": {
-                    //     top: '150px',
-                    //     left: '-50px',
-                    //     zIndex: 1,
-                    //     border: '1px solid red',
-                    // },
-                    // "@media (max-width:716px)": {
-                    //     display: 'none'
-                    // },
+                    
                 }}>
                     <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" />
-                </Box>
+                </Box> */}
 
                 <Box
                     sx={{
@@ -1328,28 +1261,6 @@ const Home = () => {
                             width={320}
                         />
                     </Box>
-
-                    {/* <Box sx={{
-                        display: 'none',
-                        "@media (max-width:877px)": {
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'end',
-                            width: '100%',
-                            height: '100vh',
-                            position: 'relative',
-                            top: '100px',
-                        }
-                    }}>
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/rodape.svg"}
-                            alt="Diga não ao Racismo"
-                            style={{
-                                width: '1500px',
-                                height: '900px'
-                            }}
-                        />
-                    </Box> */}
 
                 </Box>
 
