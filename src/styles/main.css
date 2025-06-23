@@ -1,36 +1,36 @@
 @font-face {
-  font-family: 'Widescreen Ex Black';
-  src: url('../widescreen-ex-black.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Widescreen Ex Black';
+    src: url('../widescreen-ex-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 .logo-image {
-  width: 170px;
+    width: 170px;
 }
 
-.logo-texto-pira{
+.logo-texto-pira {
     width: 440px;
     height: 260px;
 }
 
-.imgbandeirinhadireito{
+.imgbandeirinhadireito {
     width: '100px';
     border: '1px solid red';
 }
 
- .diganaoracismo{
+.diganaoracismo {
     width: '320px'
 }
 
 @media (max-width: 344px) {
 
-    .container-tradicao-texto{
+    .container-tradicao-texto {
         display: flex;
     }
 
-    .imagem-texto{
+    .imagem-texto {
         width: 329px;
     }
 
@@ -38,34 +38,47 @@
 
 @media (max-width: 391px) {
 
-    .logo-texto-pira{
+    .logo-texto-pira {
         width: 300px;
     }
 
-    .imagem-texto{
+    .imagem-texto {
         min-width: "100px";
-        min-height:"100px";
+        min-height: "100px";
     }
 }
 
 @media (max-width: 459px) {
 
-    .logo-texto-pira{
+    .logo-texto-pira {
         width: 370px;
-        height: 280px;  
+        height: 280px;
     }
 }
 
 @media (max-width: 883px) {
 
-    .diganaoracismo{
+    .diganaoracismo {
         width: '50px'
     }
 }
 
 @media (max-width: 1345px) {
 
-    .youtube{
+    .youtube {
         width: '78%'
+    }
+}
+
+.video_youtube {
+    width: 680px;
+    height: 315px;
+}
+
+@media (max-width: 730px) {
+
+    .video_youtube {
+        width: 300px;
+        height: 315px;
     }
 }

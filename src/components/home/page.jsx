@@ -205,7 +205,7 @@ const Home = () => {
                     px: { xs: 2, md: 18 },
                     position: "relative",
                     flexDirection: "column",
-                    // height: "140vh",
+                    height: "110vh",
                     padding: "280px 0 0 0",
                     "@media (max-width:746px)": {
                         padding: "0 0 0 0",
@@ -808,7 +808,7 @@ const Home = () => {
 
                             </Box>
 
-                            <img
+                            {/* <img
                                 src={
                                     process.env.PUBLIC_URL +
                                     "/images/banner_youtube.jpg"
@@ -817,7 +817,13 @@ const Home = () => {
                                 alt="Youtube"
                                 width="100%"
                                 height="85%"
-                            />
+                            /> */}
+
+                            <div>
+                                <iframe className="video_youtube"  src="https://www.youtube.com/embed/8NdVcZE9B4o?si=IANj6FtOwBtvQtF5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+
                         </div>
                     </Box>
                 </Box>
@@ -1016,7 +1022,8 @@ const Home = () => {
                         display: "flex",
                         flexDirection: "column",
                         gap: "45px",
-                        zIndex: 1
+                        zIndex: 1,
+                        margin: "8px",
                     }}
                 >
                     {/* sobre a pira */}
@@ -1083,143 +1090,44 @@ const Home = () => {
                     backgroundPosition: "center",
                     position: "relative",
                     height: "100vh",
+                    marginTop: '-316px',
 
-                    "@media (max-width: 4511px)": {
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_gigante.jpg)`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "100% 100%",
-                        backgroundPosition: "center",
-                        position: "relative",
-                        height: "100vh"
-                    },
-                    "@media (max-width: 3221px)": {
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_adaptado3.jpg)`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "100% 100%",
-                        backgroundPosition: "center",
-                        position: "relative",
-                        height: "100vh"
-                    },
-                    "@media (max-width: 2071px)": {
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste1.jpg)`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "100% 100%",
-                        backgroundPosition: "center",
-                        position: "relative",
-                        height: "100vh"
-                    },
-                    "@media (max-width: 1532px)": {
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste5.jpg)`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "container",
-                        backgroundPosition: "center",
-                        position: "relative",
-                        height: "100vh"
-                    },
-                    "@media (max-width:928px)": {
+
+                    "@media (max-width:877px)": {
+                        // height: "120vh",
                         backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste01.jpg)`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         height: "50vh",
+                        marginTop: '0',
                     }
                 }}
             >
 
+                <Box
+                    id="cacto-anchor"
+                    sx={{
+                        position: "absolute",
+                        top: "45%", // ajuste esse valor até bater com a "curva verde"
+                        left: "0",
+                        width: "100%",
+                        height: "1px", // invisível
+                    }}
+                />
 
-                {/* cacto
                 <Box sx={{
-                    display: 'flex',
-                    justifyContent: 'right',
-                    position: 'relative',
-                    right: '250px',
-                    top: '12vh', // Usando viewport height
+                    position: 'absolute',
+                    top: 'calc(40% - 265px)', // mesmo valor da âncora menos metade da altura do cacto
+                    right: '1%',
+                    width: '200px',
                     zIndex: 1,
-
-                    // Tablets e desktops grandes
-                    "@media (max-width: 1920px)": {
-                        top: '15vh', // 5% da altura da tela
-                        right: '250px',
-                    },
-
-                    "@media (max-width: 1920px) and (max-height: 1250px)": {
-                        top: '150px', // Reduz o top para telas mais baixas
-                    },
-                    
-                    "@media (max-width: 1920px) and (max-height: 790px)": {
-                        top: '50px', // Reduz o top para telas mais baixas
-                    },
-
-                    // Desktops médios
-                    "@media (max-width: 1600px)": {
-                        top: '18vh',
-                        right: '280px',
-                    },
-
-                    "@media (max-width: 1600px) and (max-height: 790px)": {
-                        top: '50px', // Reduz o top para telas mais baixas
-                    },
-                    "@media (max-width: 1600px) and (max-height: 840px)": {
-                        top: '80px', // Reduz o top para telas mais baixas
-                    },
-
-                    // Laptops grandes
-                    "@media (max-width: 1440px)": {
-                        top: '15vh',
-                        right: '200px',
-                        left: '-50px',
-                    },
-
-                    // Ajustes para telas com altura menor
-                    "@media (max-width: 1440px) and (max-height: 800px)": {
-                        top: '50px', // Reduz o top para telas mais baixas
-                    },
-
-                    "@media (max-width: 1440px) and (max-height: 600px)": {
-                        top: '40px', // Ainda menos para telas muito baixas
-                    },
-
-                    // Laptops médios
-                    "@media (max-width: 1200px)": {
-                        top: '16vh',
-                        right: 'auto',
-                        left: '-50px',
-                    },
-
-                    "@media (max-width: 1200px) and (max-height: 790px)": {
-                        top: '40px', // Reduz o top para telas mais baixas
-                    },
-
-                    // Tablets landscape
-                    "@media (max-width: 1024px)": {
-                        top: '18vh',
-                        left: '-80px',
-                        right: 'auto',
-                    },
-
-                    "@media (max-width: 1024px) and (max-height: 790px)": {
-                        top: '50px', // Reduz o top para telas mais baixas
-                    },
-
-                    // Tablets portrait e mobile landscape
-                    "@media (max-width: 900px)": {
-                        top: '20vh',
-                        left: '-120px',
-                        right: 'auto',
-                    },
-
-                     "@media (max-width: 900px) and (max-height: 790px)": {
-                        top: '70px', // Reduz o top para telas mais baixas
-                    },
-
-                    // Mobile portrait - esconder o cacto
-                    "@media (max-width: 768px)": {
+                    "@media (max-width: 1111px)": {
                         display: 'none'
                     },
-                    
                 }}>
                     <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" />
-                </Box> */}
+                </Box>
 
                 <Box
                     sx={{
