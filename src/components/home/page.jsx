@@ -205,7 +205,7 @@ const Home = () => {
                     px: { xs: 2, md: 18 },
                     position: "relative",
                     flexDirection: "column",
-                    height: "110vh",
+                    height: "135vh",
                     padding: "280px 0 0 0",
                     "@media (max-width:746px)": {
                         padding: "0 0 0 0",
