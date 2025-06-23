@@ -78,7 +78,7 @@ const Home = () => {
                     justifyContent: "space-evenly",
                     alignItems: "center",
                     background: "#FEF5E6",
-                    "@media (max-width:746px)": {
+                    "@media (max-width:790px)": {
                         display: "flex",
                         flexDirection: "column",
                     },
@@ -136,7 +136,7 @@ const Home = () => {
                         gap: "18px",
                         borderRadius: "20px",
                         padding: "50px 30px 50px 30px",
-                        "@media (max-width:746px)": {
+                        "@media (max-width:790px)": {
                             flexDirection: "row",
                             marginTop: "25px",
                             padding: "15px 30px 15px 30px",
@@ -205,7 +205,7 @@ const Home = () => {
                     px: { xs: 2, md: 18 },
                     position: "relative",
                     flexDirection: "column",
-                    height: "140vh",
+                    // height: "140vh",
                     padding: "280px 0 0 0",
                     "@media (max-width:746px)": {
                         padding: "0 0 0 0",
@@ -227,11 +227,36 @@ const Home = () => {
                     <Box
                         sx={{
                             position: "relative",
-                            bottom: "48px",
-                            "@media (max-width:746px)": {
-                                top: "75px",
+                            bottom: "70px",
+                            "@media (min-width:1025px) and (max-width:1080px)": {
+                                top: "-25px",
+                            },
+                            "@media (min-width:960px) and (max-width:1025px)": {
+                                top: "-25px",
+                            },
+                            "@media (min-width:900px) and (max-width:960px)": {
+                                top: "-5px",
+                            },
+                            "@media (min-width:830px) and (max-width:900px)": {
+                                top: "-45px",
+                            },
+                            "@media (min-width:746px) and (max-width:830px)": {
+                                top: "-30px",
+                            },
+                            "@media (min-width:728px) and (max-width:746px)": {
+                                top: "70px",
                                 right: '60px',
-                                rotate: '-5deg'
+                                rotate: '-5deg',
+                            },
+                            "@media (min-width:340px) and (max-width:422px)": {
+                                top: "75px",
+                                right: '0px',
+                                rotate: '-5deg',
+                            },
+                            "@media (min-width:422px) and (max-width:728px)": {
+                                top: "70px",
+                                right: '0px',
+                                rotate: '-5deg',
                             }
                         }}
                     >
@@ -246,10 +271,10 @@ const Home = () => {
                     <Box
                         sx={{
                             position: "relative",
-                            bottom: "-15px",
+                            bottom: "-5px",
                             "@media (max-width:746px)": {
                                 left: "400px",
-                                rotate: '-5deg'
+                                rotate: '-5deg',
                             }
                         }}
                     >
@@ -264,10 +289,15 @@ const Home = () => {
                     <Box
                         sx={{
                             position: "relative",
-                            bottom: "30px",
+                            bottom: "40px",
                             "@media (max-width:746px)": {
                                 top: "160px",
-                                right: '100px',
+                                right: '90px',
+                                rotate: '-5deg'
+                            },
+                            "@media (max-width:554px)": {
+                                top: "180px",
+                                right: '50px',
                                 rotate: '-5deg'
                             }
                         }}
@@ -283,7 +313,7 @@ const Home = () => {
                     <Box
                         sx={{
                             position: "relative",
-                            bottom: "55px",
+                            bottom: "60px",
                             "@media (max-width:746px)": {
                                 top: "195px",
                                 rotate: '-5deg'
@@ -308,7 +338,10 @@ const Home = () => {
                         justifyContent: "center",
                         alignItems: "center",
                         "@media (max-width:750px)": {
-                            zIndex: 1
+                            zIndex: 1,
+                            margin: "5px",
+                            position: "relative",
+                            top: "40px",
                         }
                     }}
                 >
@@ -321,7 +354,10 @@ const Home = () => {
                             gap: "60px",
                             padding: "30px",
                             border: '2px dashed #63533B',
-                            borderRadius: "20px"
+                            borderRadius: "20px",
+                            "@media (max-width:420px)": {
+                                padding: "0",
+                            }
                         }}
                     >
                         {/* cto spotify */}
@@ -356,7 +392,7 @@ const Home = () => {
                         {/* play na musica */}
                         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
                             <iframe
-                                style={{ borderRadius: "12px" }}
+                                style={{ borderRadius: "20px" }}
                                 src={spotifyEmbedUrl}
                                 width="100%"
                                 height="85"
@@ -379,7 +415,7 @@ const Home = () => {
                         display: "flex",
                         justifyContent: "space-around",
                         alignItems: "center",
-                        padding: "5rem",
+                        padding: "4rem",
                         gap: "15px",
                     }}
                 >
@@ -771,7 +807,7 @@ const Home = () => {
                                 </Box>
 
                             </Box>
-    
+
                             <img
                                 src={
                                     process.env.PUBLIC_URL +
@@ -823,7 +859,7 @@ const Home = () => {
                         sx={{
                             display: "flex",
                             justifyContent: "center",
-                            padding: "150px 0 0 100px",
+                            padding: "50px 0 0 100px",
                             gap: "40px",
                             "@media (max-width:435px)": {
                                 gap: "20px",
@@ -1047,7 +1083,7 @@ const Home = () => {
                     backgroundPosition: "center",
                     position: "relative",
                     height: "100vh",
-                   
+
                     "@media (max-width: 4511px)": {
                         backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_gigante.jpg)`,
                         backgroundRepeat: "no-repeat",
@@ -1080,7 +1116,7 @@ const Home = () => {
                         position: "relative",
                         height: "100vh"
                     },
-                     "@media (max-width:928px)": {
+                    "@media (max-width:928px)": {
                         backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste01.jpg)`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
@@ -1089,7 +1125,7 @@ const Home = () => {
                     }
                 }}
             >
-                
+
 
                 {/* cacto
                 <Box sx={{
