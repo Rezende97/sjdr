@@ -524,7 +524,7 @@ const Home = () => {
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
-                            gap: "10px",
+                            gap: "20px",
                             "@media (max-width:746px)": {
                                 display: "flex",
                                 flexDirection: "column",
@@ -733,7 +733,7 @@ const Home = () => {
                         sx={{
                             display: "flex",
                             justifyContent: "center",
-                            paddingY: "40px",
+                            paddingY: "30px",
                         }}
                     >
                         <div
@@ -742,8 +742,8 @@ const Home = () => {
                                 background: "#000000",
                                 padding: "15px",
                                 borderRadius: "15px",
-                                height: '43vh',
-                                width: '91%',
+                                // height: '43vh',
+                                // width: '91%',
                                 overflow: "hidden"
                             }}
                         >
