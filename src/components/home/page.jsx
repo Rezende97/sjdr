@@ -1090,7 +1090,7 @@ const Home = () => {
                     backgroundPosition: "center",
                     position: "relative",
                     height: "100vh",
-                    marginTop: '-316px',
+                    marginTop: '-150px',
 
 
                     "@media (max-width:877px)": {
