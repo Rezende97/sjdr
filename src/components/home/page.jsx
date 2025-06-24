@@ -820,7 +820,7 @@ const Home = () => {
                             /> */} 
 
                             <div>
-                                <iframe className="video_youtube" src="https://www.youtube.com/embed/xiVGqKA35IE?si=Q_4Il59jvdZ8UYG_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe className="video_youtube" src="https://www.youtube.com/embed/j6RLfdbGQgA?si=HoTUyG8XGOyMm-vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
 
 
