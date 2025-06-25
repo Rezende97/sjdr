@@ -140,6 +140,7 @@ const Home = () => {
                             flexDirection: "row",
                             marginTop: "25px",
                             padding: "15px 30px 15px 30px",
+                            zIndex: 1
                         },
                     }}
                 >
@@ -195,7 +196,7 @@ const Home = () => {
             <Box
                 component="section"
                 sx={{
-                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/inicio-main.jpg)`,
+                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/main_t2.jpg)`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
@@ -213,6 +214,7 @@ const Home = () => {
                     },
                 }}
             >
+
                 <Box
                     sx={{
                         display: "flex",
@@ -227,37 +229,41 @@ const Home = () => {
                     <Box
                         sx={{
                             position: "relative",
-                            bottom: "70px",
-                            "@media (min-width:1025px) and (max-width:1080px)": {
-                                top: "-25px",
+                            bottom: "140px",
+                            "@media (min-width:1646px) and (max-width:2633px)": {
+                                top: "-195px",
                             },
-                            "@media (min-width:960px) and (max-width:1025px)": {
-                                top: "-25px",
+                            "@media (min-width:1025px) and (max-width:1092px)": {
+                                top: "-135px",
                             },
-                            "@media (min-width:900px) and (max-width:960px)": {
-                                top: "-5px",
+                            // "@media (min-width:960px) and (max-width:1025px)": {
+                            //     top: "-135px",
+                            // },
+                            // "@media (min-width:900px) and (max-width:960px)": {
+                            //     top: "-5px",
+                            // },
+                            // "@media (min-width:830px) and (max-width:900px)": {
+                            //     top: "-45px",
+                            // },
+                            "@media (min-width:746px) and (max-width:839px)": {
+                                top: "-134px",
                             },
-                            "@media (min-width:830px) and (max-width:900px)": {
-                                top: "-45px",
-                            },
-                            "@media (min-width:746px) and (max-width:830px)": {
-                                top: "-30px",
-                            },
-                            "@media (min-width:728px) and (max-width:746px)": {
-                                top: "70px",
-                                right: '60px',
+                            "@media (min-width:340px) and (max-width:746px)": {
+                                top: "-9px",
+                                right: '-5px',
                                 rotate: '-5deg',
+                                zIndex: 0
                             },
-                            "@media (min-width:340px) and (max-width:422px)": {
-                                top: "75px",
-                                right: '0px',
-                                rotate: '-5deg',
-                            },
-                            "@media (min-width:422px) and (max-width:728px)": {
-                                top: "70px",
-                                right: '0px',
-                                rotate: '-5deg',
-                            }
+                            // "@media (min-width:340px) and (max-width:422px)": {
+                            //     top: "75px",
+                            //     right: '0px',
+                            //     rotate: '-5deg',
+                            // },
+                            // "@media (min-width:422px) and (max-width:728px)": {
+                            //     top: "70px",
+                            //     right: '0px',
+                            //     rotate: '-5deg',
+                            // }
                         }}
                     >
                         <img
@@ -271,7 +277,7 @@ const Home = () => {
                     <Box
                         sx={{
                             position: "relative",
-                            bottom: "-5px",
+                            bottom: "95px",
                             "@media (max-width:746px)": {
                                 left: "400px",
                                 rotate: '-5deg',
@@ -289,7 +295,7 @@ const Home = () => {
                     <Box
                         sx={{
                             position: "relative",
-                            bottom: "40px",
+                            bottom: "120px",
                             "@media (max-width:746px)": {
                                 top: "160px",
                                 right: '90px',
@@ -313,7 +319,8 @@ const Home = () => {
                     <Box
                         sx={{
                             position: "relative",
-                            bottom: "60px",
+                            bottom: "150px",
+                            left: '100px',
                             "@media (max-width:746px)": {
                                 top: "195px",
                                 rotate: '-5deg'
@@ -327,85 +334,87 @@ const Home = () => {
                         />
                     </Box>
                 </Box>
-
-                {/* inicio container spotify musica */}
-                <Box
-                    sx={{
-                        background: "#231F20",
-                        padding: '15px',
-                        borderRadius: "20px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        "@media (max-width:750px)": {
-                            zIndex: 1,
-                            margin: "5px",
-                            position: "relative",
-                            top: "40px",
-                        }
-                    }}
-                >
-                    {/* container central */}
+                
+           
+                    {/* inicio container spotify musica */}
                     <Box
                         sx={{
+                            background: "#231F20",
+                            padding: '15px',
+                            borderRadius: "20px",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
-                            gap: "60px",
-                            padding: "30px",
-                            border: '2px dashed #63533B',
-                            borderRadius: "20px",
-                            "@media (max-width:420px)": {
-                                padding: "0",
+                            "@media (max-width:750px)": {
+                                zIndex: 1,
+                                margin: "5px",
+                                position: "relative",
+                                top: "40px",
                             }
                         }}
                     >
-                        {/* cto spotify */}
+                        {/* container central */}
                         <Box
                             sx={{
                                 display: "flex",
-                                justifyContent: "left",
-                                flexDirection: "column",
-                                gap: "10px",
-                                "@media (max-width:746px)": {
-                                    display: "none",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                gap: "60px",
+                                padding: "30px",
+                                border: '2px dashed #63533B',
+                                borderRadius: "20px",
+                                width: '100%',
+                                "@media (max-width:420px)": {
+                                    padding: "0",
                                 }
                             }}
                         >
+                            {/* cto spotify */}
+                            <Box
+                                sx={{
+                                    display: "flex",
+                                    justifyContent: "left",
+                                    flexDirection: "column",
+                                    gap: "10px",
+                                    "@media (max-width:746px)": {
+                                        display: "none",
+                                    }
+                                }}
+                            >
 
-                            <img
-                                src={process.env.PUBLIC_URL + "/images/confira_playlist.png"}
-                                width={110}
-                                alt="Confira Playlist"
-                            />
+                                <img
+                                    src={process.env.PUBLIC_URL + "/images/confira_playlist.png"}
+                                    width={110}
+                                    alt="Confira Playlist"
+                                />
 
-                            <img
-                                src={
-                                    process.env.PUBLIC_URL +
-                                    "/images/Spotify_logo_with_text.svg.png"
-                                }
-                                width={90}
-                                alt="Sportify"
-                            />
-                        </Box>
+                                <img
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        "/images/Spotify_logo_with_text.svg.png"
+                                    }
+                                    width={90}
+                                    alt="Sportify"
+                                />
+                            </Box>
 
-                        {/* play na musica */}
-                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
-                            <iframe
-                                style={{ borderRadius: "20px" }}
-                                src={spotifyEmbedUrl}
-                                width="100%"
-                                height="85"
-                                frameBorder="0"
-                                allowFullScreen=""
-                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                loading="lazy"
-                                title="Player de música do Spotify"
-                            />
+                            {/* play na musica */}
+                            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
+                                <iframe
+                                    style={{ borderRadius: "20px" }}
+                                    src={spotifyEmbedUrl}
+                                    width="100%"
+                                    height="85"
+                                    frameBorder="0"
+                                    allowFullScreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"
+                                    title="Player de música do Spotify"
+                                />
+                            </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* fim container spotify musica */}
+                    {/* fim container spotify musica */}
 
                 {/* inicio container tradição boa de viver */}
                 <Box
