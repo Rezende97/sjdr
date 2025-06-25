@@ -53,7 +53,7 @@ const Header = () => {
       <Box
         component="header"
         sx={{
-          backgroundImage: 'url("/images/header-fundo.jpg")',
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/header-fundo.jpg)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%',
           backgroundPosition: 'center',
@@ -95,16 +95,16 @@ const Header = () => {
             }}
           >
             <img
-              src="/images/ministerio_cultura_petrobras.png"
-              // src={process.env.PUBLIC_URL + '/images/ministerio_cultura_petrobras.png'}
+              // src="/images/ministerio_cultura_petrobras.png"
+              src={process.env.PUBLIC_URL + '/images/ministerio_cultura_petrobras.png'}
               alt="Ministério da Cultura"
               style={{ width: '100%', height: 'auto' }}
             />
           </Box>
           <Box sx={{ maxWidth: '150px' }}>
             <img
-              src="/images/logo_menu.png"
-              // src={process.env.PUBLIC_URL + '/images/logo_menu.png'}
+              // src="/images/logo_menu.png"
+              src={process.env.PUBLIC_URL + '/images/logo_menu.png'}
               alt="Logo"
               style={{ width: '100%', height: 'auto' }}
             />
@@ -175,7 +175,7 @@ const Header = () => {
             }
           }}
         >
-          <img src='/images/bandeirolas-esquerdo.png' alt='Bandeirinha' width={200} />
+          <img src={process.env.PUBLIC_URL + '/images/bandeirolas-esquerdo.png'} alt='Bandeirinha' width={200} />
         </Box>
 
         <Box
@@ -187,7 +187,7 @@ const Header = () => {
             }
           }}
         >
-          <img src='/images/bandeirolas-direito.png' alt='Bandeirinha' width={200}/>
+          <img src={process.env.PUBLIC_URL +'/images/bandeirolas-direito.png'} alt='Bandeirinha' width={200}/>
         </Box>
       </Box>
 
