@@ -210,9 +210,9 @@ const Home = () => {
                     "@media (max-width:2634px)": {
                         backgroundImage: `url(${process.env.PUBLIC_URL}/images/main05.jpg)`,
                     },
-                    "@media (max-width:746px)": {
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/main02.jpg)`,
-                    },
+                    // "@media (max-width:746px)": {
+                    //     backgroundImage: `url(${process.env.PUBLIC_URL}/images/main02.jpg)`,
+                    // },
                 }}
                 >
 
