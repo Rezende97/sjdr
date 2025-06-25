@@ -205,7 +205,7 @@ const Home = () => {
                     px: { xs: 2, md: 18 },
                     position: "relative",
                     flexDirection: "column",
-                    height: "160vh",
+                    height: "168vh",
                     gap: '30px',
                     "@media (max-width:746px)": {
                         padding: "0 0 0 0",
@@ -229,33 +229,48 @@ const Home = () => {
                             position: "relative",
                             bottom: "70px",
                             "@media (min-width:1025px) and (max-width:1080px)": {
-                                top: "-25px",
+                                top: "-55px",
                             },
                             "@media (min-width:960px) and (max-width:1025px)": {
-                                top: "-25px",
-                            },
-                            "@media (min-width:900px) and (max-width:960px)": {
-                                top: "-5px",
-                            },
-                            "@media (min-width:830px) and (max-width:900px)": {
                                 top: "-45px",
                             },
-                            "@media (min-width:746px) and (max-width:830px)": {
-                                top: "-30px",
+                            "@media (min-width:900px) and (max-width:981px)": {
+                                top: "-34px",
                             },
-                            "@media (min-width:728px) and (max-width:746px)": {
-                                top: "70px",
-                                right: '60px',
+                            "@media (min-width:800px) and (max-width:900px)": {
+                                top: "-65px",
+                            },
+                            "@media (min-width:746px) and (max-width:800px)": {
+                                top: "-50px",
+                            },
+                            "@media (max-width:746px)": {
+                                top: "-155px",
+                                right: '30px',
                                 rotate: '-5deg',
                             },
-                            "@media (min-width:340px) and (max-width:422px)": {
-                                top: "75px",
-                                right: '0px',
+                            "@media (min-width:687px) and (max-width:728px)": {
+                                top: "-160px",
+                                right: '-5px',
                                 rotate: '-5deg',
                             },
-                            "@media (min-width:422px) and (max-width:728px)": {
-                                top: "70px",
-                                right: '0px',
+                            "@media (min-width:500px) and (max-width:687px)": {
+                                top: "-167px",
+                                right: '-5px',
+                                rotate: '-5deg',
+                            },
+                            "@media (min-width:414px) and (max-width:430px)": {
+                                top: "-172px",
+                                right: '-5px',
+                                rotate: '-5deg',
+                            },
+                            "@media (min-width:375px) and (max-width:414px)": {
+                                top: "-172px",
+                                right: '-5px',
+                                rotate: '-5deg',
+                            },
+                            "@media (min-width:200px) and (max-width:375px)": {
+                                top: "-177px",
+                                right: '-5px',
                                 rotate: '-5deg',
                             }
                         }}
@@ -280,7 +295,7 @@ const Home = () => {
                     >
                         <img
                             src={process.env.PUBLIC_URL + "/images/flor-main.png"}
-                            alt="cacto"
+                            alt="flor"
                             width={85}
                         />
                     </Box>
@@ -291,12 +306,12 @@ const Home = () => {
                             position: "relative",
                             bottom: "40px",
                             "@media (max-width:746px)": {
-                                top: "160px",
+                                top: "-66px",
                                 right: '90px',
                                 rotate: '-5deg'
                             },
                             "@media (max-width:554px)": {
-                                top: "180px",
+                                top: "-60px",
                                 right: '50px',
                                 rotate: '-5deg'
                             }
@@ -304,7 +319,7 @@ const Home = () => {
                     >
                         <img
                             src={process.env.PUBLIC_URL + "/images/cobra.png"}
-                            alt="cacto"
+                            alt="cobra"
                             width={149}
                         />
                     </Box>
@@ -315,7 +330,7 @@ const Home = () => {
                             position: "relative",
                             bottom: "60px",
                             "@media (max-width:746px)": {
-                                top: "195px",
+                                top: "-195px",
                                 rotate: '-5deg'
                             }
                         }}
