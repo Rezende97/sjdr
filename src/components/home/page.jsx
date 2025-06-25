@@ -195,7 +195,7 @@ const Home = () => {
             <Box
                 component="section"
                 sx={{
-                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/inicio-main.jpg)`,
+                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/main_t2.jpg)`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
@@ -205,8 +205,8 @@ const Home = () => {
                     px: { xs: 2, md: 18 },
                     position: "relative",
                     flexDirection: "column",
-                    height: "135vh",
-                    padding: "280px 0 0 0",
+                    height: "160vh",
+                    gap: '30px',
                     "@media (max-width:746px)": {
                         padding: "0 0 0 0",
                         height: "0",
@@ -219,7 +219,7 @@ const Home = () => {
                         justifyContent: "space-evenly",
                         alignItems: "center",
                         position: "relative",
-                        bottom: "100px",
+                        bottom: "-65px",
                         width: "100%",
                     }}
                 >
