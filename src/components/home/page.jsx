@@ -207,6 +207,9 @@ const Home = () => {
                     flexDirection: "column",
                     height: "168vh",
                     gap: '30px',
+                    "@media(max-width:2633px)": {
+                       gap: '-1px'
+                    },
                     "@media (max-width:746px)": {
                         padding: "0 0 0 0",
                         height: "0",
@@ -228,6 +231,15 @@ const Home = () => {
                         sx={{
                             position: "relative",
                             bottom: "70px",
+                            "@media (min-width:1500px) and (max-width:2633px)": {
+                                top: "-150px",
+                            },
+                            "@media (min-width:1300px) and (max-width:1500px)": {
+                                top: "-80px",
+                            },
+                             "@media (min-width:1080px) and (max-width:1300px)": {
+                                top: "-80px",
+                            },
                             "@media (min-width:1025px) and (max-width:1080px)": {
                                 top: "-55px",
                             },
@@ -287,6 +299,9 @@ const Home = () => {
                         sx={{
                             position: "relative",
                             bottom: "-5px",
+                            "@media(max-width:2633px)": {
+                                top: "-70px",
+                            },
                             "@media (max-width:746px)": {
                                 left: "400px",
                                 rotate: '-5deg',
@@ -305,6 +320,9 @@ const Home = () => {
                         sx={{
                             position: "relative",
                             bottom: "40px",
+                            "@media(max-width:2633px)": {
+                                top: "-130px",
+                            },
                             "@media (max-width:746px)": {
                                 top: "-66px",
                                 right: '90px',
@@ -329,6 +347,9 @@ const Home = () => {
                         sx={{
                             position: "relative",
                             bottom: "60px",
+                            "@media(max-width:2633px)": {
+                                top: "-180px",
+                            },
                             "@media (max-width:746px)": {
                                 top: "-195px",
                                 rotate: '-5deg'
@@ -1270,6 +1291,7 @@ const Home = () => {
                 </Modal>
             </Box>
             {/* fim container rodape */}
+            
         </>
     );
 };
