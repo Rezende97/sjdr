@@ -78,6 +78,7 @@ const Home = () => {
                     justifyContent: "space-evenly",
                     alignItems: "center",
                     background: "#FEF5E6",
+                    zIndex: 1,
                     "@media (max-width:790px)": {
                         display: "flex",
                         flexDirection: "column",
@@ -140,6 +141,7 @@ const Home = () => {
                             flexDirection: "row",
                             marginTop: "25px",
                             padding: "15px 30px 15px 30px",
+                            zIndex: 1
                         },
                     }}
                 >
@@ -200,340 +202,383 @@ const Home = () => {
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     display: "flex",
-                    alignItems: "center",
                     justifyContent: "space-evenly",
+                    alignItems: "center",
                     px: { xs: 2, md: 18 },
                     position: "relative",
                     flexDirection: "column",
-                    minHeight: '150px',
-                    gap: '50px',
+                    height: '150vh', // altura mínima da viewport
+                    // padding: '40px 0',  // espaço interno superior e inferior
+                    border: '1px solid red',
                     "@media (max-width:2634px)": {
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/main05.jpg)`,
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/main07.jpg)`,
                     },
-                    // "@media (max-width:746px)": {
-                    //     backgroundImage: `url(${process.env.PUBLIC_URL}/images/main02.jpg)`,
-                    // },
+                    "@media (max-width:1778px)": {
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/main_mobile3.jpg)`,
+                    },
+                    "@media (max-width:1150px)": {
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/main_mobile6.jpg)`,
+                    }
                 }}
                 >
-
                 <Box
                     sx={{
-                        display: "flex",
-                        justifyContent: "space-evenly",
-                        alignItems: "center",
-                        position: "relative",
-                        bottom: "-85px",
-                        width: "100%",
+                        position: 'relative',
+                        top: '50px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexDirection: 'column',
+                        alignItems: 'center',
                     }}
                 >
-                    {/* cacto */}
+
                     <Box
                         sx={{
+                            display: "none",
+                            justifyContent: "space-around",
+                            alignItems: "center",
                             position: "relative",
-                            bottom: "70px",
-                            "@media (min-width:1025px) and (max-width:1080px)": {
-                                top: "-25px",
-                            },
-                            "@media (min-width:960px) and (max-width:1025px)": {
-                                top: "-25px",
-                            },
-                            "@media (min-width:900px) and (max-width:960px)": {
-                                top: "-5px",
-                            },
-                            "@media (min-width:830px) and (max-width:900px)": {
-                                top: "-45px",
-                            },
-                            "@media (min-width:746px) and (max-width:830px)": {
-                                top: "-30px",
-                            },
-                            "@media (min-width:728px) and (max-width:746px)": {
-                                top: "70px",
-                                right: '60px',
-                                rotate: '-5deg',
-                            },
-                            "@media (min-width:340px) and (max-width:422px)": {
-                                top: "75px",
-                                right: '0px',
-                                rotate: '-5deg',
-                            },
-                            "@media (min-width:422px) and (max-width:728px)": {
-                                top: "70px",
-                                right: '0px',
-                                rotate: '-5deg',
+                            bottom: "7rem",
+                            width: "100%",
+                            "@media (max-width:1150px)": {
+                                display: 'none'
                             }
                         }}
                     >
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/Cacto.png"}
-                            alt="cacto"
-                            width={75}
-                        />
+                        {/* cacto */}
+                        <Box
+                            sx={{
+                                position: "relative",
+                                bottom: "70px",
+                                // "@media (min-width:2333px) and (max-width:2585px)": {
+                                //     top: "-40px",
+                                // },
+                                // "@media (min-width:1500px) and (max-width:2333px)": {
+                                //     top: "-10px",
+                                // },
+                                // "@media (min-width:746px) and (max-width:1150px)": {
+                                //     bottom: "-110px",
+                                // },
+                                // "@media (min-width:407px) and (max-width:746px)": {
+                                //     bottom: "-70px",
+
+                                // },
+                                // "@media (min-width:400px) and (max-width:407px)": {
+                                //     top: "50px",
+                                //     right: '10px',
+                                //     zIndex: 0
+
+                                // },
+                                // "@media (min-width:300px) and (max-width:400px)": {
+                                //     top: "55px",
+                                //     right: '10px',
+                                //     zIndex: 0
+
+                                // },
+                                // "@media (min-width:1031px) and (max-width:1134px)": {
+                                //     top: "19px",
+                                // },
+                                // "@media (min-width:900px) and (max-width:1031px)": {
+                                //     top: "52px",
+                                // },
+                                // "@media (min-width:830px) and (max-width:900px)": {
+                                //     top: "135px",
+                                // },
+                                // "@media (min-width:746px) and (max-width:830px)": {
+                                //     top: "-30px",
+                                // },
+                                // "@media (min-width:728px) and (max-width:746px)": {
+                                //     top: "70px",
+                                //     right: '60px',
+                                //     rotate: '-5deg',
+                                // },
+                                // "@media (min-width:340px) and (max-width:422px)": {
+                                //     top: "75px",
+                                //     right: '0px',
+                                //     rotate: '-5deg',
+                                // },
+                                // "@media (min-width:422px) and (max-width:728px)": {
+                                //     top: "70px",
+                                //     right: '0px',
+                                //     rotate: '-5deg',
+                                // }
+                            }}
+                        >
+                            <img
+                                src={process.env.PUBLIC_URL + "/images/Cacto.png"}
+                                alt="cacto"
+                                width={75}
+                            />
+                        </Box>
+
+                        {/* flor */}
+                        <Box
+                            sx={{
+                                position: "relative",
+                                bottom: "-5px",
+                                "@media (max-width:746px)": {
+                                    left: "400px",
+                                    rotate: '-5deg',
+                                }
+                            }}
+                        >
+                            <img
+                                src={process.env.PUBLIC_URL + "/images/flor-main.png"}
+                                alt="cacto"
+                                width={85}
+                            />
+                        </Box>
+
+                        {/* cobra */}
+                        <Box
+                            sx={{
+                                position: "relative",
+                                bottom: "40px",
+                                "@media (max-width:746px)": {
+                                    top: "160px",
+                                    right: '90px',
+                                    rotate: '-5deg'
+                                },
+                                "@media (max-width:554px)": {
+                                    top: "180px",
+                                    right: '50px',
+                                    rotate: '-5deg'
+                                }
+                            }}
+                        >
+                            <img
+                                src={process.env.PUBLIC_URL + "/images/cobra.png"}
+                                alt="cacto"
+                                width={149}
+                            />
+                        </Box>
+
+                        {/* estrela - banner */}
+                        <Box
+                            sx={{
+                                position: "relative",
+                                bottom: "60px",
+                                "@media (max-width:746px)": {
+                                    top: "195px",
+                                    rotate: '-5deg'
+                                }
+                            }}
+                        >
+                            <img
+                                src={process.env.PUBLIC_URL + "/images/Faica.png"}
+                                alt="faica"
+                                width={85}
+                            />
+                        </Box>
                     </Box>
 
-                    {/* flor */}
+                    {/* inicio container spotify musica */}
                     <Box
                         sx={{
-                            position: "relative",
-                            bottom: "-5px",
-                            "@media (max-width:746px)": {
-                                left: "400px",
-                                rotate: '-5deg',
-                            }
-                        }}
-                    >
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/flor-main.png"}
-                            alt="cacto"
-                            width={85}
-                        />
-                    </Box>
-
-                    {/* cobra */}
-                    <Box
-                        sx={{
-                            position: "relative",
-                            bottom: "40px",
-                            "@media (max-width:746px)": {
-                                top: "160px",
-                                right: '90px',
-                                rotate: '-5deg'
-                            },
-                            "@media (max-width:554px)": {
-                                top: "180px",
-                                right: '50px',
-                                rotate: '-5deg'
-                            }
-                        }}
-                    >
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/cobra.png"}
-                            alt="cacto"
-                            width={149}
-                        />
-                    </Box>
-
-                    {/* estrela - banner */}
-                    <Box
-                        sx={{
-                            position: "relative",
-                            bottom: "60px",
-                            "@media (max-width:746px)": {
-                                top: "195px",
-                                rotate: '-5deg'
-                            }
-                        }}
-                    >
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/Faica.png"}
-                            alt="faica"
-                            width={85}
-                        />
-                    </Box>
-                </Box>
-
-                {/* inicio container spotify musica */}
-                <Box
-                    sx={{
-                        background: "#231F20",
-                        padding: '15px',
-                        borderRadius: "20px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        "@media (max-width:750px)": {
-                            zIndex: 1,
-                            margin: "5px",
-                            position: "relative",
-                            top: "40px",
-                        }
-                    }}
-                >
-                    {/* container central */}
-                    <Box
-                        sx={{
+                            background: "#231F20",
+                            padding: '15px',
+                            borderRadius: "20px",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
-                            gap: "60px",
-                            padding: "30px",
-                            border: '2px dashed #63533B',
-                            borderRadius: "20px",
-                            "@media (max-width:420px)": {
-                                padding: "0",
+                            width: '70%',
+
+                            "@media (max-width:750px)": {
+                                zIndex: 1,
+                                margin: "5px",
+                                position: "relative",
+                                top: "40px",
                             }
                         }}
                     >
-                        {/* cto spotify */}
+                        {/* container central */}
                         <Box
                             sx={{
                                 display: "flex",
-                                justifyContent: "left",
-                                flexDirection: "column",
-                                gap: "10px",
-                                "@media (max-width:746px)": {
-                                    display: "none",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                gap: "60px",
+                                padding: "30px",
+                                border: '2px dashed #63533B',
+                                borderRadius: "20px",
+                                width: '100%',
+                                "@media (max-width:420px)": {
+                                    padding: "0",
                                 }
                             }}
                         >
-
-                            <img
-                                src={process.env.PUBLIC_URL + "/images/confira_playlist.png"}
-                                width={110}
-                                alt="Confira Playlist"
-                            />
-
-                            <img
-                                src={
-                                    process.env.PUBLIC_URL +
-                                    "/images/Spotify_logo_with_text.svg.png"
-                                }
-                                width={90}
-                                alt="Sportify"
-                            />
-                        </Box>
-
-                        {/* play na musica */}
-                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
-                            <iframe
-                                style={{ borderRadius: "20px" }}
-                                src={spotifyEmbedUrl}
-                                width="100%"
-                                height="85"
-                                frameBorder="0"
-                                allowFullScreen=""
-                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                loading="lazy"
-                                title="Player de música do Spotify"
-                            />
-                        </Box>
-                    </Box>
-                </Box>
-                {/* fim container spotify musica */}
-
-                {/* inicio container tradição boa de viver */}
-                <Box
-                    component="section"
-                    id="projeto-section"
-                    sx={{
-                        display: "flex",
-                        justifyContent: "space-around",
-                        alignItems: "center",
-                        padding: "4rem",
-                        gap: "15px",
-                    }}
-                >
-
-                    {/* sanfona e triângulo */}
-                    <Box
-                        sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            flexDirection: "column",
-                            position: 'relative',
-                            bottom: '15px',
-                            gap: "20px",
-                            "@media (max-width:746px)": {
-                                display: "none",
-                            },
-                        }}
-                    >
-                        <Box
-                            sx={{
-                                position: 'relative',
-                                bottom: '-3px'
-                            }}
-                        >
-                            <img
-                                src={process.env.PUBLIC_URL + "/images/Sanfona.png"}
-                                alt="Sanfona"
-                                width="170px"
-                            />
-                        </Box>
-
-                        <Box
-                            sx={{
-                                position: 'relative',
-                                bottom: '15px'
-                            }}
-                        >
-                            <img
-                                src={process.env.PUBLIC_URL + "/images/triangulo.png"}
-                                alt="Lua e Estrela"
-                                width="110px"
-                                height="110px"
-                            />
-                        </Box>
-                    </Box>
-
-                    {/* lua e estrela */}
-                    <Box
-                        sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            "@media (max-width:746px)": {
-                                display: "none",
-                            },
-                        }}
-                    >
-                        <Box
-                            sx={{
-                                position: 'relative',
-                                right: '18px'
-                            }}
-                        >
-                            <img
-                                src={process.env.PUBLIC_URL + "/images/lua_estrela.png"}
-                                alt="Triângulo"
-                                width="70px"
-                                height="70px"
-                            />
-                        </Box>
-                    </Box>
-
-                    {/* tradição e texto sobre sao joao */}
-                    <Box
-                        className="container-tradicao-texto"
-                        sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            flexDirection: "column",
-                            gap: "20px"
-                        }}
-                    >
-                        <Box>
-                            <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
-                                TRADIÇÃO
-                            </Typography>
-                            <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
-                                BOA DE VIVER
-                            </Typography>
-                        </Box>
-                        <Box>
-                            <Typography
-                                id="modal-modal-title"
+                            {/* cto spotify */}
+                            <Box
                                 sx={{
-                                    fontFamily: 'montserrat',
-                                    textAlign: 'left',
-                                    color: '#F7EDDB',
-                                    maxWidth: '500px', // limite de largura como na imagem
-                                    lineHeight: 1.6,
-                                    fontSize: '16px', // ajuste conforme necessário
+                                    display: "flex",
+                                    justifyContent: "left",
+                                    flexDirection: "column",
+                                    gap: "10px",
+                                    "@media (max-width:746px)": {
+                                        display: "none",
+                                    }
                                 }}
                             >
-                                O São João do Reencontro nasce do desejo de reconectar a Bahia com a força de sua maior tradição popular.
-                                Criamos um circuito junino por 27 municípios, valorizando as raízes culturais de cada região e reacendendo
-                                o sentimento de pertencimento. Mais que celebrar, o projeto movimenta a economia criativa, fortalece o
-                                turismo e promove diversidade.<br /><br />
-                                É tradição boa de viver — de interior a interior, de palco em palco, de abraço em abraço.
-                            </Typography>
 
+                                <img
+                                    src={process.env.PUBLIC_URL + "/images/confira_playlist.png"}
+                                    width={110}
+                                    alt="Confira Playlist"
+                                />
+
+                                <img
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        "/images/Spotify_logo_with_text.svg.png"
+                                    }
+                                    width={90}
+                                    alt="Sportify"
+                                />
+                            </Box>
+
+                            {/* play na musica */}
+                            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
+                                <iframe
+                                    style={{ borderRadius: "20px" }}
+                                    src={spotifyEmbedUrl}
+                                    width="100%"
+                                    height="85"
+                                    frameBorder="0"
+                                    allowFullScreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"
+                                    title="Player de música do Spotify"
+                                />
+                            </Box>
                         </Box>
                     </Box>
+                    {/* fim container spotify musica */}
 
+                    {/* inicio container tradição boa de viver */}
+                    <Box
+                        component="section"
+                        id="projeto-section"
+                        sx={{
+                            display: "flex",
+                            justifyContent: "space-around",
+                            alignItems: "center",
+                            padding: "4rem",
+                            gap: "15px",
+                        }}
+                    >
+
+                        {/* sanfona e triângulo */}
+                        <Box
+                            sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                flexDirection: "column",
+                                position: 'relative',
+                                bottom: '15px',
+                                gap: "20px",
+                                "@media (max-width:746px)": {
+                                    display: "none",
+                                },
+                            }}
+                        >
+                            <Box
+                                sx={{
+                                    position: 'relative',
+                                    bottom: '-3px'
+                                }}
+                            >
+                                <img
+                                    src={process.env.PUBLIC_URL + "/images/Sanfona.png"}
+                                    alt="Sanfona"
+                                    width="170px"
+                                />
+                            </Box>
+
+                            <Box
+                                sx={{
+                                    position: 'relative',
+                                    bottom: '15px'
+                                }}
+                            >
+                                <img
+                                    src={process.env.PUBLIC_URL + "/images/triangulo.png"}
+                                    alt="Lua e Estrela"
+                                    width="110px"
+                                    height="110px"
+                                />
+                            </Box>
+                        </Box>
+
+                        {/* lua e estrela */}
+                        <Box
+                            sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                "@media (max-width:746px)": {
+                                    display: "none",
+                                },
+                            }}
+                        >
+                            <Box
+                                sx={{
+                                    position: 'relative',
+                                    right: '18px'
+                                }}
+                            >
+                                <img
+                                    src={process.env.PUBLIC_URL + "/images/lua_estrela.png"}
+                                    alt="Triângulo"
+                                    width="70px"
+                                    height="70px"
+                                />
+                            </Box>
+                        </Box>
+
+                        {/* tradição e texto sobre sao joao */}
+                        <Box
+                            className="container-tradicao-texto"
+                            sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                flexDirection: "column",
+                                gap: "20px"
+                            }}
+                        >
+                            <Box>
+                                <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
+                                    TRADIÇÃO
+                                </Typography>
+                                <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
+                                    BOA DE VIVER
+                                </Typography>
+                            </Box>
+                            <Box>
+                                <Typography
+                                    id="modal-modal-title"
+                                    sx={{
+                                        fontFamily: 'montserrat',
+                                        textAlign: 'left',
+                                        color: '#F7EDDB',
+                                        maxWidth: '500px', // limite de largura como na imagem
+                                        lineHeight: 1.6,
+                                        fontSize: '16px', // ajuste conforme necessário
+                                    }}
+                                >
+                                    O São João do Reencontro nasce do desejo de reconectar a Bahia com a força de sua maior tradição popular.
+                                    Criamos um circuito junino por 27 municípios, valorizando as raízes culturais de cada região e reacendendo
+                                    o sentimento de pertencimento. Mais que celebrar, o projeto movimenta a economia criativa, fortalece o
+                                    turismo e promove diversidade.<br /><br />
+                                    É tradição boa de viver — de interior a interior, de palco em palco, de abraço em abraço.
+                                </Typography>
+
+                            </Box>
+                        </Box>
+
+                    </Box>
+                    {/* fim container tradição boa de viver */}
                 </Box>
-                {/* fim container tradição boa de viver */}
             </Box>
             {/* fim container main */}
 
