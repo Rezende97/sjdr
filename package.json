@@ -1,7 +1,7 @@
 {
   "name": "sjdr",
   "version": "0.1.0",
-  "homepage": "https://Rezende97.github.io/sjdr",
+  "homepage": "https://github.com/Rezende97/sjdr",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
