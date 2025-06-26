@@ -405,7 +405,8 @@ const Home = () => {
                 <Box sx={{
                     zIndex: '1',
                     gap: '10px',
-                    "@media (max-width:375px)": {
+                    marginTop: "190px",
+                    "@media (max-width:893px)": {
                         marginTop: "-40px",
                     }
 
