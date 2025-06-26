@@ -984,27 +984,36 @@ const Home = () => {
             {/* fim container cidade */}
 
             {/* inicio container pira */}
-                <Box
-        component="section"
-        id="pira-section"
-        sx={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/images/sobrepirafundo.jpg)`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "top",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center", // CENTRALIZA MELHOR EM ALTURA
-            flexDirection: "column",
-            px: { xs: 2, md: 8 },     // INSERE PADDING HORIZONTAL
-            py: { xs: 8, md: 12 },    // INSERE PADDING VERTICAL
-            minHeight: '100vh',       // garante que o conteúdo preencha a tela, mas permite mais conteúdo se necessário
-            position: "relative",
-            "@media (min-width: 1440px)": {
-            minHeight: '70vh',      // em telas grandes, evita muito espaço vertical vazio
-            },
-        }}
-        >
+            <Box
+                component="section"
+                id="pira-section"
+                sx={{
+                    backgroundImage: `url(${process.env.PUBLIC_URL}/images/sobrepirafundo.jpg)`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    backgroundPosition: "top",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-evenly",
+                    // px: { xs: 2, md: 18 },
+                    position: "relative",
+                    flexDirection: "column",
+                    height: '100vh',
+                    // mt: { xs: -8, md: -10 },
+                    "@media (max-width:2300px)": {
+                        zIndex: 1
+                    },
+                    "@media (min-width:1439px)": {
+                        height: '70vh'
+                    },
+                    "@media (max-width:1370px)": {
+                        height: '100vh',
+                    },
+                    "@media (max-width:1100px)": {
+                        height: '120vh',
+                    },
+                }}
+            >
                 <Box sx={{
                     display: 'flex',
                     justifyContent: 'right',
