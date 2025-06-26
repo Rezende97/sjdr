@@ -994,12 +994,10 @@ const Home = () => {
                     backgroundPosition: "top",
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "space-evenly",
-                    // px: { xs: 2, md: 18 },
+                    justifyContent: "center",
                     position: "relative",
                     flexDirection: "column",
                     height: '100vh',
-                    // mt: { xs: -8, md: -10 },
                     "@media (max-width:2300px)": {
                         zIndex: 1
                     },
@@ -1036,6 +1034,7 @@ const Home = () => {
                         gap: "45px",
                         zIndex: 1,
                         margin: "8px",
+
                     }}
                 >
                     {/* sobre a pira */}
@@ -1044,7 +1043,7 @@ const Home = () => {
                         sx={{
                             display: "flex",
                             alignItems: "end",
-                            padding: "200px 0 0 0",
+                            padding: "300px 0 0 0",
                             gap: "40px",
                             "@media (max-width:500px)": {
                                 padding: '70px 30px 0px 30px',
