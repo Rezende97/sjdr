@@ -1103,14 +1103,31 @@ const Home = () => {
             >
                 <Box sx={{
                     display: 'flex',
-                    justifyContent: 'right',
-                    position: 'relative',
-                    top: '200px',
-                    right: '170px',
-                    width: '100%',
-                    "@media (max-width:593px)": {
-                        right: '5px',
+                    // justifyContent: 'center',
+                    position: 'absolute',
+                    right: '20%',
+                    top: '59%',
+                    // right: '170px',
+                    // width: '100%',
+                    "@media (max-width:1750px)": {
+                        top: '46%'
+                    },
+                    "@media (max-width:1576px)": {
+                        top: '42%'
+                    },
+                    "@media (max-width:1439px)": {
+                        top: '32%'
+                    },
+                    "@media (max-width:1100px)": {
+                        top: '27%'
+                    },
+                    "@media (max-width:844px)": {
+                        top: '26%'
+                    },
+                    "@media (max-width:592px)": {
+                        display: 'none'
                     }
+                    
                 }}>
                     <img src={process.env.PUBLIC_URL + "/images/estrela-main.png"} alt="estrela" width={80} />
                 </Box>
@@ -1137,9 +1154,9 @@ const Home = () => {
                             // "@media (max-width:2625px)": {
                             //     padding: '250px 30px 0px 30px',
                             // },
-                            "@media (max-width:500px)": {
-                                padding: '70px 30px 0px 30px',
-                            }
+                            // "@media (max-width:500px)": {
+                            //     padding: '70px 30px 0px 30px',
+                            // }
                         }}
                     >
                         <Box>
@@ -1169,9 +1186,9 @@ const Home = () => {
                                 lineHeight: 1.6,
                                 fontSize: '16px',
                                 zIndex: 1,
-                                "@media (max-width:500px)": {
-                                    padding: '0px 30px 0px 30px',
-                                }
+                                // "@media (max-width:500px)": {
+                                //     padding: '0px 30px 0px 30px',
+                                // }
                             }}
                         >
                             A Pira é uma agência full service, especializada<br />
