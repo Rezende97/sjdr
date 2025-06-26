@@ -209,18 +209,18 @@ const Home = () => {
                     zIndex: 1,
                     flexDirection: "column",
                     gap: '30px', 
-                    "@media (max-width:2330px)": {
-                        height: '150vh',
-                    },
+                    // "@media (max-width:2330px)": {
+                    //     height: '150vh',
+                    // },
                     "@media (min-width:2229px) ": {
                         backgroundImage: `url(${process.env.PUBLIC_URL}/images/main_10.jpg)`,
-                        height: '120vh',
+                        height: '150vh',
                     },
-                    "@media (min-width:2321px)": {
-                        height: '120vh',
-                    },
+                    // "@media (min-width:2321px)": {
+                    //     height: '130vh',
+                    // },
                     "@media (min-width:1749px) ": {
-                        height: '110vh',
+                        height: '115vh',
                     },
                     "@media (max-width:1749px)": {
                         height: '116.7vh',
