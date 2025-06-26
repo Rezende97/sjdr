@@ -1003,9 +1003,13 @@ const Home = () => {
                     "@media (max-width:2300px)": {
                         zIndex: 1
                     },
-                    "@media (min-width:1370px)": {
-                        height: '50vh',
+                    "@media (min-width:1371px)": {
+                        height: '50vh'
                     },
+                    "@media (max-width:1370px)": {
+                        height: '100vh',
+                    },
+                    
                 }}
             >
                 <Box sx={{
