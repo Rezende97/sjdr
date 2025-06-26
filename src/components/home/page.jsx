@@ -1000,8 +1000,11 @@ const Home = () => {
                     flexDirection: "column",
                     height: '100vh',
                     // mt: { xs: -8, md: -10 },
-                    "@media (max-width:1644px)": {
-                        zIndex: 1,
+                    "@media (max-width:2300px)": {
+                        zIndex: 1
+                    },
+                    "@media (min-width:1370px)": {
+                        height: '50vh',
                     },
                 }}
             >
@@ -1037,6 +1040,9 @@ const Home = () => {
                             alignItems: "end",
                             padding: "200px 0 0 0",
                             gap: "40px",
+                            "@media (max-width:500px)": {
+                                padding: '0px 30px 0px 30px',
+                            }
                         }}
                     >
                         <Box>
@@ -1065,7 +1071,10 @@ const Home = () => {
                                 maxWidth: '500px',
                                 lineHeight: 1.6,
                                 fontSize: '16px',
-                                zIndex: 1
+                                zIndex: 1,
+                                "@media (max-width:500px)": {
+                                    padding: '0px 30px 0px 30px',
+                                }
                             }}
                         >
                             A Pira é uma agência full service, especializada<br />
@@ -1094,8 +1103,6 @@ const Home = () => {
                     position: "relative",
                     height: "100vh",
                     marginTop: '-150px',
-
-
                     "@media (max-width:877px)": {
                         // height: "120vh",
                         backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste01.jpg)`,
