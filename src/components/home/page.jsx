@@ -208,81 +208,110 @@ const Home = () => {
                     position: "relative",
                     zIndex: 1,
                     flexDirection: "column",
-                    gap: '30px',
-                    marginTop: '-60px', // Puxa a seção para cima, sobrepondo o container anterior
-                    paddingTop: '110px',
-                    "@media (min-width:1262px)": {
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/main_7.jpg)`,
-                        height: '104vh',
+                    gap: '30px', 
+                    "@media (max-width:2330px)": {
+                        height: '150vh',
                     },
-                    "@media (max-width:1261px)": {
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/main_1.jpg)`,
-                        marginTop: '-50px',
-                        paddingTop: '10px',
+                    "@media (min-width:2229px) ": {
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/main_10.jpg)`,
+                        height: '120vh',
                     },
+                    "@media (min-width:2321px)": {
+                        height: '120vh',
+                    },
+                    "@media (min-width:1749px) ": {
+                        height: '110vh',
+                    },
+                    "@media (max-width:1749px)": {
+                        height: '116.7vh',
+                    },
+
                 }}
             >
 
-                {/* <Box
+                <Box
                     sx={{
                         display: "flex",
                         justifyContent: "space-evenly",
                         alignItems: "center",
-                        position: "relative",
-                        bottom: "-85px",
+                        position: "absolute",
+                        top: "8.5%",
+                        left: "0",
                         width: "100%",
+                        height: "1px",
+                        zIndex: '0'
                     }}
                 >
+                    
                     <Box
                         sx={{
-                            position: "relative",
-                            bottom: "70px",
-                            "@media (min-width:1025px) and (max-width:1080px)": {
-                                top: "-25px",
+                            position: "absolute",
+                            top: 'calc(40% - 60px)', 
+                            right: '68%',
+                            width: '200px',
+                            zIndex: 0,
+                            "@media (max-width:2513px)": {
+                                top: 'calc(40% - 40px)',
                             },
-                            "@media (min-width:960px) and (max-width:1025px)": {
-                                top: "-25px",
+                            "@media (max-width:2343px)": {
+                                top: 'calc(40% - 35px)',
                             },
-                            "@media (min-width:900px) and (max-width:960px)": {
-                                top: "-5px",
+                            "@media (max-width:2315px)": {
+                                top: 'calc(40% - 25px)',
                             },
-                            "@media (min-width:830px) and (max-width:900px)": {
-                                top: "-45px",
+                            "@media (max-width:2229px)": {
+                                top: 'calc(40% - 95px)',
                             },
-                            "@media (min-width:746px) and (max-width:830px)": {
-                                top: "-30px",
+                            "@media (max-width:1750px)": {
+                                top: 'calc(40% - 115px)',
                             },
-                            "@media (min-width:728px) and (max-width:746px)": {
-                                top: "70px",
-                                right: '60px',
-                                rotate: '-5deg',
+                            "@media (max-width:1215px)": {
+                                top: 'calc(40% - 115px)',
+                                right: '60%',
                             },
-                            "@media (min-width:340px) and (max-width:422px)": {
-                                top: "75px",
-                                right: '0px',
-                                rotate: '-5deg',
-                            },
-                            "@media (min-width:422px) and (max-width:728px)": {
-                                top: "70px",
-                                right: '0px',
-                                rotate: '-5deg',
+                            "@media (max-width:750px)": {
+                                top: 'calc(40% - 270px)',
+                                right: '55%',
                             }
                         }}
                     >
                         <img
                             src={process.env.PUBLIC_URL + "/images/Cacto.png"}
                             alt="cacto"
-                            width={75}
+                            width={100}
                         />
                     </Box>
 
                     <Box
-                        sx={{
-                            position: "relative",
-                            bottom: "-5px",
-                            "@media (max-width:746px)": {
-                                left: "400px",
-                                rotate: '-5deg',
+                       sx={{
+                            position: "absolute",
+                            top: 'calc(40% - -70px)', 
+                            right: '49%',
+                            width: '200px',
+                            zIndex: 0,
+                            "@media (max-width:2513px)": {
+                                top: 'calc(40% - -70px)', 
+                            },
+                            "@media (max-width:2343px)": {
+                                top: 'calc(40% - -70px)',
+                            },
+                            "@media (max-width:2315px)": {
+                                top: 'calc(40% - -70px)', 
+                            },
+                            "@media (max-width:2229px)": {
+                                top: 'calc(40% - -70px)', 
+                            },
+                            "@media (max-width:1750px)": {
+                                top: 'calc(40% - -30px)', 
+                            },
+                            "@media (max-width:1215px)": {
+                                top: 'calc(40% - -30px)',
+                                right: '40%',
+                            },
+                            "@media (max-width:750px)": {
+                                // top: 'calc(40% - 230px)',
+                                // right: '-5%',
+                                display: 'none'
                             }
                         }}
                     >
@@ -295,17 +324,33 @@ const Home = () => {
 
                     <Box
                         sx={{
-                            position: "relative",
-                            bottom: "40px",
-                            "@media (max-width:746px)": {
-                                top: "160px",
-                                right: '90px',
-                                rotate: '-5deg'
+                            position: "absolute",
+                            top: 'calc(40% - -40px)', 
+                            right: '38%',
+                            width: '200px',
+                            zIndex: 0,
+                            "@media (max-width:2513px)": {
+                                top: 'calc(40% - -40px)', 
                             },
-                            "@media (max-width:554px)": {
-                                top: "180px",
-                                right: '50px',
-                                rotate: '-5deg'
+                            "@media (max-width:2343px)": {
+                                top: 'calc(40% - -40px)',
+                            },
+                            "@media (max-width:2315px)": {
+                                top: 'calc(40% - -40px)', 
+                            },
+                            "@media (max-width:2229px)": {
+                                top: 'calc(40% - -40px)', 
+                            },
+                            "@media (max-width:1750px)": {
+                                top: 'calc(40% - -20px)', 
+                            },
+                            "@media (max-width:1215px)": {
+                                top: 'calc(40% - -20px)',
+                                right: '25%',
+                            },
+                            "@media (max-width:750px)": {
+                                top: 'calc(40% - 30px)',
+                                right: '35%',
                             }
                         }}
                     >
@@ -318,11 +363,34 @@ const Home = () => {
 
                     <Box
                         sx={{
-                            position: "relative",
-                            bottom: "60px",
-                            "@media (max-width:746px)": {
-                                top: "195px",
-                                rotate: '-5deg'
+                            position: "absolute",
+                            top: 'calc(40% - 5px)', 
+                            right: '18%',
+                            width: '200px',
+                            zIndex: 0,
+                            "@media (max-width:2513px)": {
+                                top: 'calc(40% - -70px)', 
+                            },
+                            "@media (max-width:2343px)": {
+                                top: 'calc(40% - -70px)',
+                            },
+                            "@media (max-width:2315px)": {
+                                top: 'calc(40% - -70px)', 
+                            },
+                            "@media (max-width:2229px)": {
+                                top: 'calc(40% - 30px)', 
+                            },
+                            "@media (max-width:1750px)": {
+                                top: 'calc(40% - 20px)', 
+                            },
+                            "@media (max-width:1215px)": {
+                                top: 'calc(40% - 20px)', 
+                                right: '2%',
+                            },
+                            "@media (max-width:750px)": {
+                                top: 'calc(40% - 15px)',
+                                rotate: '-40deg', 
+                                right: '-5%',
                             }
                         }}
                     >
@@ -332,236 +400,212 @@ const Home = () => {
                             width={85}
                         />
                     </Box>
-                </Box> */}
-                <Box sx={{
-                    "@media (min-width:1262px)": {
-                        marginTop: '290px'
-                    },
-                    "@media (max-width:1261px)": {
-                        marginTop: '350px'
-                    },
-                    "@media (max-width:800px)": {
-                        marginTop: '110px'
-                    },
-                    "@media (max-width:470px)": {
-                        marginTop: '110px',
-                        paddingTop: '350px',
-                    },
-                    
-                }}>
+                </Box> 
 
-                    {/* inicio container spotify musica */}
+                {/* inicio container spotify musica */}
+                <Box
+                    sx={{
+                        background: "#231F20",
+                        padding: '15px',
+                        borderRadius: "20px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        // width: '100%',
+                        zIndex: 1,
+                        marginTop: '280px'
+                    }}
+                >
+                    {/* container central */}
                     <Box
                         sx={{
-                            background: "#231F20",
-                            padding: '15px',
-                            borderRadius: "20px",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
-                            "@media (max-width:750px)": {
-                                zIndex: 1,
-                                margin: "5px",
-                                position: "relative",
-                                top: "40px",
-                            },
-                            "@media (max-width:470px)": {
-                                position: "relative",
-                                top: "-350px"
-                            },
+                            gap: "60px",
+                            padding: "30px",
+                            border: '2px dashed #63533B',
+                            width: '100%',
+                            "@media (max-width:420px)": {
+                                padding: "0",
+                            }
                         }}
                     >
-                        {/* container central */}
+                        {/* cto spotify */}
                         <Box
                             sx={{
                                 display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                gap: "60px",
-                                padding: "30px",
-                                border: '2px dashed #63533B',
-                                borderRadius: "20px",
-                                "@media (max-width:420px)": {
-                                    padding: "0",
+                                justifyContent: "left",
+                                flexDirection: "column",
+                                gap: "10px",
+                                "@media (max-width:746px)": {
+                                    display: "none",
                                 }
                             }}
                         >
-                            {/* cto spotify */}
-                            <Box
-                                sx={{
-                                    display: "flex",
-                                    justifyContent: "left",
-                                    flexDirection: "column",
-                                    gap: "10px",
-                                    "@media (max-width:746px)": {
-                                        display: "none",
-                                    }
-                                }}
-                            >
 
-                                <img
-                                    src={process.env.PUBLIC_URL + "/images/confira_playlist.png"}
-                                    width={110}
-                                    alt="Confira Playlist"
-                                />
+                            <img
+                                src={process.env.PUBLIC_URL + "/images/confira_playlist.png"}
+                                width={110}
+                                alt="Confira Playlist"
+                            />
 
-                                <img
-                                    src={
-                                        process.env.PUBLIC_URL +
-                                        "/images/Spotify_logo_with_text.svg.png"
-                                    }
-                                    width={90}
-                                    alt="Sportify"
-                                />
-                            </Box>
+                            <img
+                                src={
+                                    process.env.PUBLIC_URL +
+                                    "/images/Spotify_logo_with_text.svg.png"
+                                }
+                                width={90}
+                                alt="Sportify"
+                            />
+                        </Box>
 
-                            {/* play na musica */}
-                            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
-                                <iframe
-                                    style={{ borderRadius: "20px" }}
-                                    src={spotifyEmbedUrl}
-                                    width="100%"
-                                    height="85"
-                                    frameBorder="0"
-                                    allowFullScreen=""
-                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                    loading="lazy"
-                                    title="Player de música do Spotify"
-                                />
-                            </Box>
+                        {/* play na musica */}
+                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
+                            <iframe
+                                style={{ borderRadius: "20px" }}
+                                src={spotifyEmbedUrl}
+                                width="100%"
+                                height="85"
+                                frameBorder="0"
+                                allowFullScreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"
+                                title="Player de música do Spotify"
+                            />
                         </Box>
                     </Box>
-                    {/* fim container spotify musica */}
+                </Box>
+                {/* fim container spotify musica */}
 
-                    {/* inicio container tradição boa de viver */}
+                {/* inicio container tradição boa de viver */}
+                <Box
+                    component="section"
+                    id="projeto-section"
+                    sx={{
+                        display: "flex",
+                        justifyContent: "space-around",
+                        alignItems: "center",
+                        // padding: "4rem",
+                        gap: "15px",
+                        "@media (max-width:515px)": {
+                            padding: '75px 0 75px 0'
+                        },
+                    }}
+                >
+
+                    {/* sanfona e triângulo */}
                     <Box
-                        component="section"
-                        id="projeto-section"
                         sx={{
                             display: "flex",
-                            justifyContent: "space-around",
+                            justifyContent: "center",
                             alignItems: "center",
-                            padding: "4rem",
-                            gap: "15px",
-                            "@media (max-width:470px)": {
-                                position: "relative",
-                                top: "-150px"
+                            flexDirection: "column",
+                            position: 'relative',
+                            bottom: '15px',
+                            gap: "20px",
+                            "@media (max-width:746px)": {
+                                display: "none",
                             },
                         }}
                     >
-
-                        {/* sanfona e triângulo */}
                         <Box
                             sx={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                flexDirection: "column",
                                 position: 'relative',
-                                bottom: '15px',
-                                gap: "20px",
-                                "@media (max-width:746px)": {
-                                    display: "none",
-                                },
+                                bottom: '-3px'
                             }}
                         >
-                            <Box
-                                sx={{
-                                    position: 'relative',
-                                    bottom: '-3px'
-                                }}
-                            >
-                                <img
-                                    src={process.env.PUBLIC_URL + "/images/Sanfona.png"}
-                                    alt="Sanfona"
-                                    width="170px"
-                                />
-                            </Box>
-
-                            <Box
-                                sx={{
-                                    position: 'relative',
-                                    bottom: '15px'
-                                }}
-                            >
-                                <img
-                                    src={process.env.PUBLIC_URL + "/images/triangulo.png"}
-                                    alt="Lua e Estrela"
-                                    width="110px"
-                                    height="110px"
-                                />
-                            </Box>
+                            <img
+                                src={process.env.PUBLIC_URL + "/images/Sanfona.png"}
+                                alt="Sanfona"
+                                width="170px"
+                            />
                         </Box>
 
-                        {/* lua e estrela */}
                         <Box
                             sx={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                "@media (max-width:746px)": {
-                                    display: "none",
-                                },
+                                position: 'relative',
+                                bottom: '15px'
                             }}
                         >
-                            <Box
-                                sx={{
-                                    position: 'relative',
-                                    right: '18px'
-                                }}
-                            >
-                                <img
-                                    src={process.env.PUBLIC_URL + "/images/lua_estrela.png"}
-                                    alt="Triângulo"
-                                    width="70px"
-                                    height="70px"
-                                />
-                            </Box>
+                            <img
+                                src={process.env.PUBLIC_URL + "/images/triangulo.png"}
+                                alt="Lua e Estrela"
+                                width="110px"
+                                height="110px"
+                            />
                         </Box>
-
-                        {/* tradição e texto sobre sao joao */}
-                        <Box
-                            className="container-tradicao-texto"
-                            sx={{
-                                display: "flex",
-                                justifyContent: "center",
-                                flexDirection: "column",
-                                gap: "20px"
-                            }}
-                        >
-                            <Box>
-                                <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
-                                    TRADIÇÃO
-                                </Typography>
-                                <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
-                                    BOA DE VIVER
-                                </Typography>
-                            </Box>
-                            <Box>
-                                <Typography
-                                    id="modal-modal-title"
-                                    sx={{
-                                        fontFamily: 'montserrat',
-                                        textAlign: 'left',
-                                        color: '#F7EDDB',
-                                        maxWidth: '500px', // limite de largura como na imagem
-                                        lineHeight: 1.6,
-                                        fontSize: '16px', // ajuste conforme necessário
-                                    }}
-                                >
-                                    O São João do Reencontro nasce do desejo de reconectar a Bahia com a força de sua maior tradição popular.
-                                    Criamos um circuito junino por 27 municípios, valorizando as raízes culturais de cada região e reacendendo
-                                    o sentimento de pertencimento. Mais que celebrar, o projeto movimenta a economia criativa, fortalece o
-                                    turismo e promove diversidade.<br /><br />
-                                    É tradição boa de viver — de interior a interior, de palco em palco, de abraço em abraço.
-                                </Typography>
-
-                            </Box>
-                        </Box>
-
                     </Box>
-                    {/* fim container tradição boa de viver */}
+
+                    {/* lua e estrela */}
+                    <Box
+                        sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            "@media (max-width:746px)": {
+                                display: "none",
+                            },
+                        }}
+                    >
+                        <Box
+                            sx={{
+                                position: 'relative',
+                                right: '18px'
+                            }}
+                        >
+                            <img
+                                src={process.env.PUBLIC_URL + "/images/lua_estrela.png"}
+                                alt="Triângulo"
+                                width="70px"
+                                height="70px"
+                            />
+                        </Box>
+                    </Box>
+
+                    {/* tradição e texto sobre sao joao */}
+                    <Box
+                        className="container-tradicao-texto"
+                        sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            flexDirection: "column",
+                            gap: "20px"
+                        }}
+                    >
+                        <Box>
+                            <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
+                                TRADIÇÃO
+                            </Typography>
+                            <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
+                                BOA DE VIVER
+                            </Typography>
+                        </Box>
+                        <Box>
+                            <Typography
+                                id="modal-modal-title"
+                                sx={{
+                                    fontFamily: 'montserrat',
+                                    textAlign: 'left',
+                                    color: '#F7EDDB',
+                                    maxWidth: '500px', // limite de largura como na imagem
+                                    lineHeight: 1.6,
+                                    fontSize: '16px', // ajuste conforme necessário
+                                }}
+                            >
+                                O São João do Reencontro nasce do desejo de reconectar a Bahia com a força de sua maior tradição popular.
+                                Criamos um circuito junino por 27 municípios, valorizando as raízes culturais de cada região e reacendendo
+                                o sentimento de pertencimento. Mais que celebrar, o projeto movimenta a economia criativa, fortalece o
+                                turismo e promove diversidade.<br /><br />
+                                É tradição boa de viver — de interior a interior, de palco em palco, de abraço em abraço.
+                            </Typography>
+
+                        </Box>
+                    </Box>
+
                 </Box>
+                {/* fim container tradição boa de viver */}
+
             </Box>
             {/* fim container main */}
 
@@ -581,6 +625,12 @@ const Home = () => {
                     px: { xs: 2, md: 18 },
                     position: "relative",
                     flexDirection: "column",
+                    // "@media (max-width:1312px)": {
+                    //     paddingTop: '150px'
+                    // },
+                    "@media (max-width:1256px)": {
+                        paddingTop: '40px'
+                    },
                 }}
             >
                 {/* redes sociais */}
@@ -1026,14 +1076,17 @@ const Home = () => {
                     position: "relative",
                     flexDirection: "column",
                     height: '100vh',
+                    "@media (max-width:2625px)": {
+                        height: '60vh'
+                    },
                     "@media (max-width:2300px)": {
                         zIndex: 1
                     },
-                    "@media (min-width:1439px)": {
+                    "@media (max-width:1439px)": {
                         height: '70vh'
                     },
                     "@media (max-width:1370px)": {
-                        height: '100vh',
+                        height: '90vh',
                     },
                     "@media (max-width:1100px)": {
                         height: '120vh',
@@ -1073,6 +1126,9 @@ const Home = () => {
                             alignItems: "end",
                             padding: "300px 0 0 0",
                             gap: "40px",
+                            // "@media (max-width:2625px)": {
+                            //     padding: '250px 30px 0px 30px',
+                            // },
                             "@media (max-width:500px)": {
                                 padding: '70px 30px 0px 30px',
                             }
@@ -1137,7 +1193,6 @@ const Home = () => {
                     height: "100vh",
                     marginTop: '-150px',
                     "@media (max-width:877px)": {
-                        // height: "120vh",
                         backgroundImage: `url(${process.env.PUBLIC_URL}/images/rodape_ajuste01.jpg)`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
@@ -1159,18 +1214,18 @@ const Home = () => {
                     }}
                 />
 
-                <Box sx={{
-                    position: 'absolute',
-                    top: 'calc(40% - 265px)', // mesmo valor da âncora menos metade da altura do cacto
-                    right: '1%',
-                    width: '200px',
-                    zIndex: 1,
-                    "@media (max-width: 1111px)": {
-                        display: 'none'
-                    },
-                }}>
-                    <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" />
-                </Box>
+                    <Box sx={{
+                        position: 'absolute',
+                        top: 'calc(40% - 265px)', // mesmo valor da âncora menos metade da altura do cacto
+                        right: '1%',
+                        width: '200px',
+                        zIndex: 1,
+                        "@media (max-width: 1111px)": {
+                            display: 'none'
+                        },
+                    }}>
+                        <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" />
+                    </Box>
 
                 <Box
                     sx={{
