@@ -1045,7 +1045,7 @@ const Home = () => {
                             padding: "200px 0 0 0",
                             gap: "40px",
                             "@media (max-width:500px)": {
-                                padding: '0px 30px 0px 30px',
+                                padding: '60px 30px 0px 30px',
                             }
                         }}
                     >
