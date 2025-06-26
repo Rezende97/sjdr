@@ -78,6 +78,8 @@ const Home = () => {
                     justifyContent: "space-evenly",
                     alignItems: "center",
                     background: "#FEF5E6",
+                    zIndex: 0,
+                    paddingBottom: '60px',
                     "@media (max-width:790px)": {
                         display: "flex",
                         flexDirection: "column",
@@ -204,19 +206,24 @@ const Home = () => {
                     justifyContent: "space-evenly",
                     px: { xs: 2, md: 18 },
                     position: "relative",
+                    zIndex: 1,
                     flexDirection: "column",
-                    minHeight: '150px',
-                    gap: '50px',
-                    "@media (max-width:2634px)": {
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/main05.jpg)`,
+                    gap: '30px',
+                    marginTop: '-60px', // Puxa a seção para cima, sobrepondo o container anterior
+                    paddingTop: '110px',
+                    "@media (min-width:1262px)": {
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/main_7.jpg)`,
+                        height: '104vh',
                     },
-                    // "@media (max-width:746px)": {
-                    //     backgroundImage: `url(${process.env.PUBLIC_URL}/images/main02.jpg)`,
-                    // },
+                    "@media (max-width:1261px)": {
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/main_1.jpg)`,
+                        marginTop: '-50px',
+                        paddingTop: '10px',
+                    },
                 }}
-                >
+            >
 
-                <Box
+                {/* <Box
                     sx={{
                         display: "flex",
                         justifyContent: "space-evenly",
@@ -226,7 +233,6 @@ const Home = () => {
                         width: "100%",
                     }}
                 >
-                    {/* cacto */}
                     <Box
                         sx={{
                             position: "relative",
@@ -270,7 +276,6 @@ const Home = () => {
                         />
                     </Box>
 
-                    {/* flor */}
                     <Box
                         sx={{
                             position: "relative",
@@ -288,7 +293,6 @@ const Home = () => {
                         />
                     </Box>
 
-                    {/* cobra */}
                     <Box
                         sx={{
                             position: "relative",
@@ -312,7 +316,6 @@ const Home = () => {
                         />
                     </Box>
 
-                    {/* estrela - banner */}
                     <Box
                         sx={{
                             position: "relative",
@@ -329,211 +332,236 @@ const Home = () => {
                             width={85}
                         />
                     </Box>
-                </Box>
+                </Box> */}
+                <Box sx={{
+                    "@media (min-width:1262px)": {
+                        marginTop: '290px'
+                    },
+                    "@media (max-width:1261px)": {
+                        marginTop: '350px'
+                    },
+                    "@media (max-width:800px)": {
+                        marginTop: '110px'
+                    },
+                    "@media (max-width:470px)": {
+                        marginTop: '110px',
+                        paddingTop: '350px',
+                    },
+                    
+                }}>
 
-                {/* inicio container spotify musica */}
-                <Box
-                    sx={{
-                        background: "#231F20",
-                        padding: '15px',
-                        borderRadius: "20px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        "@media (max-width:750px)": {
-                            zIndex: 1,
-                            margin: "5px",
-                            position: "relative",
-                            top: "40px",
-                        }
-                    }}
-                >
-                    {/* container central */}
+                    {/* inicio container spotify musica */}
                     <Box
                         sx={{
+                            background: "#231F20",
+                            padding: '15px',
+                            borderRadius: "20px",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
-                            gap: "60px",
-                            padding: "30px",
-                            border: '2px dashed #63533B',
-                            borderRadius: "20px",
-                            "@media (max-width:420px)": {
-                                padding: "0",
-                            }
+                            "@media (max-width:750px)": {
+                                zIndex: 1,
+                                margin: "5px",
+                                position: "relative",
+                                top: "40px",
+                            },
+                            "@media (max-width:470px)": {
+                                position: "relative",
+                                top: "-350px"
+                            },
                         }}
                     >
-                        {/* cto spotify */}
+                        {/* container central */}
                         <Box
                             sx={{
                                 display: "flex",
-                                justifyContent: "left",
-                                flexDirection: "column",
-                                gap: "10px",
-                                "@media (max-width:746px)": {
-                                    display: "none",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                gap: "60px",
+                                padding: "30px",
+                                border: '2px dashed #63533B',
+                                borderRadius: "20px",
+                                "@media (max-width:420px)": {
+                                    padding: "0",
                                 }
                             }}
                         >
-
-                            <img
-                                src={process.env.PUBLIC_URL + "/images/confira_playlist.png"}
-                                width={110}
-                                alt="Confira Playlist"
-                            />
-
-                            <img
-                                src={
-                                    process.env.PUBLIC_URL +
-                                    "/images/Spotify_logo_with_text.svg.png"
-                                }
-                                width={90}
-                                alt="Sportify"
-                            />
-                        </Box>
-
-                        {/* play na musica */}
-                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
-                            <iframe
-                                style={{ borderRadius: "20px" }}
-                                src={spotifyEmbedUrl}
-                                width="100%"
-                                height="85"
-                                frameBorder="0"
-                                allowFullScreen=""
-                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                loading="lazy"
-                                title="Player de música do Spotify"
-                            />
-                        </Box>
-                    </Box>
-                </Box>
-                {/* fim container spotify musica */}
-
-                {/* inicio container tradição boa de viver */}
-                <Box
-                    component="section"
-                    id="projeto-section"
-                    sx={{
-                        display: "flex",
-                        justifyContent: "space-around",
-                        alignItems: "center",
-                        padding: "4rem",
-                        gap: "15px",
-                    }}
-                >
-
-                    {/* sanfona e triângulo */}
-                    <Box
-                        sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            flexDirection: "column",
-                            position: 'relative',
-                            bottom: '15px',
-                            gap: "20px",
-                            "@media (max-width:746px)": {
-                                display: "none",
-                            },
-                        }}
-                    >
-                        <Box
-                            sx={{
-                                position: 'relative',
-                                bottom: '-3px'
-                            }}
-                        >
-                            <img
-                                src={process.env.PUBLIC_URL + "/images/Sanfona.png"}
-                                alt="Sanfona"
-                                width="170px"
-                            />
-                        </Box>
-
-                        <Box
-                            sx={{
-                                position: 'relative',
-                                bottom: '15px'
-                            }}
-                        >
-                            <img
-                                src={process.env.PUBLIC_URL + "/images/triangulo.png"}
-                                alt="Lua e Estrela"
-                                width="110px"
-                                height="110px"
-                            />
-                        </Box>
-                    </Box>
-
-                    {/* lua e estrela */}
-                    <Box
-                        sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            "@media (max-width:746px)": {
-                                display: "none",
-                            },
-                        }}
-                    >
-                        <Box
-                            sx={{
-                                position: 'relative',
-                                right: '18px'
-                            }}
-                        >
-                            <img
-                                src={process.env.PUBLIC_URL + "/images/lua_estrela.png"}
-                                alt="Triângulo"
-                                width="70px"
-                                height="70px"
-                            />
-                        </Box>
-                    </Box>
-
-                    {/* tradição e texto sobre sao joao */}
-                    <Box
-                        className="container-tradicao-texto"
-                        sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            flexDirection: "column",
-                            gap: "20px"
-                        }}
-                    >
-                        <Box>
-                            <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
-                                TRADIÇÃO
-                            </Typography>
-                            <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
-                                BOA DE VIVER
-                            </Typography>
-                        </Box>
-                        <Box>
-                            <Typography
-                                id="modal-modal-title"
+                            {/* cto spotify */}
+                            <Box
                                 sx={{
-                                    fontFamily: 'montserrat',
-                                    textAlign: 'left',
-                                    color: '#F7EDDB',
-                                    maxWidth: '500px', // limite de largura como na imagem
-                                    lineHeight: 1.6,
-                                    fontSize: '16px', // ajuste conforme necessário
+                                    display: "flex",
+                                    justifyContent: "left",
+                                    flexDirection: "column",
+                                    gap: "10px",
+                                    "@media (max-width:746px)": {
+                                        display: "none",
+                                    }
                                 }}
                             >
-                                O São João do Reencontro nasce do desejo de reconectar a Bahia com a força de sua maior tradição popular.
-                                Criamos um circuito junino por 27 municípios, valorizando as raízes culturais de cada região e reacendendo
-                                o sentimento de pertencimento. Mais que celebrar, o projeto movimenta a economia criativa, fortalece o
-                                turismo e promove diversidade.<br /><br />
-                                É tradição boa de viver — de interior a interior, de palco em palco, de abraço em abraço.
-                            </Typography>
 
+                                <img
+                                    src={process.env.PUBLIC_URL + "/images/confira_playlist.png"}
+                                    width={110}
+                                    alt="Confira Playlist"
+                                />
+
+                                <img
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        "/images/Spotify_logo_with_text.svg.png"
+                                    }
+                                    width={90}
+                                    alt="Sportify"
+                                />
+                            </Box>
+
+                            {/* play na musica */}
+                            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
+                                <iframe
+                                    style={{ borderRadius: "20px" }}
+                                    src={spotifyEmbedUrl}
+                                    width="100%"
+                                    height="85"
+                                    frameBorder="0"
+                                    allowFullScreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"
+                                    title="Player de música do Spotify"
+                                />
+                            </Box>
                         </Box>
                     </Box>
+                    {/* fim container spotify musica */}
 
+                    {/* inicio container tradição boa de viver */}
+                    <Box
+                        component="section"
+                        id="projeto-section"
+                        sx={{
+                            display: "flex",
+                            justifyContent: "space-around",
+                            alignItems: "center",
+                            padding: "4rem",
+                            gap: "15px",
+                            "@media (max-width:470px)": {
+                                position: "relative",
+                                top: "-150px"
+                            },
+                        }}
+                    >
+
+                        {/* sanfona e triângulo */}
+                        <Box
+                            sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                flexDirection: "column",
+                                position: 'relative',
+                                bottom: '15px',
+                                gap: "20px",
+                                "@media (max-width:746px)": {
+                                    display: "none",
+                                },
+                            }}
+                        >
+                            <Box
+                                sx={{
+                                    position: 'relative',
+                                    bottom: '-3px'
+                                }}
+                            >
+                                <img
+                                    src={process.env.PUBLIC_URL + "/images/Sanfona.png"}
+                                    alt="Sanfona"
+                                    width="170px"
+                                />
+                            </Box>
+
+                            <Box
+                                sx={{
+                                    position: 'relative',
+                                    bottom: '15px'
+                                }}
+                            >
+                                <img
+                                    src={process.env.PUBLIC_URL + "/images/triangulo.png"}
+                                    alt="Lua e Estrela"
+                                    width="110px"
+                                    height="110px"
+                                />
+                            </Box>
+                        </Box>
+
+                        {/* lua e estrela */}
+                        <Box
+                            sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                "@media (max-width:746px)": {
+                                    display: "none",
+                                },
+                            }}
+                        >
+                            <Box
+                                sx={{
+                                    position: 'relative',
+                                    right: '18px'
+                                }}
+                            >
+                                <img
+                                    src={process.env.PUBLIC_URL + "/images/lua_estrela.png"}
+                                    alt="Triângulo"
+                                    width="70px"
+                                    height="70px"
+                                />
+                            </Box>
+                        </Box>
+
+                        {/* tradição e texto sobre sao joao */}
+                        <Box
+                            className="container-tradicao-texto"
+                            sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                flexDirection: "column",
+                                gap: "20px"
+                            }}
+                        >
+                            <Box>
+                                <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
+                                    TRADIÇÃO
+                                </Typography>
+                                <Typography id="modal-modal-title" variant="h4" component="h2" sx={{ textAlign: 'left', color: '#F7EDDB', fontFamily: 'Widescreen Ex Black', fontWeight: 'bold' }}>
+                                    BOA DE VIVER
+                                </Typography>
+                            </Box>
+                            <Box>
+                                <Typography
+                                    id="modal-modal-title"
+                                    sx={{
+                                        fontFamily: 'montserrat',
+                                        textAlign: 'left',
+                                        color: '#F7EDDB',
+                                        maxWidth: '500px', // limite de largura como na imagem
+                                        lineHeight: 1.6,
+                                        fontSize: '16px', // ajuste conforme necessário
+                                    }}
+                                >
+                                    O São João do Reencontro nasce do desejo de reconectar a Bahia com a força de sua maior tradição popular.
+                                    Criamos um circuito junino por 27 municípios, valorizando as raízes culturais de cada região e reacendendo
+                                    o sentimento de pertencimento. Mais que celebrar, o projeto movimenta a economia criativa, fortalece o
+                                    turismo e promove diversidade.<br /><br />
+                                    É tradição boa de viver — de interior a interior, de palco em palco, de abraço em abraço.
+                                </Typography>
+
+                            </Box>
+                        </Box>
+
+                    </Box>
+                    {/* fim container tradição boa de viver */}
                 </Box>
-                {/* fim container tradição boa de viver */}
             </Box>
             {/* fim container main */}
 
