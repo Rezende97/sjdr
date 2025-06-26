@@ -1003,7 +1003,7 @@ const Home = () => {
                     "@media (max-width:2300px)": {
                         zIndex: 1
                     },
-                    "@media (min-width:1371px)": {
+                    "@media (min-width:1439px)": {
                         height: '50vh'
                     },
                     "@media (max-width:1370px)": {
@@ -1045,7 +1045,7 @@ const Home = () => {
                             padding: "200px 0 0 0",
                             gap: "40px",
                             "@media (max-width:500px)": {
-                                padding: '60px 30px 0px 30px',
+                                padding: '70px 30px 0px 30px',
                             }
                         }}
                     >
