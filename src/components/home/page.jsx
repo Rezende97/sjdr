@@ -208,7 +208,7 @@ const Home = () => {
                     position: "relative",
                     zIndex: 1,
                     flexDirection: "column",
-                    gap: '30px', 
+                    gap: '30px',
                     // "@media (max-width:2330px)": {
                     //     height: '150vh',
                     // },
@@ -242,11 +242,11 @@ const Home = () => {
                         zIndex: '0'
                     }}
                 >
-                    
+
                     <Box
                         sx={{
                             position: "absolute",
-                            top: 'calc(40% - 60px)', 
+                            top: 'calc(40% - 60px)',
                             right: '68%',
                             width: '200px',
                             zIndex: 0,
@@ -283,26 +283,26 @@ const Home = () => {
                     </Box>
 
                     <Box
-                       sx={{
+                        sx={{
                             position: "absolute",
-                            top: 'calc(40% - -70px)', 
+                            top: 'calc(40% - -70px)',
                             right: '49%',
                             width: '200px',
                             zIndex: 0,
                             "@media (max-width:2513px)": {
-                                top: 'calc(40% - -70px)', 
+                                top: 'calc(40% - -70px)',
                             },
                             "@media (max-width:2343px)": {
                                 top: 'calc(40% - -70px)',
                             },
                             "@media (max-width:2315px)": {
-                                top: 'calc(40% - -70px)', 
+                                top: 'calc(40% - -70px)',
                             },
                             "@media (max-width:2229px)": {
-                                top: 'calc(40% - -70px)', 
+                                top: 'calc(40% - -70px)',
                             },
                             "@media (max-width:1750px)": {
-                                top: 'calc(40% - -30px)', 
+                                top: 'calc(40% - -30px)',
                             },
                             "@media (max-width:1215px)": {
                                 top: 'calc(40% - -30px)',
@@ -325,32 +325,32 @@ const Home = () => {
                     <Box
                         sx={{
                             position: "absolute",
-                            top: 'calc(40% - -40px)', 
+                            top: 'calc(40% - -40px)',
                             right: '38%',
                             width: '200px',
                             zIndex: 0,
                             "@media (max-width:2513px)": {
-                                top: 'calc(40% - -40px)', 
+                                top: 'calc(40% - -40px)',
                             },
                             "@media (max-width:2343px)": {
                                 top: 'calc(40% - -40px)',
                             },
                             "@media (max-width:2315px)": {
-                                top: 'calc(40% - -40px)', 
+                                top: 'calc(40% - -40px)',
                             },
                             "@media (max-width:2229px)": {
-                                top: 'calc(40% - -40px)', 
+                                top: 'calc(40% - -40px)',
                             },
                             "@media (max-width:1750px)": {
-                                top: 'calc(40% - -20px)', 
+                                top: 'calc(40% - -20px)',
                             },
                             "@media (max-width:1215px)": {
                                 top: 'calc(40% - -20px)',
                                 right: '25%',
                             },
                             "@media (max-width:750px)": {
-                                top: 'calc(40% - 30px)',
-                                right: '35%',
+                                top: 'calc(40% - 32px)',
+                                right: '24%',
                             }
                         }}
                     >
@@ -364,33 +364,33 @@ const Home = () => {
                     <Box
                         sx={{
                             position: "absolute",
-                            top: 'calc(40% - 5px)', 
+                            top: 'calc(40% - 5px)',
                             right: '18%',
                             width: '200px',
                             zIndex: 0,
                             "@media (max-width:2513px)": {
-                                top: 'calc(40% - -70px)', 
+                                top: 'calc(40% - -70px)',
                             },
                             "@media (max-width:2343px)": {
                                 top: 'calc(40% - -70px)',
                             },
                             "@media (max-width:2315px)": {
-                                top: 'calc(40% - -70px)', 
+                                top: 'calc(40% - -70px)',
                             },
                             "@media (max-width:2229px)": {
-                                top: 'calc(40% - 30px)', 
+                                top: 'calc(40% - 30px)',
                             },
                             "@media (max-width:1750px)": {
-                                top: 'calc(40% - 20px)', 
+                                top: 'calc(40% - 20px)',
                             },
                             "@media (max-width:1215px)": {
-                                top: 'calc(40% - 20px)', 
+                                top: 'calc(40% - 20px)',
                                 right: '2%',
                             },
                             "@media (max-width:750px)": {
-                                top: 'calc(40% - 15px)',
-                                rotate: '-40deg', 
-                                right: '-5%',
+                                top: 'calc(40% - 35px)',
+                                rotate: '-40deg',
+                                right: '-32%',
                             }
                         }}
                     >
@@ -400,8 +400,8 @@ const Home = () => {
                             width={85}
                         />
                     </Box>
-                </Box> 
-                
+                </Box>
+
                 <Box sx={{
                     zIndex: '1',
                     gap: '10px',
@@ -493,7 +493,7 @@ const Home = () => {
                             display: "flex",
                             justifyContent: "space-around",
                             alignItems: "center",
-                            padding: "4rem",
+                            padding: "2rem",
                             gap: "15px",
                             "@media (max-width:515px)": {
                                 // padding: '75px 0 75px 0'
@@ -906,7 +906,7 @@ const Home = () => {
                                 alt="Youtube"
                                 width="100%"
                                 height="85%"
-                            /> */} 
+                            /> */}
 
                             <div>
                                 <iframe className="video_youtube" src="https://www.youtube.com/embed/j6RLfdbGQgA?si=HoTUyG8XGOyMm-vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -1106,14 +1106,14 @@ const Home = () => {
                     // justifyContent: 'center',
                     position: 'absolute',
                     right: '20%',
-                    top: '59%',
+                    top: '50%',
                     // right: '170px',
                     // width: '100%',
                     "@media (max-width:1750px)": {
                         top: '46%'
                     },
                     "@media (max-width:1576px)": {
-                        top: '42%'
+                        top: '49%'
                     },
                     "@media (max-width:1439px)": {
                         top: '32%'
@@ -1127,7 +1127,7 @@ const Home = () => {
                     "@media (max-width:592px)": {
                         display: 'none'
                     }
-                    
+
                 }}>
                     <img src={process.env.PUBLIC_URL + "/images/estrela-main.png"} alt="estrela" width={80} />
                 </Box>
@@ -1139,8 +1139,9 @@ const Home = () => {
                         flexDirection: "column",
                         gap: "45px",
                         zIndex: 1,
-                        margin: "8px",
-
+                        "@media (max-width:500px)": {
+                            margin: "8px",
+                        }
                     }}
                 >
                     {/* sobre a pira */}
@@ -1149,7 +1150,7 @@ const Home = () => {
                         sx={{
                             display: "flex",
                             alignItems: "end",
-                            padding: "300px 0 0 0",
+                            padding: "340px 0 0 0",
                             gap: "40px",
                             // "@media (max-width:2625px)": {
                             //     padding: '250px 30px 0px 30px',
@@ -1239,18 +1240,18 @@ const Home = () => {
                     }}
                 />
 
-                    <Box sx={{
-                        position: 'absolute',
-                        top: 'calc(40% - 265px)', // mesmo valor da âncora menos metade da altura do cacto
-                        right: '1%',
-                        width: '200px',
-                        zIndex: 1,
-                        "@media (max-width: 1111px)": {
-                            display: 'none'
-                        },
-                    }}>
-                        <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" />
-                    </Box>
+                <Box sx={{
+                    position: 'absolute',
+                    top: 'calc(40% - 265px)', // mesmo valor da âncora menos metade da altura do cacto
+                    right: '1%',
+                    width: '200px',
+                    zIndex: 1,
+                    "@media (max-width: 1111px)": {
+                        display: 'none'
+                    },
+                }}>
+                    <img src={process.env.PUBLIC_URL + "/images/Cacto.png"} alt="cacto" />
+                </Box>
 
                 <Box
                     sx={{
