@@ -272,6 +272,16 @@ const Home = () => {
                             "@media (max-width:750px)": {
                                 top: 'calc(40% - 270px)',
                                 right: '55%',
+                            },
+                            "@media (min-width:391px) and (max-width:749px)": {
+                                top: 'calc(40% - 273px)',
+                                right: '55%',
+                                rotate: '-8deg',
+                            },
+                            "@media (max-width:390px)": {
+                                top: 'calc(40% - 269px)',
+                                right: '55%',
+                                rotate: '-6deg',
                             }
                         }}
                     >
@@ -351,6 +361,10 @@ const Home = () => {
                             "@media (max-width:750px)": {
                                 top: 'calc(40% - 32px)',
                                 right: '24%',
+                            },
+                            "@media (max-width:390px)": {
+                                top: 'calc(40% - 42px)',
+                                right: '20%',
                             }
                         }}
                     >
